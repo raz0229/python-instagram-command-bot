@@ -1,7 +1,7 @@
 https://github.com/raz0229/python-whatsapp-chatbot.git
 #
 # Simple python-whatsapp bot built with selenium webdriver and PyAutoGUI hooked with 3rd-party Acobot API to respond to your requests.
-# Webdriver configuration and your private API key found in 'bot.py' file and can be changed accordingly
+Webdriver configuration and your private API key found in 'bot.py' file and can be changed accordingly
 
 External packages you might need to install:
 pip install selenium pynput pyautogui
