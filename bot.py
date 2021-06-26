@@ -42,7 +42,7 @@ class Bot:
         data = res.read()
 
         response = json.loads(data.decode('UTF-8'))["cnt"]
-        return response.replace('Aco', 'Raja Abdullah Zafar Sheraz Khan Janjua AKA RAZ').replace('acobot.ai', 'RAZ\'s computer and also on cloud')
+        return response.replace('Aco', 'RAZ').replace('acobot.ai', 'a remote repo')  # replace name and location in response 
 
     def new_msg_received(self):
         incoming = driver.find_elements_by_xpath(f'//div[contains(@data-pre-plain-text, "{self.contact}")]')
