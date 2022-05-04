@@ -25,7 +25,7 @@
 from pynput import keyboard
 from bot import Bot
 
-my_bot = Bot('Bot')
+my_bot = Bot('Fuck PGC')
 
 # Keyboard event listener
 listener = keyboard.Listener(on_press=my_bot.on_press)

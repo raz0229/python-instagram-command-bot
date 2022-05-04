@@ -3,6 +3,7 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from pynput import keyboard
@@ -11,10 +12,13 @@ import http.client
 import json
 import gc
 
+
+options = Options()
+options.add_argument("user-data-dir=/tmp/raz0229")
 # Configuration
 PATH = "/opt/chromedriver"  # path to your downloaded webdriver
-driver = webdriver.Chrome(PATH)
-driver.get('https://web.whatsapp.com')
+driver = webdriver.Chrome(PATH, chrome_options=options)
+driver.get('https://instagram.com/direct/inbox')
 print(driver.title)  # prints title of the webpage
 conn = http.client.HTTPSConnection("acobot-brainshop-ai-v1.p.rapidapi.com")
 headers = {
