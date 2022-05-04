@@ -30,10 +30,10 @@ headers = {
 class Bot:
     def __init__(self, contact):
         self.contact = contact
-        elem = WebDriverWait(driver, 30).until(EC.element_to_be_clickable((By.XPATH, f'//*[text() = "{self.contact}" ]')))
+        elem = WebDriverWait(driver, 120).until(EC.element_to_be_clickable((By.XPATH, f'//*[text() = "{self.contact}" ]')))
         elem.click()
-        self.incoming = WebDriverWait(driver, 30).until(
-            EC.visibility_of_all_elements_located((By.XPATH, f'//div[contains(@data-pre-plain-text, "{self.contact}")]')))
+        self.incoming = WebDriverWait(driver, 120).until(
+            EC.visibility_of_all_elements_located((By.CSS_SELECTOR ,'._7UhW9.xLCgt.MMzan.KV-D4.uL8Hv.T0kll')))
         self.received_msgs = len(self.incoming)
         self.running = True
         self.pressed_ctrl = False
@@ -49,7 +49,7 @@ class Bot:
         return response.replace('Aco', 'RAZ').replace('acobot.ai', 'a remote repo')  # replace name and location in response 
 
     def new_msg_received(self):
-        incoming = driver.find_elements_by_xpath(f'//div[contains(@data-pre-plain-text, "{self.contact}")]')
+        incoming = driver.find_elements_by_css_selector('._7UhW9.xLCgt.MMzan.KV-D4.uL8Hv.T0kll')
         if len(incoming) != self.received_msgs:
             return True
         else:
@@ -60,7 +60,7 @@ class Bot:
         input_box = input_box[len(input_box) - 1]
         input_box.click()
         input_box.send_keys(text, Keys.RETURN)
-        incoming = driver.find_elements_by_xpath(f'//div[contains(@data-pre-plain-text, "{self.contact}")]')
+        incoming = driver.find_elements_by_css_selector('._7UhW9.xLCgt.MMzan.KV-D4.uL8Hv.T0kll')
         self.received_msgs = len(incoming)
 
     def on_press(self, key):
@@ -77,8 +77,7 @@ class Bot:
         while self.running:
             if self.new_msg_received():
                 try:
-                    self.incoming = driver.find_elements_by_xpath(
-                        f'//div[contains(@data-pre-plain-text, "{self.contact}")]')
+                    self.incoming = driver.find_elements_by_css_selector('._7UhW9.xLCgt.MMzan.KV-D4.uL8Hv.T0kll')
                     self.received_msgs = len(self.incoming)
                     last_msg = self.incoming[self.received_msgs - 1].text
                     print(last_msg)
