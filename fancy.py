@@ -54,9 +54,9 @@ class Fancy:
     def __init__(self, text):
         self.text = str(text).strip()
         # Create the result as an empty variable.
-        self.result = ""
 
     def makeFancy(self, style):
+        result = ""
         # Extract the selected character maps from the list.
         print(self)
         originalMap = original[int(style) - 1]
@@ -67,20 +67,19 @@ class Fancy:
         if int(style) in uppercaseOnly:
             self.text = self.text.upper()
         if int(style) == 14 or int(style) == 15:
-            reversed = ''.join(reversed(self.text))
-            self.text = reversed
+            self.text = self.text[::-1]
 
         # Conversion.
         for i in self.text:
             if i in originalMap:
                 # If the current character is in the list of accepted characters, convert it.
-                self.result += replaceMap[originalMap.index(i)]
+                result += replaceMap[originalMap.index(i)]
             else:  # Otherwise, leave it as is.
-                self.result += i
+                result += i
             if int(style) == 9:
                 # Add spaces for the blue font. Otherwise, the text will turn into flags. (see the comment before
                 # the "replace" list)
-                self.result += " "
+                result += " "
             if int(style) == 9 and i == " ":  # Widen the spaces between the blue words.
-                self.result += " "
-        return self.result
+                result += " "
+        return result

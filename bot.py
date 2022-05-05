@@ -17,7 +17,7 @@ import emoji
 import json
 import gc
 
-profile = FirefoxProfile("/home/raz0229/.mozilla/firefox/yxyq7u1x.default")
+profile = FirefoxProfile("/home/raz0229/.mozilla/firefox/58m1hr3k.dev-edition-default")
 # Configuration
 PATH = "/home/raz0229/Downloads/geckodriver"  # path to your downloaded webdriver
 driver = webdriver.Firefox(profile, executable_path=PATH)
