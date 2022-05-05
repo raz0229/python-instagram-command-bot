@@ -44,7 +44,8 @@ def deemojify(text):
     return emoji.get_emoji_regexp().sub(r'', text)
 
 def urlify(text, command, target):
-    return slugify(f"q={deemojify(text.lower().replace(command, '').strip())}&target={target}", separator='%20')
+    slug = slugify(text.lower().replace(command, '').strip(), separator='%20')
+    return f"q={deemojify(slug)}&target={target}"
 
 class Bot:
     def __init__(self, contact):
@@ -118,7 +119,6 @@ class Bot:
                     # Translate to Pashto
                     elif last_msg.lower().startswith("bot_pashto"):
                         payloadPashto = urlify(last_msg, "bot_pashto", "ps")
-                        dataPashto = ""
                         self.send_message("Translating last message to Pashto...")
                         try:
                             connTranslate.request("POST", "/language/translate/v2", payloadPashto, headersTranslate)
@@ -132,7 +132,6 @@ class Bot:
                     # Translate to English
                     elif last_msg.lower().startswith("bot_english"):
                         payloadEng = urlify(last_msg, "bot_english", "en")
-                        dataEng = ""
                         self.send_message("Translating last message to English...")
                         try:
                             connTranslate.request("POST", "/language/translate/v2", payloadEng, headersTranslate)
@@ -146,7 +145,6 @@ class Bot:
                     # Translate to Urdu
                     elif last_msg.lower().startswith("bot_urdu"):
                         payloadUr = urlify(last_msg, "bot_urdu", "ur")
-                        dataUr = ""
                         self.send_message("Translating last message to Urdu...")
                         try:
                             connTranslate.request("POST", "/language/translate/v2", payloadUr, headersTranslate)
@@ -155,7 +153,7 @@ class Bot:
                         except http.client.HTTPException:
                             self.send_message("Error translating. Try again")
                         else:
-                            print(json.loads(dataUr.decode("utf-8"))["data"]["translations"][0])
+                            print(json.loads(dataUr.decode("utf-8"))["data"])
                             self.send_message(json.loads(dataUr.decode("utf-8"))["data"]["translations"][0]['translatedText'])
 
                     # Search Wikipedia
