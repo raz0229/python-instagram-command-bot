@@ -1,4 +1,5 @@
 # see 'main.py'
+import os
 
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
@@ -10,13 +11,18 @@ from pynput import keyboard
 from slugify import slugify
 from fancy import Fancy
 import pyautogui as gui
+from animu import client as acl
 import http.client
 import wikipedia
+import asyncio
+import requests
 import socket
 import emoji
 import json
 import gc
+import os
 
+waifu = acl.Client("eae6c4c7e1a3fffe31e383371dd477d82649ac579117")
 profile = FirefoxProfile("/home/raz0229/.mozilla/firefox/58m1hr3k.dev-edition-default")
 # Configuration
 PATH = "/home/raz0229/Downloads/geckodriver"  # path to your downloaded webdriver
@@ -46,6 +52,14 @@ def deemojify(text):
 def urlify(text, command, target):
     slug = slugify(text.lower().replace(command, '').strip(), separator='%20')
     return f"q={deemojify(slug)}&target={target}"
+
+def load_requests(source_url, sink_path):
+    import requests
+    r = requests.get(source_url, stream=True)
+    if r.status_code == 200:
+        with open(sink_path, 'wb') as f:
+            for chunk in r:
+                f.write(chunk)
 
 class Bot:
     def __init__(self, contact):
@@ -88,9 +102,18 @@ class Bot:
         incoming = driver.find_elements_by_css_selector('._7UhW9.xLCgt.MMzan.KV-D4.uL8Hv.T0kll')
         self.received_msgs = len(incoming)
 
+    def send_copied_image(self):
+        input_box = driver.find_element_by_css_selector('textarea')
+        input_box.click()
+        input_box.send_keys(Keys.LEFT_CONTROL, "v")
+        send_button = driver.find_element_by_css_selector(".sqdOP.L3NKy._4pI4F.y3zKF.cB_4K")
+        send_button.click()
+        incoming = driver.find_elements_by_css_selector('._7UhW9.xLCgt.MMzan.KV-D4.uL8Hv.T0kll')
+        self.received_msgs = len(incoming)
+
     def on_press(self, key):
         print(key, 'Key pressed')
-        if key == keyboard.Key.ctrl_l:  # If 'Left Ctrl' is the key pressed
+        if key == keyboard.Key.ctrl_r:  # If 'Left Ctrl' is the key pressed
             try:
                 self.pressed_ctrl = True
             except Exception as e:
@@ -173,6 +196,25 @@ class Bot:
                         fn = Fancy(text)
                         for i in range(25):
                             self.send_message(fn.makeFancy(i+1))
+
+                    # Anime quote
+                    elif last_msg.lower().startswith("bot_quote"):
+                        try:
+                            quote = asyncio.run(waifu.quote())
+                            self.send_message(quote["quote"])
+                        except Exception:
+                            self.send_message("Cannot get Quote due to slow internet")
+
+                    # Fetch waifu
+                    elif last_msg.lower().startswith("bot_waifu"):
+                        self.send_message("Fetching a hot waifu. This could take a while...")
+                        try:
+                            waf = asyncio.run(waifu.waifu())
+                            load_requests(waf["images"][0], "waifu.png")
+                            os.system("xclip -selection clipboard -t image/png -i ~/Documents/python-instagram-command-bot/waifu.png")
+                            self.send_copied_image()
+                        except Exception:
+                            self.send_message("Slow internet while fetching waifu")
 
                     else:
                         print("No command")
