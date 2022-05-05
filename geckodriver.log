@@ -1,0 +1,15 @@
+1651768755061	geckodriver	INFO	Listening on 127.0.0.1:55321
+1651768755115	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "43475" "-no-remote" "-profile" "/tmp/rust_mozprofiletYELuw"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651768755992	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletYELuw/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:43475/devtools/browser/046545ac-a726-472c-9033-df0991a96ae8
+1651768758823	Marionette	INFO	Listening on port 33099
+1651768758893	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://www.instagram.com"
+1651768780774	Marionette	INFO	Stopped listening on port 33099
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1651768780918	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: Object
+[2022-05-05T16:39:41Z ERROR glean] Can't persist ping lifetime data: Error { kind: Rkv(IoError(Os { code: 2, kind: NotFound, message: "No such file or directory" })) }

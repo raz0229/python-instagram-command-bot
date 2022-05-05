@@ -3,11 +3,12 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.webdriver import FirefoxProfile
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 from pynput import keyboard
 from slugify import slugify
+from fancy import Fancy
 import pyautogui as gui
 import http.client
 import wikipedia
@@ -16,11 +17,10 @@ import emoji
 import json
 import gc
 
-options = Options()
-options.add_argument("user-data-dir=/tmp/raz0229")
+profile = FirefoxProfile("/home/raz0229/.mozilla/firefox/yxyq7u1x.default")
 # Configuration
-PATH = "/opt/chromedriver"  # path to your downloaded webdriver
-driver = webdriver.Chrome(PATH, chrome_options=options)
+PATH = "/home/raz0229/Downloads/geckodriver"  # path to your downloaded webdriver
+driver = webdriver.Firefox(profile, executable_path=PATH)
 driver.get('https://instagram.com/direct/inbox')
 print(driver.title)  # prints title of the webpage
 
@@ -161,11 +161,18 @@ class Bot:
                         msg = deemojify(last_msg.lower().replace("bot_wiki", "").strip())
                         self.send_message(f"Searching Wikipedia for: {msg}")
                         try:
-                            response = wikipedia.summary(msg)
+                            response = wikipedia.summary(msg, auto_suggest=False)
                         except Exception as wk:
                             self.send_message(str(wk))
                         else:
                             self.send_message(response)
+
+                    # Fancy text converter
+                    elif last_msg.lower().startswith("bot_fancy"):
+                        text = deemojify(last_msg.lower().replace("bot_fancy", "").strip())
+                        fn = Fancy(text)
+                        for i in range(25):
+                            self.send_message(fn.makeFancy(i+1))
 
                     else:
                         print("No command")
