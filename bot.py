@@ -10,6 +10,7 @@ from pynput import keyboard
 from slugify import slugify
 import pyautogui as gui
 import http.client
+import wikipedia
 import socket
 import emoji
 import json
@@ -30,10 +31,20 @@ headers = {
     'X-RapidAPI-Key': "85632300dbmsha01f5765f1a7303p18df83jsn83e04aa1780a"
     }
 
+connTranslate = http.client.HTTPSConnection("google-translate1.p.rapidapi.com")
+headersTranslate = {
+    'content-type': "application/x-www-form-urlencoded",
+    'Accept-Encoding': "application/gzip",
+    'X-RapidAPI-Host': "google-translate1.p.rapidapi.com",
+    'X-RapidAPI-Key': "85632300dbmsha01f5765f1a7303p18df83jsn83e04aa1780a"
+    }
+
 
 def deemojify(text):
     return emoji.get_emoji_regexp().sub(r'', text)
 
+def urlify(text, command, target):
+    return slugify(f"q={deemojify(text.lower().replace(command, '').strip())}&target={target}", separator='%20')
 
 class Bot:
     def __init__(self, contact):
@@ -89,7 +100,7 @@ class Bot:
     def init_bot(self):
         while self.running:
             if self.new_msg_received():
-                try:
+
                     self.incoming = driver.find_elements_by_css_selector('._7UhW9.xLCgt.MMzan.KV-D4.uL8Hv.T0kll')
                     self.received_msgs = len(self.incoming)
                     last_msg = self.incoming[self.received_msgs - 1].text
@@ -102,12 +113,64 @@ class Bot:
                         if deemojify(last_msg.lower().strip()) == "bot_ask":
                             self.send_message("Chat with me using bot_ask command. Example: bot_ask who are you")
                         else:
-                            self.send_message(self.make_call(last_msg.replace("bot.ask", '').strip()))
-                except Exception as e:
-                    summary = str(e)
-                    self.send_message(summary)
-                    print(e)
-                    pass
+                            self.send_message(self.make_call(deemojify(last_msg.replace("bot_ask", '').strip())))
+
+                    # Translate to Pashto
+                    elif last_msg.lower().startswith("bot_pashto"):
+                        payloadPashto = urlify(last_msg, "bot_pashto", "ps")
+                        dataPashto = ""
+                        self.send_message("Translating last message to Pashto...")
+                        try:
+                            connTranslate.request("POST", "/language/translate/v2", payloadPashto, headersTranslate)
+                            resPashto = connTranslate.getresponse()
+                            dataPashto = resPashto.read()
+                        except http.client.HTTPException:
+                            self.send_message("Error translating. Try again")
+                        else:
+                            self.send_message(json.loads(dataPashto.decode("utf-8"))["data"]["translations"][0]['translatedText'])
+
+                    # Translate to English
+                    elif last_msg.lower().startswith("bot_english"):
+                        payloadEng = urlify(last_msg, "bot_english", "en")
+                        dataEng = ""
+                        self.send_message("Translating last message to English...")
+                        try:
+                            connTranslate.request("POST", "/language/translate/v2", payloadEng, headersTranslate)
+                            resEng = connTranslate.getresponse()
+                            dataEng = resEng.read()
+                        except http.client.HTTPException:
+                            self.send_message("Error translating. Try again")
+                        else:
+                            self.send_message(json.loads(dataEng.decode("utf-8"))["data"]["translations"][0]['translatedText'])
+
+                    # Translate to Urdu
+                    elif last_msg.lower().startswith("bot_urdu"):
+                        payloadUr = urlify(last_msg, "bot_urdu", "ur")
+                        dataUr = ""
+                        self.send_message("Translating last message to Urdu...")
+                        try:
+                            connTranslate.request("POST", "/language/translate/v2", payloadUr, headersTranslate)
+                            resUr = connTranslate.getresponse()
+                            dataUr = resUr.read()
+                        except http.client.HTTPException:
+                            self.send_message("Error translating. Try again")
+                        else:
+                            print(json.loads(dataUr.decode("utf-8"))["data"]["translations"][0])
+                            self.send_message(json.loads(dataUr.decode("utf-8"))["data"]["translations"][0]['translatedText'])
+
+                    # Search Wikipedia
+                    elif last_msg.lower().startswith("bot_wiki"):
+                        msg = deemojify(last_msg.lower().replace("bot_wiki", "").strip())
+                        self.send_message(f"Searching Wikipedia for: {msg}")
+                        try:
+                            response = wikipedia.summary(msg)
+                        except Exception as wk:
+                            self.send_message(str(wk))
+                        else:
+                            self.send_message(response)
+
+                    else:
+                        print("No command")
             if self.pressed_ctrl:
                 break
         self.contact = gui.prompt('Enter contact\'s name', 'WhatsApp Chat bot')
