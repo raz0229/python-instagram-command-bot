@@ -21,12 +21,16 @@ import emoji
 import json
 import gc
 import os
+from selenium.webdriver.firefox.options import Options
+
+options = Options()
+options.headless = True
 
 waifu = acl.Client("eae6c4c7e1a3fffe31e383371dd477d82649ac579117")
 profile = FirefoxProfile("/home/raz0229/.mozilla/firefox/58m1hr3k.dev-edition-default")
 # Configuration
 PATH = "/home/raz0229/Downloads/geckodriver"  # path to your downloaded webdriver
-driver = webdriver.Firefox(profile, executable_path=PATH)
+driver = webdriver.Firefox(profile, executable_path=PATH, options=options)
 driver.get('https://instagram.com/direct/inbox')
 print(driver.title)  # prints title of the webpage
 
@@ -81,6 +85,7 @@ class Bot:
             res = conn.getresponse()
             data = res.read()
             response = json.loads(data.decode("utf-8"))["out"]
+            print(response)
         except socket.timeout:
             return "ERR: Slow Internet connect on host"
         except http.client.HTTPException:
@@ -98,7 +103,7 @@ class Bot:
     def send_message(self, text):
         input_box = driver.find_element_by_css_selector('textarea')
         input_box.click()
-        input_box.send_keys(deemojify(text), Keys.RETURN)
+        input_box.send_keys(text, Keys.RETURN)
         incoming = driver.find_elements_by_css_selector('._7UhW9.xLCgt.MMzan.KV-D4.uL8Hv.T0kll')
         self.received_msgs = len(incoming)
 
@@ -132,49 +137,49 @@ class Bot:
 
                     # BOT response
                     if last_msg.lower().startswith("bot_ask"):
-                        self.send_message('Thinking...')
+                        self.send_message('Thinking... 🤖🦇')
 
                         if deemojify(last_msg.lower().strip()) == "bot_ask":
-                            self.send_message("Chat with me using bot_ask command. Example: bot_ask who are you")
+                            self.send_message("🤖🦇 Chat with me using bot_ask command. Example: bot_ask who are you")
                         else:
                             self.send_message(self.make_call(deemojify(last_msg.replace("bot_ask", '').strip())))
 
                     # Translate to Pashto
                     elif last_msg.lower().startswith("bot_pashto"):
                         payloadPashto = urlify(last_msg, "bot_pashto", "ps")
-                        self.send_message("Translating last message to Pashto...")
+                        self.send_message("🤖🦇 Translating last message to Pashto...")
                         try:
                             connTranslate.request("POST", "/language/translate/v2", payloadPashto, headersTranslate)
                             resPashto = connTranslate.getresponse()
                             dataPashto = resPashto.read()
                         except http.client.HTTPException:
-                            self.send_message("Error translating. Try again")
+                            self.send_message("🤖🦇 Error translating. Try again")
                         else:
                             self.send_message(json.loads(dataPashto.decode("utf-8"))["data"]["translations"][0]['translatedText'])
 
                     # Translate to English
                     elif last_msg.lower().startswith("bot_english"):
                         payloadEng = urlify(last_msg, "bot_english", "en")
-                        self.send_message("Translating last message to English...")
+                        self.send_message("🤖🦇 Translating last message to English...")
                         try:
                             connTranslate.request("POST", "/language/translate/v2", payloadEng, headersTranslate)
                             resEng = connTranslate.getresponse()
                             dataEng = resEng.read()
                         except http.client.HTTPException:
-                            self.send_message("Error translating. Try again")
+                            self.send_message("🤖🦇 Error translating. Try again")
                         else:
                             self.send_message(json.loads(dataEng.decode("utf-8"))["data"]["translations"][0]['translatedText'])
 
                     # Translate to Urdu
                     elif last_msg.lower().startswith("bot_urdu"):
                         payloadUr = urlify(last_msg, "bot_urdu", "ur")
-                        self.send_message("Translating last message to Urdu...")
+                        self.send_message("🤖🦇 Translating last message to Urdu...")
                         try:
                             connTranslate.request("POST", "/language/translate/v2", payloadUr, headersTranslate)
                             resUr = connTranslate.getresponse()
                             dataUr = resUr.read()
                         except http.client.HTTPException:
-                            self.send_message("Error translating. Try again")
+                            self.send_message("🤖🦇 Error translating. Try again")
                         else:
                             print(json.loads(dataUr.decode("utf-8"))["data"])
                             self.send_message(json.loads(dataUr.decode("utf-8"))["data"]["translations"][0]['translatedText'])
@@ -182,7 +187,7 @@ class Bot:
                     # Search Wikipedia
                     elif last_msg.lower().startswith("bot_wiki"):
                         msg = deemojify(last_msg.lower().replace("bot_wiki", "").strip())
-                        self.send_message(f"Searching Wikipedia for: {msg}")
+                        self.send_message(f"🤖🦇 Searching Wikipedia for: {msg}")
                         try:
                             response = wikipedia.summary(msg, auto_suggest=False)
                         except Exception as wk:
@@ -203,18 +208,18 @@ class Bot:
                             quote = asyncio.run(waifu.quote())
                             self.send_message(quote["quote"])
                         except Exception:
-                            self.send_message("Cannot get Quote due to slow internet")
+                            self.send_message("🤖🦇 Cannot get Quote due to slow internet")
 
                     # Fetch waifu
                     elif last_msg.lower().startswith("bot_waifu"):
-                        self.send_message("Fetching a hot waifu. This could take a while...")
+                        self.send_message("🤖🦇 Fetching a hot waifu. This could take a while...")
                         try:
                             waf = asyncio.run(waifu.waifu())
                             load_requests(waf["images"][0], "waifu.png")
                             os.system("xclip -selection clipboard -t image/png -i ~/Documents/python-instagram-command-bot/waifu.png")
                             self.send_copied_image()
                         except Exception:
-                            self.send_message("Slow internet while fetching waifu")
+                            self.send_message("🤖🦇 Slow internet while fetching waifu")
 
                     else:
                         print("No command")

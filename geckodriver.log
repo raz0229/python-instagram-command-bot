@@ -669,3 +669,74 @@ JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_
 ###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
 
 Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1651777586214	geckodriver	INFO	Listening on 127.0.0.1:40165
+1651777589457	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "45997" "-no-remote" "-profile" "/tmp/rust_mozprofileTBiL7B"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651777590975	Marionette	INFO	Marionette enabled
+DevTools listening on ws://localhost:45997/devtools/browser/d124ccd0-8703-4f55-a4b9-c9336f420579
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1651777594241	Marionette	INFO	Listening on port 39795
+1651777594328	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651780616606	Marionette	INFO	Stopped listening on port 39795
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953516
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1651809798319	geckodriver	INFO	Listening on 127.0.0.1:58815
+1651809801520	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "49089" "-no-remote" "-profile" "/tmp/rust_mozprofileFLu9gw"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651809802967	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:49089
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1651809805932	Marionette	INFO	Listening on port 42997
+1651809805962	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:49089/devtools/browser/876a0ee1-f78d-4a0b-99d0-ec5aeba89ffe
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953486
+1651810054875	Marionette	INFO	Stopped listening on port 42997
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1651810254194	geckodriver	INFO	Listening on 127.0.0.1:55453
+1651810257072	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "37407" "-no-remote" "-profile" "/tmp/rust_mozprofile6H3H9p"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651810258307	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:37407
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1651810261536	Marionette	INFO	Listening on port 34329
+1651810261655	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:37407/devtools/browser/e98ebb24-3030-449a-9511-2fd3fcf336db
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1651810541279	geckodriver	INFO	Listening on 127.0.0.1:60127
+1651810543957	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "41149" "-no-remote" "-profile" "/tmp/rust_mozprofileILdcl8"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651810545225	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:41149
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1651810547666	Marionette	INFO	Listening on port 39969
+DevTools listening on ws://localhost:41149/devtools/browser/ec5bf253-1d51-48b2-9e46-7e9753081bae
+1651810547792	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(/tmp/rust_mozprofileILdcl8/thumbnails) because it does not exist
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953516
+1651811787298	Marionette	INFO	Stopped listening on port 39969
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1651811905195	geckodriver	INFO	Listening on 127.0.0.1:36549
+1651811907959	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "-headless" "--remote-debugging-port" "47639" "-no-remote" "-profile" "/tmp/rust_mozprofilee2dIYT"
+*** You are running in headless mode.
+1651811909161	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:47639
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1651811910729	Marionette	INFO	Listening on port 38983
+1651811910796	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:47639/devtools/browser/efa9b11d-323c-4a29-8058-de47646abd19
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
