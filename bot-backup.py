@@ -18,7 +18,6 @@ import asyncio
 import requests
 import socket
 import emoji
-import random
 import json
 import gc
 import os
@@ -90,7 +89,7 @@ class Bot:
         except socket.timeout:
             return "ERR: Slow Internet connect on host"
         except http.client.HTTPException:
-            self.make_call(request)
+            return "Something went wrong. Try again"
         else:  # no error occurred
             return response.replace('RoboMatic', 'RAZBot').replace('robomatic.ai', 'instagram.com/raz0229')  # replace name and location in response
 
@@ -206,19 +205,6 @@ class Bot:
                         fn = Fancy(text)
                         for i in range(25):
                             self.send_message(fn.makeFancy(i+1))
-
-                    # random insult thrower
-                    elif last_msg.lower().startswith("bot_insult"):
-                        name = deemojify(last_msg.lower().replace("bot_insult", "").strip())
-                        res = [ele for ele in ["raz", "mom", "dad", "mother", "father", "mommy", "moma", "ma"] if
-                               (ele in name)]
-                        if (res):
-                            self.send_message("OFFENSIVE WORDS BLOCKED BY THE CREATOR")
-                        else:
-                            f = open('insults.txt')
-                            lines = f.readlines()
-                            choice = random.randint(0, len(lines) - 1)
-                            self.send_message(lines[choice].replace("XXX", name))
 
                     # Anime quote
                     elif last_msg.lower().startswith("bot_quote"):
