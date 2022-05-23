@@ -198,7 +198,7 @@ class Bot:
                         except Exception as wk:
                             self.send_message(str(wk))
                         else:
-                            self.send_message(response)
+                            self.send_message(response[0:500])
 
                     # Fancy text converter
                     elif last_msg.lower().startswith("bot_fancy"):
@@ -219,6 +219,13 @@ class Bot:
                             lines = f.readlines()
                             choice = random.randint(0, len(lines) - 1)
                             self.send_message(lines[choice].replace("XXX", name))
+
+                    # random pickup line
+                    elif last_msg.lower().startswith("bot_pickup"):
+                        f = open('pickup.txt')
+                        lines = f.readlines()
+                        choice = random.randint(0, len(lines) - 1)
+                        self.send_message(lines[choice])
 
                     # Anime quote
                     elif last_msg.lower().startswith("bot_quote"):
