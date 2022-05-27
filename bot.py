@@ -30,9 +30,6 @@ from apiclient.discovery import build
 options = Options()
 options.headless = False
 
-service = build("customsearch", "v1",
-               developerKey="AIzaSyB4hl9a1RPB_MmuqPm_zNmO49Y20qSf9e4")
-
 waifu = acl.Client("eae6c4c7e1a3fffe31e383371dd477d82649ac579117")
 profile = FirefoxProfile("/home/raz0229/.mozilla/firefox/58m1hr3k.dev-edition-default")
 # Configuration
@@ -255,32 +252,38 @@ class Bot:
                         except Exception:
                             self.send_message("🤖🦇 Slow internet while fetching waifu")
 
-                    # Fetch imaeg
+                    # Fetch image
                     elif last_msg.lower().startswith("bot_image"):
                         searchTerm = deemojify(last_msg.lower().replace("bot_image", "").strip())
                         if len(searchTerm) == 0:
                             self.send_message("🤖🦇 Please enter a search term too e.g bot_image Butterfly")
                         else:
                             self.send_message(f"🤖🦇 Fetching image for: {searchTerm}")
-                            try:
-                                res = service.cse().list(
-                                    q=slugify(searchTerm),
-                                    cx='7204b6b1decb42058',
-                                    searchType='image',
-                                    imgSize="MEDIUM",
-                                ).execute()
+                            while True:
+                                try:
+                                    service = build("customsearch", "v1",
+                                                    developerKey="AIzaSyB4hl9a1RPB_MmuqPm_zNmO49Y20qSf9e4")
+                                    res = service.cse().list(
+                                        q=slugify(searchTerm),
+                                        cx='7204b6b1decb42058',
+                                        searchType='image',
+                                        imgSize="MEDIUM",
+                                        safe='off'
+                                    ).execute()
 
-                                if not 'items' in res:
-                                    self.send_message("🤖🦇 Could not find any matching image")
-                                else:
-                                    length = len(res['items'])
-                                    load_requests(res['items'][randint(0, length - 1)]['link'], "image.png")
-                                    os.system(
-                                        "xclip -selection clipboard -t image/png -i ~/Documents/python-instagram-command-bot/image.png")
-                                    self.send_copied_image()
+                                    if not 'items' in res:
+                                        self.send_message("🤖🦇 Could not find any matching image")
+                                    else:
+                                        length = len(res['items'])
+                                        load_requests(res['items'][randint(0, length - 1)]['link'], "image.png")
+                                        os.system(
+                                            "xclip -selection clipboard -t image/png -i ~/Documents/python-instagram-command-bot/image.png")
+                                        self.send_copied_image()
+                                        break
 
-                            except Exception as ex:
-                                self.send_message("🤖🦇 Slow internet while fetching image")
+                                except Exception as ex:
+                                    print(ex)
+                                    continue
 
                     else:
                         print("No command")
