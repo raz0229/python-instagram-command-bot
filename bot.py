@@ -12,6 +12,7 @@ from slugify import slugify
 from fancy import Fancy
 import pyautogui as gui
 from animu import client as acl
+from random import randint
 import http.client
 import wikipedia
 import asyncio
@@ -23,9 +24,14 @@ import json
 import gc
 import os
 from selenium.webdriver.firefox.options import Options
+from apiclient.discovery import build
+
 
 options = Options()
 options.headless = False
+
+service = build("customsearch", "v1",
+               developerKey="AIzaSyB4hl9a1RPB_MmuqPm_zNmO49Y20qSf9e4")
 
 waifu = acl.Client("eae6c4c7e1a3fffe31e383371dd477d82649ac579117")
 profile = FirefoxProfile("/home/raz0229/.mozilla/firefox/58m1hr3k.dev-edition-default")
@@ -131,10 +137,13 @@ class Bot:
         while self.running:
             if self.new_msg_received():
 
-                    self.incoming = driver.find_elements_by_css_selector('._7UhW9.xLCgt.MMzan.KV-D4.uL8Hv.T0kll')
-                    self.received_msgs = len(self.incoming)
-                    last_msg = self.incoming[self.received_msgs - 1].text
-                    print(last_msg)
+                    try:
+                        self.incoming = driver.find_elements_by_css_selector('._7UhW9.xLCgt.MMzan.KV-D4.uL8Hv.T0kll')
+                        self.received_msgs = len(self.incoming)
+                        last_msg = self.incoming[self.received_msgs - 1].text
+                        print(last_msg)
+                    except Exception:
+                        last_msg = 'Something exception'
 
                     # BOT response
                     if last_msg.lower().startswith("bot_ask"):
@@ -245,6 +254,34 @@ class Bot:
                             self.send_copied_image()
                         except Exception:
                             self.send_message("🤖🦇 Slow internet while fetching waifu")
+
+                    # Fetch imaeg
+                    elif last_msg.lower().startswith("bot_image"):
+                        searchTerm = deemojify(last_msg.lower().replace("bot_image", "").strip())
+                        if len(searchTerm) == 0:
+                            self.send_message("🤖🦇 Please enter a search term too e.g bot_image Butterfly")
+                        else:
+                            self.send_message(f"🤖🦇 Fetching image for: {searchTerm}")
+                            try:
+                                res = service.cse().list(
+                                    q=slugify(searchTerm),
+                                    cx='7204b6b1decb42058',
+                                    searchType='image',
+                                    imgSize="MEDIUM",
+                                    safe='off'
+                                ).execute()
+
+                                if not 'items' in res:
+                                    self.send_message("🤖🦇 Could not find any matching image")
+                                else:
+                                    length = len(res['items'])
+                                    load_requests(res['items'][randint(0, length)]['link'], "image.png")
+                                    os.system(
+                                        "xclip -selection clipboard -t image/png -i ~/Documents/python-instagram-command-bot/image.png")
+                                    self.send_copied_image()
+
+                            except Exception:
+                                self.send_message("🤖🦇 Slow internet while fetching image")
 
                     else:
                         print("No command")
