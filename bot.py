@@ -268,19 +268,18 @@ class Bot:
                                     cx='7204b6b1decb42058',
                                     searchType='image',
                                     imgSize="MEDIUM",
-                                    safe='off'
                                 ).execute()
 
                                 if not 'items' in res:
                                     self.send_message("🤖🦇 Could not find any matching image")
                                 else:
                                     length = len(res['items'])
-                                    load_requests(res['items'][randint(0, length)]['link'], "image.png")
+                                    load_requests(res['items'][randint(0, length - 1)]['link'], "image.png")
                                     os.system(
                                         "xclip -selection clipboard -t image/png -i ~/Documents/python-instagram-command-bot/image.png")
                                     self.send_copied_image()
 
-                            except Exception:
+                            except Exception as ex:
                                 self.send_message("🤖🦇 Slow internet while fetching image")
 
                     else:
