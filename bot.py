@@ -26,12 +26,15 @@ import os
 from selenium.webdriver.firefox.options import Options
 from apiclient.discovery import build
 
-
 options = Options()
 options.headless = False
 
 waifu = acl.Client("eae6c4c7e1a3fffe31e383371dd477d82649ac579117")
 profile = FirefoxProfile("/home/raz0229/.mozilla/firefox/58m1hr3k.dev-edition-default")
+
+blocked_list = ["mom", "dad", "mother", "father", "mommy", "moma", "mama", "sister", "sissy"]
+blocked_names = ["talh", "batol", "raz", "abdulh", "wahb", "raj", "zafr", "janu", "nor", "tlha", "btol", "mustaf", "mus"]
+
 # Configuration
 PATH = "/home/raz0229/Downloads/geckodriver"  # path to your downloaded webdriver
 driver = webdriver.Firefox(profile, executable_path=PATH, options=options)
@@ -57,9 +60,11 @@ headersTranslate = {
 def deemojify(text):
     return emoji.get_emoji_regexp().sub(r'', text)
 
+
 def urlify(text, command, target):
     slug = slugify(text.lower().replace(command, '').strip(), separator='%20')
     return f"q={deemojify(slug)}&target={target}"
+
 
 def load_requests(source_url, sink_path):
     import requests
@@ -68,6 +73,16 @@ def load_requests(source_url, sink_path):
         with open(sink_path, 'wb') as f:
             for chunk in r:
                 f.write(chunk)
+
+
+def filter_word(word):
+    res = [ele for ele in blocked_list if (ele in word)]
+    if res:
+        return []
+    word = ''.join(sorted(set(word), key=word.index))
+    res = [ele for ele in blocked_names if (ele in word)]
+    return res
+
 
 class Bot:
     def __init__(self, contact):
@@ -209,17 +224,18 @@ class Bot:
                     # Fancy text converter
                     elif last_msg.lower().startswith("bot_fancy"):
                         text = deemojify(last_msg.lower().replace("bot_fancy", "").strip())
-                        fn = Fancy(text)
-                        for i in range(25):
-                            self.send_message(fn.makeFancy(i+1))
+                        if (filter_word(text)):
+                            self.send_message("🤖🦇 OFFENSIVE WORDS BLOCKED BY CREATOR")
+                        else:
+                            fn = Fancy(text)
+                            for i in range(25):
+                                self.send_message(fn.makeFancy(i + 1))
 
                     # random insult thrower
                     elif last_msg.lower().startswith("bot_insult"):
                         name = deemojify(last_msg.lower().replace("bot_insult", "").strip())
-                        res = [ele for ele in ["raz", "mom", "dad", "mother", "father", "mommy", "moma", "ma"] if
-                               (ele in name)]
-                        if (res):
-                            self.send_message("OFFENSIVE WORDS BLOCKED BY THE CREATOR")
+                        if (filter_word(name)):
+                            self.send_message("🤖🦇 OFFENSIVE WORDS BLOCKED BY CREATOR")
                         else:
                             f = open('insults.txt')
                             lines = f.readlines()
