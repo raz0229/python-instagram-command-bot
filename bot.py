@@ -30,33 +30,6 @@ from youtubesearchpython import VideosSearch
 options = Options()
 options.headless = False
 
-ftr = [3600,60,1]
-url = ''
-
-videoQuery = "sahil pe khare ho"
-videosSearch = VideosSearch(f'{videoQuery} 30 seconds', limit = 5)
-videos = videosSearch.result()['result']
-for i in range(len(videos)):
-    duration = videos[i]['duration']
-    timestr = duration
-    if duration is not None:
-        timestr = duration if len(duration.split(':')) >= 3 else f"00:{duration}"
-    checkDuration = sum([a*b for a,b in zip(ftr, map(int,timestr.split(':')))]) if timestr is not None else "None"
-    if checkDuration <= 60: 
-        url = videos[i]['link']
-        break
-        
-if url == '':
-    print("Video either too long or not exists")
-else:
-    print(url)
-# ffmpeg -loop 1 -i image.png -i audio.mp3 -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" -c:a copy -c:v libx264 -shortest video.mp4
-# ffmpeg -i video.mp4 -vcodec libx265 -crf 28 output_compressed.mp4
-# Loading all the packages required
-
-# replace 'shorts/' to 'watch?v=' in 'https://www.youtube.com/shorts/vRZOYPKebO0' if exists
-
-
 waifu = acl.Client("eae6c4c7e1a3fffe31e383371dd477d82649ac579117")
 profile = FirefoxProfile("/home/raz0229/.mozilla/firefox/58m1hr3k.dev-edition-default")
 
@@ -111,6 +84,30 @@ def filter_word(word):
     res = [ele for ele in blocked_names if (ele in word)]
     return res
 
+
+def search_youtube_url(videoQuery):
+    videosSearch = VideosSearch(f'{videoQuery}', limit = 1)
+    if len(videosSearch.result()['result']) >= 1: 
+       return videosSearch.result()['result'][0]['link']
+    return "🤖🦇 No matching video found"
+
+
+def search_video_url(videoQuery):
+    ftr = [3600,60,1]
+    url = ''
+
+    videosSearch = VideosSearch(f'{videoQuery} 30 seconds', limit = 5)
+    videos = videosSearch.result()['result']
+    for i in range(len(videos)):
+        duration = videos[i]['duration']
+        timestr = duration
+        if duration is not None:
+            timestr = duration if len(duration.split(':')) >= 3 else f"00:{duration}"
+        checkDuration = sum([a*b for a,b in zip(ftr, map(int,timestr.split(':')))]) if timestr is not None else "None"
+        if checkDuration <= 60: 
+            url = videos[i]['link']
+            break
+    return url
 
 class Bot:
     def __init__(self, contact):
@@ -291,6 +288,21 @@ class Bot:
                             self.send_message(quote["quote"])
                         except Exception:
                             self.send_message("🤖🦇 Cannot get Quote due to slow internet")
+                    
+                    # YouTube search
+                    elif last_msg.lower().startswith("bot_yt"):
+                        search = deemojify(last_msg.lower().replace("bot_yt", "").strip())
+                        self.send_message(f"🤖🦇 Searching YouTube for: {search}")
+                        self.send_message(search_youtube_url(search))
+# url = search_video_url('sea shanty')        
+# if url == '':
+#     print("Video either too long or not exists")
+# else:
+#     print(url)
+#     os.system("rm -rf song.mp3 song.mp4")
+#     os.system(f"yt-dlp --extract-audio --audio-format mp3 --audio-quality 7 \"{url}\" -o song.mp3")
+#     os.system("ffmpeg -loop 1 -i speaker.png -i song.mp3 -vf \"pad=ceil(iw/2)*2:ceil(ih/2)*2\" -c:a copy -c:v libx264 -shortest song.mp4")
+
 
                     # Fetch waifu
                     elif last_msg.lower().startswith("bot_waifu"):
