@@ -86,9 +86,10 @@ def filter_word(word):
 
 
 def search_youtube_url(videoQuery):
-    videosSearch = VideosSearch(f'{videoQuery}', limit = 1)
-    if len(videosSearch.result()['result']) >= 1: 
-       return videosSearch.result()['result'][0]['link']
+    videosSearch = VideosSearch(f'{videoQuery}', limit = 5)
+    if len(videosSearch.result()['result']) >= 1:
+       num = random.randrange(0, 5) 
+       return videosSearch.result()['result'][num]['link']
     return "🤖🦇 No matching video found"
 
 
