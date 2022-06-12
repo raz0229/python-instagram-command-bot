@@ -25,15 +25,43 @@ import gc
 import os
 from selenium.webdriver.firefox.options import Options
 from apiclient.discovery import build
+from youtubesearchpython import VideosSearch
 
 options = Options()
 options.headless = False
 
+ftr = [3600,60,1]
+url = ''
+
+videoQuery = "sahil pe khare ho"
+videosSearch = VideosSearch(f'{videoQuery} 30 seconds', limit = 5)
+videos = videosSearch.result()['result']
+for i in range(len(videos)):
+    duration = videos[i]['duration']
+    timestr = duration
+    if duration is not None:
+        timestr = duration if len(duration.split(':')) >= 3 else f"00:{duration}"
+    checkDuration = sum([a*b for a,b in zip(ftr, map(int,timestr.split(':')))]) if timestr is not None else "None"
+    if checkDuration <= 60: 
+        url = videos[i]['link']
+        break
+        
+if url == '':
+    print("Video either too long or not exists")
+else:
+    print(url)
+# ffmpeg -loop 1 -i image.png -i audio.mp3 -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2" -c:a copy -c:v libx264 -shortest video.mp4
+# ffmpeg -i video.mp4 -vcodec libx265 -crf 28 output_compressed.mp4
+# Loading all the packages required
+
+# replace 'shorts/' to 'watch?v=' in 'https://www.youtube.com/shorts/vRZOYPKebO0' if exists
+
+
 waifu = acl.Client("eae6c4c7e1a3fffe31e383371dd477d82649ac579117")
 profile = FirefoxProfile("/home/raz0229/.mozilla/firefox/58m1hr3k.dev-edition-default")
 
-blocked_list = ["mom", "dad", "mother", "father", "mommy", "moma", "mama", "sister", "sissy"]
-blocked_names = ["talh", "batol", "raz", "abdulh", "wahb", "raj", "zafr", "janu", "nor", "tlha", "btol", "mustaf", "mus"]
+blocked_list = ["mom", "dad", "mother", "father", "mommy", "moma", "mama", "sister", "sissy",  "lu", "phudi", "phodi", "chut", "bund", "bond", "fuck", "gashti", "pencho"]
+blocked_names = ["talh", "batol", "raz", "abdulh", "wahb", "janua", "jinua", "raj", "zafr", "janu", "nor", "tlha", "btol", "mustaf", "ali"]
 
 # Configuration
 PATH = "/home/raz0229/Downloads/geckodriver"  # path to your downloaded webdriver
@@ -90,7 +118,7 @@ class Bot:
         elem = WebDriverWait(driver, 120).until(EC.element_to_be_clickable((By.XPATH, f'//*[text() = "{self.contact}" ]')))
         elem.click()
         self.incoming = WebDriverWait(driver, 120).until(
-            EC.visibility_of_all_elements_located((By.CSS_SELECTOR ,'._7UhW9.xLCgt.MMzan.KV-D4.uL8Hv.T0kll')))
+            EC.visibility_of_all_elements_located((By.CSS_SELECTOR ,'._aacl._aaco._aacu._aacx._aad6._aade')))
         self.received_msgs = len(self.incoming)
         self.running = True
         self.pressed_ctrl = False
@@ -113,7 +141,7 @@ class Bot:
             return response.replace('RoboMatic', 'RAZBot').replace('robomatic.ai', 'instagram.com/raz0229')  # replace name and location in response
 
     def new_msg_received(self):
-        incoming = driver.find_elements_by_css_selector('._7UhW9.xLCgt.MMzan.KV-D4.uL8Hv.T0kll')
+        incoming = driver.find_elements_by_css_selector('._aacl._aaco._aacu._aacx._aad6._aade')
         if len(incoming) != self.received_msgs:
             return True
         else:
@@ -123,16 +151,16 @@ class Bot:
         input_box = driver.find_element_by_css_selector('textarea')
         input_box.click()
         input_box.send_keys(text, Keys.RETURN)
-        incoming = driver.find_elements_by_css_selector('._7UhW9.xLCgt.MMzan.KV-D4.uL8Hv.T0kll')
+        incoming = driver.find_elements_by_css_selector('._aacl._aaco._aacu._aacx._aad6._aade')
         self.received_msgs = len(incoming)
 
     def send_copied_image(self):
         input_box = driver.find_element_by_css_selector('textarea')
         input_box.click()
         input_box.send_keys(Keys.LEFT_CONTROL, "v")
-        send_button = driver.find_element_by_css_selector(".sqdOP.L3NKy._4pI4F.y3zKF.cB_4K")
+        send_button = driver.find_element_by_css_selector("._acan._acap._acaq._acas._acav")
         send_button.click()
-        incoming = driver.find_elements_by_css_selector('._7UhW9.xLCgt.MMzan.KV-D4.uL8Hv.T0kll')
+        incoming = driver.find_elements_by_css_selector('._aacl._aaco._aacu._aacx._aad6._aade')
         self.received_msgs = len(incoming)
 
     def on_press(self, key):
@@ -150,7 +178,7 @@ class Bot:
             if self.new_msg_received():
 
                     try:
-                        self.incoming = driver.find_elements_by_css_selector('._7UhW9.xLCgt.MMzan.KV-D4.uL8Hv.T0kll')
+                        self.incoming = driver.find_elements_by_css_selector('._aacl._aaco._aacu._aacx._aad6._aade')
                         self.received_msgs = len(self.incoming)
                         last_msg = self.incoming[self.received_msgs - 1].text
                         print(last_msg)
@@ -169,6 +197,13 @@ class Bot:
                     # invalid command
                     elif last_msg.lower().startswith("bot "):
                         self.send_message('Invalid command 🤖🦇')
+
+                    # initialize bot
+                    elif last_msg.lower().startswith("bot_start"):
+                        self.send_message('Bot Online 🤖🦇')
+                        os.system(
+                            "xclip -selection clipboard -t image/png -i ~/Documents/python-instagram-command-bot/commands.png")
+                        self.send_copied_image()
 
                     # Translate to Pashto
                     elif last_msg.lower().startswith("bot_pashto"):
@@ -284,7 +319,7 @@ class Bot:
                                         cx='7204b6b1decb42058',
                                         searchType='image',
                                         imgSize="MEDIUM",
-                                        safe='off'
+                                        safe='high'
                                     ).execute()
 
                                     if not 'items' in res:
@@ -299,6 +334,7 @@ class Bot:
 
                                 except Exception as ex:
                                     print(ex)
+                                    self.send_message("Cannot find matching images")
                                     continue
 
                     else:

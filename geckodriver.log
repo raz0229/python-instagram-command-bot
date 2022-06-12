@@ -2263,3 +2263,488 @@ JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/fil
 1653721068045	Marionette	INFO	Listening on port 35315
 DevTools listening on ws://localhost:34623/devtools/browser/5e504bd8-b75e-4ff9-a4b6-59cad104e64b
 1653721068123	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[Parent 6368, Main Thread] WARNING: gtk_widget_get_clipboard: assertion 'gtk_widget_has_screen (widget)' failed: 'glib warning', file /builds/worker/checkouts/gecko/toolkit/xre/nsSigHandlers.cpp:167
+
+(firefox-aurora:6368): Gtk-CRITICAL **: 12:00:36.222: gtk_widget_get_clipboard: assertion 'gtk_widget_has_screen (widget)' failed
+[Parent 6368, Main Thread] WARNING: gtk_clipboard_request_contents: assertion 'clipboard != NULL' failed: 'glib warning', file /builds/worker/checkouts/gecko/toolkit/xre/nsSigHandlers.cpp:167
+
+(firefox-aurora:6368): Gtk-CRITICAL **: 12:00:36.222: gtk_clipboard_request_contents: assertion 'clipboard != NULL' failed
+[Parent 6368, Main Thread] WARNING: gtk_widget_get_clipboard: assertion 'gtk_widget_has_screen (widget)' failed: 'glib warning', file /builds/worker/checkouts/gecko/toolkit/xre/nsSigHandlers.cpp:167
+
+(firefox-aurora:6368): Gtk-CRITICAL **: 12:00:36.222: gtk_widget_get_clipboard: assertion 'gtk_widget_has_screen (widget)' failed
+[Parent 6368, Main Thread] WARNING: gtk_clipboard_request_contents: assertion 'clipboard != NULL' failed: 'glib warning', file /builds/worker/checkouts/gecko/toolkit/xre/nsSigHandlers.cpp:167
+
+(firefox-aurora:6368): Gtk-CRITICAL **: 12:00:36.222: gtk_clipboard_request_contents: assertion 'clipboard != NULL' failed
+[Parent 6368, Main Thread] WARNING: gtk_widget_get_clipboard: assertion 'gtk_widget_has_screen (widget)' failed: 'glib warning', file /builds/worker/checkouts/gecko/toolkit/xre/nsSigHandlers.cpp:167
+
+(firefox-aurora:6368): Gtk-CRITICAL **: 12:00:36.223: gtk_widget_get_clipboard: assertion 'gtk_widget_has_screen (widget)' failed
+[Parent 6368, Main Thread] WARNING: gtk_clipboard_request_contents: assertion 'clipboard != NULL' failed: 'glib warning', file /builds/worker/checkouts/gecko/toolkit/xre/nsSigHandlers.cpp:167
+
+(firefox-aurora:6368): Gtk-CRITICAL **: 12:00:36.223: gtk_clipboard_request_contents: assertion 'clipboard != NULL' failed
+[Parent 6368, Main Thread] WARNING: gtk_widget_get_clipboard: assertion 'gtk_widget_has_screen (widget)' failed: 'glib warning', file /builds/worker/checkouts/gecko/toolkit/xre/nsSigHandlers.cpp:167
+
+(firefox-aurora:6368): Gtk-CRITICAL **: 12:00:36.223: gtk_widget_get_clipboard: assertion 'gtk_widget_has_screen (widget)' failed
+[Parent 6368, Main Thread] WARNING: gtk_clipboard_request_contents: assertion 'clipboard != NULL' failed: 'glib warning', file /builds/worker/checkouts/gecko/toolkit/xre/nsSigHandlers.cpp:167
+
+(firefox-aurora:6368): Gtk-CRITICAL **: 12:00:36.223: gtk_clipboard_request_contents: assertion 'clipboard != NULL' failed
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953482
+1653721363960	Marionette	INFO	Stopped listening on port 35315
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1653721434060	geckodriver	INFO	Listening on 127.0.0.1:52769
+1653721437135	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "35589" "-no-remote" "-profile" "/tmp/rust_mozprofileKPvrzq"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1653721438307	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:35589
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1653721440707	Marionette	INFO	Listening on port 36527
+DevTools listening on ws://localhost:35589/devtools/browser/be6e9b62-4e9d-4f00-9183-eeaa437db193
+1653721440762	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(/tmp/rust_mozprofileKPvrzq/thumbnails) because it does not exist
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: https://www.instagram.com/static/bundles/es6/DirectMQTT.js/aef115f25a56.js, line 20: Error: Publish Timed Out
+JavaScript error: https://www.instagram.com/static/bundles/es6/DirectMQTT.js/aef115f25a56.js, line 20: Error: Publish Timed Out
+1653751464415	geckodriver	INFO	Listening on 127.0.0.1:43707
+1653751467811	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "53855" "-no-remote" "-profile" "/tmp/rust_mozprofileJirgkS"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1653751469214	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:53855
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1653751472203	Marionette	INFO	Listening on port 44739
+1653751472307	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:53855/devtools/browser/d3677f94-d349-4b69-9d27-11ffcc9a64cf
+1653932477745	geckodriver	INFO	Listening on 127.0.0.1:54363
+1653932481367	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "54495" "-no-remote" "-profile" "/tmp/rust_mozprofilecVgAsc"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1653932488331	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:54495
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1653932495248	Marionette	INFO	Listening on port 40299
+1653932495386	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:54495/devtools/browser/a30d8878-3582-4c63-911e-d5dec292d871
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(/tmp/rust_mozprofilecVgAsc/thumbnails) because it does not exist
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953619
+1653933292780	Marionette	INFO	Stopped listening on port 40299
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1653933311761	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1653933320103	geckodriver	INFO	Listening on 127.0.0.1:41693
+1653933323714	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "36307" "-no-remote" "-profile" "/tmp/rust_mozprofilekjgtdo"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1653933324889	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:36307
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1653933327598	Marionette	INFO	Listening on port 40097
+1653933327662	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:36307/devtools/browser/a6252e7c-a95b-4996-a83d-c434a9723a3d
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953515
+1653933559705	Marionette	INFO	Stopped listening on port 40097
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1653933593245	geckodriver	INFO	Listening on 127.0.0.1:58499
+1653933596753	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "54893" "-no-remote" "-profile" "/tmp/rust_mozprofilek1Gqvv"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1653933597837	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:54893
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1653933600476	Marionette	INFO	Listening on port 46717
+DevTools listening on ws://localhost:54893/devtools/browser/c6785024-4fbb-496c-803a-43c83034cfe1
+1653933600587	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.instagram.com/static/bundles/es6/DirectMQTT.js/aef115f25a56.js, line 20: Error: Publish Timed Out
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(/tmp/rust_mozprofilek1Gqvv/thumbnails) because it does not exist
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953513
+1653934575013	Marionette	INFO	Stopped listening on port 46717
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1653934579826	geckodriver	INFO	Listening on 127.0.0.1:56015
+1653934583596	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "38869" "-no-remote" "-profile" "/tmp/rust_mozprofileKoTYAK"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1653934584723	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:38869
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1653934587255	Marionette	INFO	Listening on port 46289
+DevTools listening on ws://localhost:38869/devtools/browser/b2bdf477-7738-4eec-86ca-f0e20d9a9314
+1653934587327	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953516
+1653934708579	Marionette	INFO	Stopped listening on port 46289
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1653934712004	geckodriver	INFO	Listening on 127.0.0.1:35493
+1653934715254	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "35041" "-no-remote" "-profile" "/tmp/rust_mozprofilelriPbn"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1653934716399	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:35041
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1653934718714	Marionette	INFO	Listening on port 37525
+DevTools listening on ws://localhost:35041/devtools/browser/1ae627a6-57d2-40c3-bbdd-7b0ec7e99822
+1653934718791	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(/tmp/rust_mozprofilelriPbn/thumbnails) because it does not exist
+1654188088627	geckodriver	INFO	Listening on 127.0.0.1:59933
+1654188096831	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "35275" "-no-remote" "-profile" "/tmp/rust_mozprofileVkZLAJ"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1654188097497	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:35275
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1654188101337	Marionette	INFO	Listening on port 34935
+1654188101408	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:35275/devtools/browser/19000f5a-383a-4445-8bf1-609a03efeea1
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1654188132493	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3itBX4/yV/l/en_US/ELk19kgHKfe.js?_nc_x=Ij3Wp8lg5Kz, line 42: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.412316860634
+1654188361365	Marionette	INFO	Stopped listening on port 34935
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1654188364000	geckodriver	INFO	Listening on 127.0.0.1:48905
+1654188366714	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "33701" "-no-remote" "-profile" "/tmp/rust_mozprofileKbA7y3"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1654188367135	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:33701
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1654188369789	Marionette	INFO	Listening on port 46559
+1654188369843	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:33701/devtools/browser/ffa348b9-9ca7-4d0a-b46e-5f7f6cd3d797
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3itBX4/yV/l/en_US/ELk19kgHKfe.js?_nc_x=Ij3Wp8lg5Kz, line 42: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1654188597290	geckodriver	INFO	Listening on 127.0.0.1:45863
+1654188601087	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "42501" "-no-remote" "-profile" "/tmp/rust_mozprofileKalxvV"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1654188601513	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:42501
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1654188603614	Marionette	INFO	Listening on port 38691
+1654188603719	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:42501/devtools/browser/bfa0554f-e604-43c4-8614-626b0d39b8c4
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1654188651522	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: timeout
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.412316860636
+1654188658701	Marionette	INFO	Stopped listening on port 46559
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1654188659675	Marionette	INFO	Stopped listening on port 38691
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.412316860637
+1654188659828	Sync.ErrorHandler	ERROR	Sync encountered a login error
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: resource:///modules/BrowserGlue.jsm, line 4579: TypeError: can't access property "document", win is null
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1654188664894	geckodriver	INFO	Listening on 127.0.0.1:42175
+1654188667742	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "56727" "-no-remote" "-profile" "/tmp/rust_mozprofileLxYdEj"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1654188668164	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:56727
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1654188670816	Marionette	INFO	Listening on port 43669
+1654188670867	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:56727/devtools/browser/2d845a77-f516-449e-910d-4577c0ca8ce0
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3itBX4/yV/l/en_US/ELk19kgHKfe.js?_nc_x=Ij3Wp8lg5Kz, line 42: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+SourceActor threw an exception: [Exception... "Failed to open input source 'file:///'"  nsresult: "0x80520015 (NS_ERROR_FILE_ACCESS_DENIED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:545:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2121:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:288:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:161:24
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:53:20
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:556:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:465:21
+Line: 699, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: NS_ERROR_FILE_ACCESS_DENIED: Failed to open input source 'file:///'
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(/tmp/rust_mozprofileLxYdEj/thumbnails) because it does not exist
+1654189258403	geckodriver	INFO	Listening on 127.0.0.1:41809
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1654189261918	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "47087" "-no-remote" "-profile" "/tmp/rust_mozprofileqSt6gq"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1654189262403	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:47087
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1654189265653	Marionette	INFO	Listening on port 40307
+1654189265760	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:47087/devtools/browser/0f8b563e-8685-400d-bff7-3b1ef9ba10c5
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.412316860635
+1654189305964	Marionette	INFO	Stopped listening on port 40307
+1654189306092	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: error
+1654189306094	Sync.ErrorHandler	ERROR	Sync encountered a login error
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: resource:///modules/BrowserGlue.jsm, line 4579: TypeError: can't access property "document", win is null
+1654189306146	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1654189306187	Sync.LogManager	ERROR	Failed to cleanup logs: Unix error 2 during operation DirectoryIterator.prototype.next on file /tmp/rust_mozprofileqSt6gq/weave/logs (No such file or directory)((unknown module)) No traceback available
+[2022-06-02T17:01:46Z ERROR glean] Can't persist ping lifetime data: Error { kind: Rkv(IoError(Os { code: 2, kind: NotFound, message: "No such file or directory" })) }
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.412316860635
+1654189307751	Marionette	INFO	Stopped listening on port 43669
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1654189483207	geckodriver	INFO	Listening on 127.0.0.1:43467
+1654189485901	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "57683" "-no-remote" "-profile" "/tmp/rust_mozprofilebzgEtH"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1654189486457	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:57683
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1654189488926	Marionette	INFO	Listening on port 43909
+DevTools listening on ws://localhost:57683/devtools/browser/9ffe4d9b-eee1-4963-821e-d6d7f58513f1
+1654189489025	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3itBX4/yV/l/en_US/ELk19kgHKfe.js?_nc_x=Ij3Wp8lg5Kz, line 42: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 767))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.412316860636
+1654189893220	Marionette	INFO	Stopped listening on port 43909
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1654189895182	geckodriver	INFO	Listening on 127.0.0.1:42181
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1654189897910	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "52403" "-no-remote" "-profile" "/tmp/rust_mozprofileH5X1V1"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1654189898336	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:52403
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1654189901027	Marionette	INFO	Listening on port 45587
+1654189901185	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:52403/devtools/browser/12fdf39e-67cb-49f6-b107-cf144f4fe5b9
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3itBX4/yV/l/en_US/ELk19kgHKfe.js?_nc_x=Ij3Wp8lg5Kz, line 42: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1654189942789	Sync.ErrorHandler	ERROR	Sync encountered a login error
+1654189948344	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: timeout
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.412316860640
+1654190172761	Marionette	INFO	Stopped listening on port 45587
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1654190174937	geckodriver	INFO	Listening on 127.0.0.1:36625
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1654190177650	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "42451" "-no-remote" "-profile" "/tmp/rust_mozprofileIfsRxT"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1654190178088	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:42451
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1654190181642	Marionette	INFO	Listening on port 34475
+1654190181700	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:42451/devtools/browser/87b25c87-25ab-4ef6-a3c4-dd8b14912933
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3itBX4/yV/l/en_US/ELk19kgHKfe.js?_nc_x=Ij3Wp8lg5Kz, line 42: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.412316860640
+1654190419153	Marionette	INFO	Stopped listening on port 34475
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1654190536502	geckodriver	INFO	Listening on 127.0.0.1:53995
+1654190539166	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "33311" "-no-remote" "-profile" "/tmp/rust_mozprofileN73jKr"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1654190539595	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:33311
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1654190541840	CDP	WARN	Failed to remove undefined (Could not parse path (undefined): NS_ERROR_FILE_UNRECOGNIZED_PATH)
+JavaScript error: resource:///modules/BrowserGlue.jsm, line 4579: TypeError: can't access property "document", win is null
+1654190542007	Marionette	INFO	Listening on port 38249
+1654190542091	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1654190542657	FirefoxAccounts	ERROR	error GETing /account/devices: {"error":{},"errorString":"[Exception... \"NS_ERROR_ABORT\"  nsresult: \"0x80004004 (NS_ERROR_ABORT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]","message":null,"code":null,"errno":null}
+1654190542658	Sync.SyncAuthManager	ERROR	Non-authentication error in _fetchTokenForUser: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.js:39:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.js:62:16
+_tokenServerExchangeRequest@tokenserverclient.js:241:13
+1654190542659	Sync.ErrorHandler	ERROR	Sync encountered a login error
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1654190542667	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_ABORT\"  nsresult: \"0x80004004 (NS_ERROR_ABORT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1654190542667	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_ABORT\"  nsresult: \"0x80004004 (NS_ERROR_ABORT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1654190542667	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_ABORT\"  nsresult: \"0x80004004 (NS_ERROR_ABORT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1654190542667	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_ABORT\"  nsresult: \"0x80004004 (NS_ERROR_ABORT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1654190542667	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_ABORT\"  nsresult: \"0x80004004 (NS_ERROR_ABORT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+1654190542668	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_ABORT\"  nsresult: \"0x80004004 (NS_ERROR_ABORT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 488\"  data: no]"}
+JavaScript error: resource:///modules/BrowserGlue.jsm, line 4579: TypeError: can't access property "document", win is null
+JavaScript error: resource:///modules/BrowserGlue.jsm, line 4579: TypeError: can't access property "document", win is null
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1654190563364	geckodriver	INFO	Listening on 127.0.0.1:33787
+1654190566137	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "56101" "-no-remote" "-profile" "/tmp/rust_mozprofileYXZ9H7"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1654190566568	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:56101
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1654190568816	Marionette	INFO	Listening on port 42703
+1654190568940	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:56101/devtools/browser/60f1eeb7-4b38-493d-9c6c-f536e75a3c23
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1654190616579	addons.xpi	ERROR	System addon update list error Error: Failed downloading XML, status: 0, reason: timeout
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 489: TypeError: window is null
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3itBX4/yV/l/en_US/ELk19kgHKfe.js?_nc_x=Ij3Wp8lg5Kz, line 42: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 489: TypeError: window is null
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(/tmp/rust_mozprofileYXZ9H7/thumbnails) because it does not exist
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3itBX4/yV/l/en_US/ELk19kgHKfe.js?_nc_x=Ij3Wp8lg5Kz, line 42: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3itBX4/yV/l/en_US/ELk19kgHKfe.js?_nc_x=Ij3Wp8lg5Kz, line 42: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://www.google.com/js/bg/oUojx4yqAhS6xkJprpfOQcF4qPi0TYbME9IKyp1n5DY.js line 1 > eval line 1614 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+(firefox-aurora:13217): Gtk-WARNING **: 22:59:37.054: Can't open portal file chooser: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.portal.Desktop was not provided by any .service files
+
+(firefox-aurora:13217): Gtk-WARNING **: 22:59:54.990: Can't open portal file chooser: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.portal.Desktop was not provided by any .service files
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.412316860638
+1654192820507	Marionette	INFO	Stopped listening on port 42703
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1654795123268	geckodriver	INFO	Listening on 127.0.0.1:38803
+1654795126509	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "39201" "-no-remote" "-profile" "/tmp/rust_mozprofilekuroji"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1654795127394	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:39201
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1654795130023	Marionette	INFO	Listening on port 45339
+DevTools listening on ws://localhost:39201/devtools/browser/f27ae6b2-ad9d-405b-98d3-c22ef8f31254
+1654795130199	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3itBX4/yV/l/en_US/ELk19kgHKfe.js?_nc_x=Ij3Wp8lg5Kz, line 42: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1654795179681	geckodriver	INFO	Listening on 127.0.0.1:51799
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.412316860636
+1654795180880	Marionette	INFO	Stopped listening on port 45339
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1654795182581	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "37289" "-no-remote" "-profile" "/tmp/rust_mozprofilezCvc7R"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1654795183012	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:37289
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1654795184638	Marionette	INFO	Listening on port 36487
+1654795184775	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:37289/devtools/browser/58925298-9a05-412e-a99e-77065d405163
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3itBX4/yV/l/en_US/ELk19kgHKfe.js?_nc_x=Ij3Wp8lg5Kz, line 42: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(/tmp/rust_mozprofilezCvc7R/thumbnails) because it does not exist
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.412316860639
+1654796178625	Marionette	INFO	Stopped listening on port 36487
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1654796181019	geckodriver	INFO	Listening on 127.0.0.1:50373
+1654796183661	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "40411" "-no-remote" "-profile" "/tmp/rust_mozprofilexFsrY7"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1654796184085	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:40411
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1654796185763	Marionette	INFO	Listening on port 42389
+1654796185805	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:40411/devtools/browser/a6ddaae4-e3fc-4040-a3c0-b3fd8fb43cce
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3itBX4/yV/l/en_US/ELk19kgHKfe.js?_nc_x=Ij3Wp8lg5Kz, line 42: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+SourceActor threw an exception: [Exception... "Failed to open input source 'file:///'"  nsresult: "0x80520015 (NS_ERROR_FILE_ACCESS_DENIED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 699"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:699:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:545:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2121:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:288:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:161:24
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:53:20
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:556:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:465:21
+Line: 699, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 699: NS_ERROR_FILE_ACCESS_DENIED: Failed to open input source 'file:///'
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.412316860646
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1654796521357	Marionette	INFO	Stopped listening on port 42389
+JavaScript error: resource://devtools/shared/protocol/Front.js, line 106: Error: Connection closed, pending request to server0.conn0.windowGlobal4294967298/domnode141, type modifyAttributes failed
+
+Request stack:
+request@resource://devtools/shared/protocol/Front.js:292:14
+generateRequestMethods/</frontProto[name]@resource://devtools/shared/protocol/Front/FrontClassWithSpec.js:46:19
+apply@resource://devtools/client/fronts/node.js:69:27
+_setupAttributeEditor/done/<@resource://devtools/client/inspector/markup/views/element-editor.js:761:20
+do@resource://devtools/client/shared/undo.js:70:16
+endBatch@resource://devtools/client/shared/undo.js:81:11
+do@resource://devtools/client/shared/undo.js:93:10
+done@resource://devtools/client/inspector/markup/views/element-editor.js:759:29
+_apply@resource://devtools/client/shared/inplace-editor.js:1058:19
+_onBlur@resource://devtools/client/shared/inplace-editor.js:1089:12
+
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1654796551689	geckodriver	INFO	Listening on 127.0.0.1:49535
+1654796554350	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "41681" "-no-remote" "-profile" "/tmp/rust_mozprofilekL6pCp"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1654796554779	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:41681
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1654796556531	Marionette	INFO	Listening on port 40747
+1654796556588	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://localhost:41681/devtools/browser/8ad5b3ea-bf3f-44ff-8a2e-46478ac280a1
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 574: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3itBX4/yV/l/en_US/ELk19kgHKfe.js?_nc_x=Ij3Wp8lg5Kz, line 42: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.412316860637
+1654796691885	Marionette	INFO	Stopped listening on port 40747
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1655026008562	geckodriver	INFO	Listening on 127.0.0.1:51697
+1655026136293	geckodriver	INFO	Listening on 127.0.0.1:55967
+1655026425639	geckodriver	INFO	Listening on 127.0.0.1:52029
+1655026544943	geckodriver	INFO	Listening on 127.0.0.1:59379
+1655027789858	geckodriver	INFO	Listening on 127.0.0.1:58207
+1655028077830	geckodriver	INFO	Listening on 127.0.0.1:42783
+1655028081087	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "58519" "-no-remote" "-profile" "/tmp/rust_mozprofileF5GS7N"
+1655028100148	geckodriver	INFO	Listening on 127.0.0.1:48277
+1655028102829	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "47437" "-no-remote" "-profile" "/tmp/rust_mozprofileAxnNJn"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1655028107534	Marionette	INFO	Marionette enabled
+WebDriver BiDi listening on ws://localhost:47437
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+1655028114344	CDP	WARN	Failed to remove undefined (Could not parse path (undefined): NS_ERROR_FILE_UNRECOGNIZED_PATH)
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1655028260666	geckodriver	INFO	Listening on 127.0.0.1:50961
