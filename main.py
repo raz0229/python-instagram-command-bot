@@ -23,9 +23,9 @@
 # may refer to the official pynput documentation.
 
 from pynput import keyboard
-from bot import Bot
+from bot_chat import Bot
 
-my_bot = Bot('Sovereign Queendom of Hunsville') #Haram Chads🔥❤
+my_bot = Bot('Humor at its best') #Haram Chads🔥❤ Sovereign Queendom of Hunsville
 
 # Keyboard event listener
 listener = keyboard.Listener(on_press=my_bot.on_press)
