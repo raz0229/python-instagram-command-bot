@@ -34,7 +34,7 @@ waifu = acl.Client("eae6c4c7e1a3fffe31e383371dd477d82649ac579117")
 profile = FirefoxProfile("/home/raz0229/.mozilla/firefox/58m1hr3k.dev-edition-default")
 
 blocked_list = ["mom", "dad", "mother", "father", "mommy", "moma", "mama", "sister", "sissy",  "lu", "phudi", "phodi", "chut", "bund", "bond", "fuck", "gashti", "pencho"]
-blocked_names = ["talh", "batol", "raz", "abdulh", "wahb", "janua", "jinua", "raj", "zafr", "janu", "nor", "tlha", "btol", "mustaf", "ali"]
+blocked_names = ["talh", "batol", "raz", "abdulh", "wahb", "janua", "jinua", "raj", "zafr", "janu", "nor", "tlha", "btol", "mustaf", "ali", "chris", "an"]
 
 # Configuration
 PATH = "/home/raz0229/Downloads/geckodriver"  # path to your downloaded webdriver
@@ -42,11 +42,12 @@ driver = webdriver.Firefox(profile, executable_path=PATH, options=options)
 driver.get('https://instagram.com/direct/inbox')
 print(driver.title)  # prints title of the webpage
 
-conn = http.client.HTTPSConnection("robomatic-ai.p.rapidapi.com", timeout=10)
+conn = http.client.HTTPSConnection("harley-the-chatbot.p.rapidapi.com")
 headers = {
-    'content-type': "application/x-www-form-urlencoded",
-    'X-RapidAPI-Host': "robomatic-ai.p.rapidapi.com",
-    'X-RapidAPI-Key': "85632300dbmsha01f5765f1a7303p18df83jsn83e04aa1780a"
+    'content-type': "application/json",
+    'Accept': "application/json",
+    'X-RapidAPI-Key': "85632300dbmsha01f5765f1a7303p18df83jsn83e04aa1780a",
+    'X-RapidAPI-Host': "harley-the-chatbot.p.rapidapi.com"
     }
 
 connTranslate = http.client.HTTPSConnection("google-translate1.p.rapidapi.com")
@@ -88,7 +89,7 @@ def filter_word(word):
 def search_youtube_url(videoQuery):
     videosSearch = VideosSearch(f'{videoQuery}', limit = 5)
     if len(videosSearch.result()['result']) >= 1:
-       num = random.randrange(0, 5) 
+       num = random.randrange(0, 5)
        return videosSearch.result()['result'][num]['link']
     return "🤖🦇 No matching video found"
 
@@ -122,21 +123,24 @@ class Bot:
         self.pressed_ctrl = False
 
     def make_call(self, request):
-        request = slugify(request, separator='%20')
-        payload = f"in={request}&op=in&cbot=1&SessionID=RapidAPI1&ChatSource=RapidAPI&cbid=1&key=RHMN5hnQ4wTYZBGCF3dfxzypt68rVP"
-        response = " "
+        
+        payload = {
+	        "client": "",
+	        "bot": "harley",
+	        "message": request
+        }
+
         try:
-            conn.request("POST", "/api.php", payload, headers)
+            conn.request("POST", "/talk/bot", json.dumps(payload), headers)
             res = conn.getresponse()
             data = res.read()
-            response = json.loads(data.decode("utf-8"))["out"]
-            print(response)
+            response = json.loads(data.decode("utf-8"))['data']['conversation']['output']
         except socket.timeout:
             return "ERR: Slow Internet connect on host"
         except http.client.HTTPException:
             self.make_call(request)
         else:  # no error occurred
-            return response.replace('RoboMatic', 'RAZBot').replace('robomatic.ai', 'instagram.com/raz0229')  # replace name and location in response
+            return response.replace('Harley', 'RAZBot').replace('robomatic.ai', 'instagram.com/raz0229')  # replace name and location in response
 
     def new_msg_received(self):
         incoming = driver.find_elements_by_css_selector('._aacl._aaco._aacu._aacx._aad6._aade')

@@ -25,7 +25,7 @@
 from pynput import keyboard
 from bot import Bot
 
-my_bot = Bot('Hun\'s Quweendom : The Beginning of a new Era') #Haram Chads🔥❤
+my_bot = Bot('Sovereign Queendom of Hunsville') #Haram Chads🔥❤
 
 # Keyboard event listener
 listener = keyboard.Listener(on_press=my_bot.on_press)
