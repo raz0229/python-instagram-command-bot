@@ -220,15 +220,15 @@ class Bot:
 
                     # Translate to English
                     elif last_msg.lower().startswith("bot_english"):
-                        dataEng = getTranslation('en', last_msg.lower().replace('bot_pashto', '').strip())
+                        dataEng = getTranslation('en', last_msg.lower().replace('bot_english', '').strip())
                         self.send_message("🤖🦇 Translating last message to English...")
                         self.send_message(dataEng)
 
                     # Translate to Urdu
                     elif last_msg.lower().startswith("bot_urdu"):
-                        dataPashto = getTranslation('ur', last_msg.lower().replace('bot_pashto', '').strip())
+                        dataUr = getTranslation('ur', last_msg.lower().replace('bot_urdu', '').strip())
                         self.send_message("🤖🦇 Translating last message to Urdu...")
-                        self.send_message(dataPashto)
+                        self.send_message(dataUr)
 
                     # Search Wikipedia
                     elif last_msg.lower().startswith("bot_wiki"):
