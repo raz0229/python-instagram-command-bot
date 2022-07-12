@@ -23,7 +23,7 @@
 # may refer to the official pynput documentation.
 
 from pynput import keyboard
-from bot_chat import Bot
+from bot import Bot
 
 my_bot = Bot('Humor at its best') #Haram Chads🔥❤ Sovereign Queendom of Hunsville
 

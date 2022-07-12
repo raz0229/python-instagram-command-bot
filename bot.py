@@ -17,6 +17,7 @@ import http.client
 import wikipedia
 import asyncio
 import requests
+from googletrans import Translator
 import socket
 import emoji
 import random
@@ -50,14 +51,7 @@ headers = {
     'X-RapidAPI-Host': "harley-the-chatbot.p.rapidapi.com"
     }
 
-connTranslate = http.client.HTTPSConnection("google-translate1.p.rapidapi.com")
-headersTranslate = {
-    'content-type': "application/x-www-form-urlencoded",
-    'Accept-Encoding': "application/gzip",
-    'X-RapidAPI-Host': "google-translate1.p.rapidapi.com",
-    'X-RapidAPI-Key': "85632300dbmsha01f5765f1a7303p18df83jsn83e04aa1780a"
-    }
-
+translator = Translator()
 
 def deemojify(text):
     return emoji.get_emoji_regexp().sub(r'', text)
@@ -110,6 +104,17 @@ def search_video_url(videoQuery):
             url = videos[i]['link']
             break
     return url
+
+
+def getTranslation(abv, text):
+    try:
+        response = translator.translate(text, dest=abv).text
+    except Exception:
+        print(f"\n🤖🦇: Error translating in {abv}")
+        return
+    else:
+        return response
+
 
 class Bot:
     def __init__(self, contact):
@@ -209,16 +214,9 @@ class Bot:
 
                     # Translate to Pashto
                     elif last_msg.lower().startswith("bot_pashto"):
-                        payloadPashto = urlify(last_msg, "bot_pashto", "ps")
+                        dataPashto = getTranslation('ps', last_msg.lower().replace('bot_pashto', '').strip())
                         self.send_message("🤖🦇 Translating last message to Pashto...")
-                        try:
-                            connTranslate.request("POST", "/language/translate/v2", payloadPashto, headersTranslate)
-                            resPashto = connTranslate.getresponse()
-                            dataPashto = resPashto.read()
-                        except http.client.HTTPException:
-                            self.send_message("🤖🦇 Error translating. Try again")
-                        else:
-                            self.send_message(json.loads(dataPashto.decode("utf-8"))["data"]["translations"][0]['translatedText'])
+                        self.send_message(json.loads(dataPashto.decode("utf-8"))["data"]["translations"][0]['translatedText'])
 
                     # Translate to English
                     elif last_msg.lower().startswith("bot_english"):
