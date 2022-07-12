@@ -35,7 +35,7 @@ waifu = acl.Client("eae6c4c7e1a3fffe31e383371dd477d82649ac579117")
 profile = FirefoxProfile("/home/raz0229/.mozilla/firefox/58m1hr3k.dev-edition-default")
 
 blocked_list = ["mom", "dad", "mother", "father", "mommy", "moma", "mama", "sister", "sissy",  "lu", "phudi", "phodi", "chut", "bund", "bond", "fuck", "gashti", "pencho"]
-blocked_names = ["talh", "batol", "raz", "abdulh", "wahb", "janua", "jinua", "raj", "zafr", "janu", "nor", "tlha", "btol", "mustaf", "ali", "chris", "an"]
+blocked_names = ["my", "batol", "raz", "abdulh", "wahb", "janua", "jinua", "raj", "zafr", "janu", "btol", "ali", "chris"]
 
 # Configuration
 PATH = "/home/raz0229/Downloads/geckodriver"  # path to your downloaded webdriver
@@ -72,13 +72,14 @@ def load_requests(source_url, sink_path):
 
 
 def filter_word(word):
-    res = [ele for ele in blocked_list if (ele in word)]
-    if res:
-        return []
+    # res = [ele for ele in blocked_list if (ele in word)]
+    # if res:
+    #     return []
+    if word in blocked_list:
+        return [word]
     word = ''.join(sorted(set(word), key=word.index))
     res = [ele for ele in blocked_names if (ele in word)]
     return res
-
 
 def search_youtube_url(videoQuery):
     videosSearch = VideosSearch(f'{videoQuery}', limit = 5)
