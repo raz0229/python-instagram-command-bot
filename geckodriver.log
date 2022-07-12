@@ -3600,3 +3600,110 @@ console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkErr
 [Parent 3038, Main Thread] WARNING: ContentParent: id=7f998759c000 - ShutDownProcess: Sent shutdown message.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:1790
 [Parent 3038, Main Thread] WARNING: ContentParent: id=7f998759c000 - ShutDownProcess: Closing channel.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:1825
 [Parent 3038, Main Thread] WARNING: ContentParent: id=7f998759c000 - RemoveShutdownBlockers: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:3688
+1657621180799	geckodriver	INFO	Listening on 127.0.0.1:36855
+1657621183911	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "50815" "-no-remote" "-profile" "/tmp/rust_mozprofileuvdBMl"
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1657621184395	Marionette	INFO	Marionette enabled
+1657621184399	Marionette	INFO	Listening on port 33665
+WebDriver BiDi listening on ws://localhost:50815
+1657621184552	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+DevTools listening on ws://localhost:50815/devtools/browser/4e8c8575-5201-43d1-9c83-672d5e06dbac
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 581: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 769))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 421))
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3it4k4/yZ/l/en_US/U1XPDVgZjeI.js?_nc_x=Ij3Wp8lg5Kz, line 821: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3it4k4/yZ/l/en_US/U1XPDVgZjeI.js?_nc_x=Ij3Wp8lg5Kz, line 1169: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3it4k4/yZ/l/en_US/U1XPDVgZjeI.js?_nc_x=Ij3Wp8lg5Kz, line 1169: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3it4k4/yZ/l/en_US/U1XPDVgZjeI.js?_nc_x=Ij3Wp8lg5Kz, line 1169: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iSLN4/ye/l/en_US/R1axcCniOii.js?_nc_x=Ij3Wp8lg5Kz, line 61: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofileuvdBMl/thumbnails) because it does not exist
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.412316860668
+1657621770503	Marionette	INFO	Stopped listening on port 33665
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 3998, Main Thread] WARNING: ContentParent: id=7f310d9dfe00 - BlockShutdown: CanSend.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:3586
+[Parent 3998, Main Thread] WARNING: ContentParent: id=7f310d9dfe00 - ShutDownProcess: Sent shutdown message.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:1790
+[Parent 3998, Main Thread] WARNING: ContentParent: id=7f30f3797a00 - BlockShutdown: CanSend.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:3586
+[Parent 3998, Main Thread] WARNING: ContentParent: id=7f30f3797a00 - ShutDownProcess: Sent shutdown message.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:1790
+[Parent 3998, Main Thread] WARNING: ContentParent: id=7f30f16b4000 - BlockShutdown: CanSend.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:3586
+[Parent 3998, Main Thread] WARNING: ContentParent: id=7f30f16b4000 - ShutDownProcess: Sent shutdown message.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:1790
+[Parent 3998, Main Thread] WARNING: ContentParent: id=7f310d9dfe00 - ShutDownProcess: Closing channel.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:1825
+[Parent 3998, Main Thread] WARNING: ContentParent: id=7f310d9dfe00 - RemoveShutdownBlockers: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:3688
+[Parent 3998, Main Thread] WARNING: ContentParent: id=7f30f3797a00 - ShutDownProcess: Closing channel.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:1825
+[Parent 3998, Main Thread] WARNING: ContentParent: id=7f30f3797a00 - RemoveShutdownBlockers: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:3688
+[Parent 3998, Main Thread] WARNING: ContentParent: id=7f30f16b4000 - ShutDownProcess: Closing channel.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:1825
+[Parent 3998, Main Thread] WARNING: ContentParent: id=7f30f16b4000 - RemoveShutdownBlockers: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:3688
+1657621777602	geckodriver	INFO	Listening on 127.0.0.1:35169
+1657621780759	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "41349" "-no-remote" "-profile" "/tmp/rust_mozprofilehci3Ag"
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1657621781220	Marionette	INFO	Marionette enabled
+1657621781224	Marionette	INFO	Listening on port 33455
+WebDriver BiDi listening on ws://localhost:41349
+1657621781402	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+DevTools listening on ws://localhost:41349/devtools/browser/93355141-0c65-4f67-8ee3-cf816e8ea0a5
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 581: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 769))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 421))
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3it4k4/yZ/l/en_US/U1XPDVgZjeI.js?_nc_x=Ij3Wp8lg5Kz, line 821: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3it4k4/yZ/l/en_US/U1XPDVgZjeI.js?_nc_x=Ij3Wp8lg5Kz, line 1169: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3it4k4/yZ/l/en_US/U1XPDVgZjeI.js?_nc_x=Ij3Wp8lg5Kz, line 1169: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3it4k4/yZ/l/en_US/U1XPDVgZjeI.js?_nc_x=Ij3Wp8lg5Kz, line 1169: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iSLN4/ye/l/en_US/R1axcCniOii.js?_nc_x=Ij3Wp8lg5Kz, line 61: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+SourceActor threw an exception: [Exception... "Failed to open input source 'file:///'"  nsresult: "0x80520015 (NS_ERROR_FILE_ACCESS_DENIED)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 695"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:695:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:541:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:446:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:410:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2150:35
+addAllSources@resource://devtools/server/actors/thread.js:1482:14
+watch@resource://devtools/server/actors/resources/sources.js:62:17
+watchResources@resource://devtools/server/actors/resources/index.js:288:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:161:24
+addSessionDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:53:20
+_addSessionDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:529:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:438:21
+Line: 695, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 695: NS_ERROR_FILE_ACCESS_DENIED: Failed to open input source 'file:///'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+console.error: "stylesheets: fetch failed for https://static.cdninstagram.com/rsrc.php/v3/yo/l/0,cross/-5FvYfCJdgKKQEZnzZJmLqSiO0fTwa9HvTTfJMnJzptT.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+SourceActor threw an exception: Error: Failed to fetch https://www.instagram.com/direct/inbox/. Code 2152398878.
+Stack: onResponse@resource://devtools/shared/DevToolsUtils.js:581:16
+onStopRequest@resource://gre/modules/NetUtil.jsm:128:18
+Line: 581, column: 16
+console.error: (new Error("Failed to fetch https://www.instagram.com/direct/inbox/. Code 2152398878.", "resource://devtools/shared/DevToolsUtils.js", 581))
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 581: Error: Failed to fetch https://www.instagram.com/direct/inbox/. Code 2152398878.
+console.error: "Tried to send a 'getApplied' method reply on an already destroyed actor 'pagestyle'"
+1657622036369	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+console.error: "stylesheets: fetch failed for https://static.cdninstagram.com/rsrc.php/v3/yo/l/0,cross/-5FvYfCJdgKKQEZnzZJmLqSiO0fTwa9HvTTfJMnJzptT.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofilehci3Ag/thumbnails) because it does not exist
+console.error: "stylesheets: fetch failed for https://static.cdninstagram.com/rsrc.php/v3/yo/l/0,cross/-5FvYfCJdgKKQEZnzZJmLqSiO0fTwa9HvTTfJMnJzptT.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "stylesheets: fetch failed for https://static.cdninstagram.com/rsrc.php/v3/yo/l/0,cross/-5FvYfCJdgKKQEZnzZJmLqSiO0fTwa9HvTTfJMnJzptT.css?_nc_x=Ij3Wp8lg5Kz, using system principal instead."
+console.error: "Tried to send a 'getApplied' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getApplied' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getLayout' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getLayout' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getApplied' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getLayout' method reply on an already destroyed actor 'pagestyle'"
+console.error: "Tried to send a 'getLayout' method reply on an already destroyed actor 'pagestyle'"
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.412316860667
+1657622066023	Marionette	INFO	Stopped listening on port 33455
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1657622066142	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "Abort"  nsresult: "0x80004004 (NS_ERROR_ABORT)"  location: "<unknown>"  data: no] No traceback available
+JavaScript error: resource:///modules/BrowserGlue.jsm, line 4715: TypeError: can't access property "document", win is null
+[Parent 5895, Main Thread] WARNING: ContentParent: id=7f04652de500 - BlockShutdown: CanSend.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:3586
+[Parent 5895, Main Thread] WARNING: ContentParent: id=7f04652de500 - ShutDownProcess: Sent shutdown message.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:1790
+[Parent 5895, Main Thread] WARNING: ContentParent: id=7f043bf8c400 - BlockShutdown: CanSend.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:3586
+[Parent 5895, Main Thread] WARNING: ContentParent: id=7f043bf8c400 - ShutDownProcess: Sent shutdown message.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:1790
+[Parent 5895, Main Thread] WARNING: ContentParent: id=7f04652de500 - ShutDownProcess: Closing channel.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:1825
+[Parent 5895, Main Thread] WARNING: ContentParent: id=7f04652de500 - RemoveShutdownBlockers: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:3688
+[Parent 5895, Main Thread] WARNING: ContentParent: id=7f043bf8c400 - ShutDownProcess: Closing channel.: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:1825
+[Parent 5895, Main Thread] WARNING: ContentParent: id=7f043bf8c400 - RemoveShutdownBlockers: file /builds/worker/checkouts/gecko/dom/ipc/ContentParent.cpp:3688
