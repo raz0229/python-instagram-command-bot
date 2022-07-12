@@ -216,34 +216,19 @@ class Bot:
                     elif last_msg.lower().startswith("bot_pashto"):
                         dataPashto = getTranslation('ps', last_msg.lower().replace('bot_pashto', '').strip())
                         self.send_message("🤖🦇 Translating last message to Pashto...")
-                        self.send_message(json.loads(dataPashto.decode("utf-8"))["data"]["translations"][0]['translatedText'])
+                        self.send_message(dataPashto)
 
                     # Translate to English
                     elif last_msg.lower().startswith("bot_english"):
-                        payloadEng = urlify(last_msg, "bot_english", "en")
+                        dataEng = getTranslation('en', last_msg.lower().replace('bot_pashto', '').strip())
                         self.send_message("🤖🦇 Translating last message to English...")
-                        try:
-                            connTranslate.request("POST", "/language/translate/v2", payloadEng, headersTranslate)
-                            resEng = connTranslate.getresponse()
-                            dataEng = resEng.read()
-                        except http.client.HTTPException:
-                            self.send_message("🤖🦇 Error translating. Try again")
-                        else:
-                            self.send_message(json.loads(dataEng.decode("utf-8"))["data"]["translations"][0]['translatedText'])
+                        self.send_message(dataEng)
 
                     # Translate to Urdu
                     elif last_msg.lower().startswith("bot_urdu"):
-                        payloadUr = urlify(last_msg, "bot_urdu", "ur")
+                        dataPashto = getTranslation('ur', last_msg.lower().replace('bot_pashto', '').strip())
                         self.send_message("🤖🦇 Translating last message to Urdu...")
-                        try:
-                            connTranslate.request("POST", "/language/translate/v2", payloadUr, headersTranslate)
-                            resUr = connTranslate.getresponse()
-                            dataUr = resUr.read()
-                        except http.client.HTTPException:
-                            self.send_message("🤖🦇 Error translating. Try again")
-                        else:
-                            print(json.loads(dataUr.decode("utf-8"))["data"])
-                            self.send_message(json.loads(dataUr.decode("utf-8"))["data"]["translations"][0]['translatedText'])
+                        self.send_message(dataPashto)
 
                     # Search Wikipedia
                     elif last_msg.lower().startswith("bot_wiki"):
