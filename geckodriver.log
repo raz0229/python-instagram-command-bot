@@ -4118,3 +4118,182 @@ console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkErr
 [2022-07-12T12:30:10Z ERROR glean_core] Can't persist ping lifetime data: Error { kind: Rkv(IoError(Os { code: 2, kind: NotFound, message: "No such file or directory" })) }
 JavaScript error: resource://gre/modules/CrashManager.jsm, line 906: AbortError: IOUtils: Shutting down and refusing additional I/O tasks
 1657629151827	geckodriver	INFO	Listening on 127.0.0.1:57507
+1657629444564	geckodriver	INFO	Listening on 127.0.0.1:47281
+1657629447655	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "50919" "-no-remote" "-profile" "/tmp/rust_mozprofileudnKov"
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1657629448850	Marionette	INFO	Marionette enabled
+1657629448854	Marionette	INFO	Listening on port 36363
+WebDriver BiDi listening on ws://localhost:50919
+1657629448991	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+DevTools listening on ws://localhost:50919/devtools/browser/f2ba2286-232b-4453-9cb6-81e457e189bc
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3it4k4/yZ/l/en_US/U1XPDVgZjeI.js?_nc_x=Ij3Wp8lg5Kz, line 821: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3it4k4/yZ/l/en_US/U1XPDVgZjeI.js?_nc_x=Ij3Wp8lg5Kz, line 1169: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3it4k4/yZ/l/en_US/U1XPDVgZjeI.js?_nc_x=Ij3Wp8lg5Kz, line 1169: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3it4k4/yZ/l/en_US/U1XPDVgZjeI.js?_nc_x=Ij3Wp8lg5Kz, line 1169: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iSLN4/ye/l/en_US/R1axcCniOii.js?_nc_x=Ij3Wp8lg5Kz, line 61: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofileudnKov/thumbnails) because it does not exist
+1657881895679	geckodriver	INFO	Listening on 127.0.0.1:57293
+1657881899222	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "39813" "-no-remote" "-profile" "/tmp/rust_mozprofilegciD5f"
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1657881900612	Marionette	INFO	Marionette enabled
+1657881900615	Marionette	INFO	Listening on port 43835
+WebDriver BiDi listening on ws://localhost:39813
+1657881900746	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+DevTools listening on ws://localhost:39813/devtools/browser/13cfef59-299e-4b02-bacc-66b87777b6dc
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 769))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 421))
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953525
+1657881996642	Marionette	INFO	Stopped listening on port 43835
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1657881996718	Sync.ErrorHandler	ERROR	Some engines did not sync correctly.
+JavaScript error: resource:///modules/BrowserGlue.jsm, line 4715: TypeError: can't access property "document", win is null
+1657881996809	Sync.LogManager	ERROR	Failed to cleanup logs: Error: OS.File has been shut down. Rejecting post to DirectoryIterator_prototype_next(resource://gre/modules/osfile/osfile_async_front.jsm:426:9) JS Stack trace: post@osfile_async_front.jsm:426:9
+_next@osfile_async_front.jsm:1438:25
+forEach@osfile_async_front.jsm:1418:40
+observe@AsyncShutdown.jsm:577:16
+1657881999155	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1657882091690	geckodriver	INFO	Listening on 127.0.0.1:47429
+1657882094798	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "37485" "-no-remote" "-profile" "/tmp/rust_mozprofileX7yExf"
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1657882095959	Marionette	INFO	Marionette enabled
+1657882095963	Marionette	INFO	Listening on port 44835
+WebDriver BiDi listening on ws://localhost:37485
+1657882096094	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+DevTools listening on ws://localhost:37485/devtools/browser/710970b8-a4b6-4699-aa3b-af5fe5ec86ff
+1657882125652	Sync.ErrorHandler	ERROR	Sync encountered a login error
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 769))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 421))
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953482
+1657882255384	Marionette	INFO	Stopped listening on port 44835
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1657882699020	geckodriver	INFO	Listening on 127.0.0.1:46843
+1657882702112	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "42101" "-no-remote" "-profile" "/tmp/rust_mozprofile1ITKbS"
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1657882703321	Marionette	INFO	Marionette enabled
+1657882703325	Marionette	INFO	Listening on port 45061
+WebDriver BiDi listening on ws://localhost:42101
+1657882703609	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+DevTools listening on ws://localhost:42101/devtools/browser/84553a30-f8ce-40d5-be02-20a0ed1792bd
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/yV/l/en_US/YuC1wD0A7_Q.js?_nc_x=Ij3Wp8lg5Kz, line 822: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/yV/l/en_US/YuC1wD0A7_Q.js?_nc_x=Ij3Wp8lg5Kz, line 1171: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/yV/l/en_US/YuC1wD0A7_Q.js?_nc_x=Ij3Wp8lg5Kz, line 1171: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/yV/l/en_US/YuC1wD0A7_Q.js?_nc_x=Ij3Wp8lg5Kz, line 1171: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iSLN4/yc/l/en_US/3m4MalbQMut.js?_nc_x=Ij3Wp8lg5Kz, line 41: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953526
+1657882731492	Marionette	INFO	Stopped listening on port 45061
+1657882731562	Sync.ErrorHandler	ERROR	Sync encountered an error: Error: Aborting sync, remote setup failed(resource://services-sync/stages/enginesync.js:96:13) JS Stack trace: sync@enginesync.js:96:13
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: resource:///modules/BrowserGlue.jsm, line 4715: TypeError: can't access property "document", win is null
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1657882733990	geckodriver	INFO	Listening on 127.0.0.1:47469
+1657882781136	geckodriver	INFO	Listening on 127.0.0.1:54841
+1657883053371	geckodriver	INFO	Listening on 127.0.0.1:44057
+1657883056469	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "38305" "-no-remote" "-profile" "/tmp/rust_mozprofilevPPlmP"
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1657883057613	Marionette	INFO	Marionette enabled
+1657883057617	Marionette	INFO	Listening on port 44379
+WebDriver BiDi listening on ws://localhost:38305
+1657883057750	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+DevTools listening on ws://localhost:38305/devtools/browser/b1204d40-5661-4a6a-b5cd-1a5342d414bf
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 769))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 421))
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/yV/l/en_US/YuC1wD0A7_Q.js?_nc_x=Ij3Wp8lg5Kz, line 822: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/yV/l/en_US/YuC1wD0A7_Q.js?_nc_x=Ij3Wp8lg5Kz, line 1171: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/yV/l/en_US/YuC1wD0A7_Q.js?_nc_x=Ij3Wp8lg5Kz, line 1171: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/yV/l/en_US/YuC1wD0A7_Q.js?_nc_x=Ij3Wp8lg5Kz, line 1171: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iSLN4/yc/l/en_US/3m4MalbQMut.js?_nc_x=Ij3Wp8lg5Kz, line 41: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofilevPPlmP/thumbnails) because it does not exist
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953525
+1657883367502	Marionette	INFO	Stopped listening on port 44379
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1657883369486	geckodriver	INFO	Listening on 127.0.0.1:38907
+1657883372567	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "46019" "-no-remote" "-profile" "/tmp/rust_mozprofilegCSQU1"
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1657883373720	Marionette	INFO	Marionette enabled
+1657883373724	Marionette	INFO	Listening on port 37083
+WebDriver BiDi listening on ws://localhost:46019
+1657883373858	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+DevTools listening on ws://localhost:46019/devtools/browser/566c4f50-8d6a-4714-8cf4-d973f264869c
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 769))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 421))
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953526
+1657883417244	Marionette	INFO	Stopped listening on port 37083
+1657883417318	Sync.ErrorHandler	ERROR	Some engines did not sync correctly.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: resource:///modules/BrowserGlue.jsm, line 4715: TypeError: can't access property "document", win is null
+1657883797434	geckodriver	INFO	Listening on 127.0.0.1:44655
+1657883800516	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "41237" "-no-remote" "-profile" "/tmp/rust_mozprofile6B0rXJ"
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1657883801684	Marionette	INFO	Marionette enabled
+1657883801688	Marionette	INFO	Listening on port 44933
+WebDriver BiDi listening on ws://localhost:41237
+1657883801820	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+DevTools listening on ws://localhost:41237/devtools/browser/8dc14df5-7a9e-4a8e-9aa7-6d0175d86ff0
+1657883823198	FirefoxAccounts	ERROR	error GETing /account/devices: {"error":{},"errorString":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 490\"  data: no]","message":null,"code":null,"errno":null}
+1657883823199	Sync.Browser	ERROR	Refreshing device list failed.: {"error":{},"errorString":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 490\"  data: no]","message":null,"code":null,"errno":null}
+1657883823199	Sync.Browser	ERROR	Refreshing device list failed.: {"error":{},"errorString":"[Exception... \"NS_ERROR_UNKNOWN_HOST\"  nsresult: \"0x804b001e (NS_ERROR_UNKNOWN_HOST)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 490\"  data: no]","message":null,"code":null,"errno":null}
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953525
+1657883826596	Marionette	INFO	Stopped listening on port 44933
+1657883826648	Sync.SyncAuthManager	ERROR	Non-authentication error in _fetchTokenForUser: TokenServerClientNetworkError({"error":{}})(resource://services-common/tokenserverclient.js:39:36) JS Stack trace: TokenServerClientNetworkError@tokenserverclient.js:62:16
+_tokenServerExchangeRequest@tokenserverclient.js:241:13
+1657883826650	Sync.ErrorHandler	ERROR	Sync encountered a login error
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1657883826657	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_ABORT\"  nsresult: \"0x80004004 (NS_ERROR_ABORT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 490\"  data: no]"}
+1657883826658	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_ABORT\"  nsresult: \"0x80004004 (NS_ERROR_ABORT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 490\"  data: no]"}
+1657883826658	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_ABORT\"  nsresult: \"0x80004004 (NS_ERROR_ABORT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 490\"  data: no]"}
+1657883826658	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_ABORT\"  nsresult: \"0x80004004 (NS_ERROR_ABORT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 490\"  data: no]"}
+1657883826658	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_ABORT\"  nsresult: \"0x80004004 (NS_ERROR_ABORT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 490\"  data: no]"}
+1657883826658	FirefoxAccounts	ERROR	Background refresh of profile failed: {"name":"FxAccountsProfileClientError","code":null,"errno":998,"error":"NETWORK_ERROR","message":"[Exception... \"NS_ERROR_ABORT\"  nsresult: \"0x80004004 (NS_ERROR_ABORT)\"  location: \"JS frame :: resource://services-common/rest.js :: onStopRequest :: line 490\"  data: no]"}
+JavaScript error: resource:///modules/BrowserGlue.jsm, line 4715: TypeError: can't access property "document", win is null
+JavaScript error: resource:///modules/BrowserGlue.jsm, line 4715: TypeError: can't access property "document", win is null
+1657902671698	geckodriver	INFO	Listening on 127.0.0.1:54405
+1657902676385	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "42533" "-no-remote" "-profile" "/tmp/rust_mozprofile8sZ7Vg"
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1657902683829	Marionette	INFO	Marionette enabled
+1657902683877	Marionette	INFO	Listening on port 33807
+WebDriver BiDi listening on ws://localhost:42533
+1657902685032	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+DevTools listening on ws://localhost:42533/devtools/browser/1e3e42c7-985b-4258-8150-6701719c88f1
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/yV/l/en_US/YuC1wD0A7_Q.js?_nc_x=Ij3Wp8lg5Kz, line 822: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/yV/l/en_US/YuC1wD0A7_Q.js?_nc_x=Ij3Wp8lg5Kz, line 1171: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/yV/l/en_US/YuC1wD0A7_Q.js?_nc_x=Ij3Wp8lg5Kz, line 1171: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/yV/l/en_US/YuC1wD0A7_Q.js?_nc_x=Ij3Wp8lg5Kz, line 1171: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iSLN4/yc/l/en_US/3m4MalbQMut.js?_nc_x=Ij3Wp8lg5Kz, line 41: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 769))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 421))
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofile8sZ7Vg/thumbnails) because it does not exist
+JavaScript error: https://bordeaux.futurecdn.net/bordeaux.js, line 2: TypeError: t.pubads is not a function
+1657904439385	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1657904439388	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1657904439390	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1657904439392	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1657904439394	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1657904439397	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1657904439412	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1657904439415	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1657904439417	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1657904439418	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1657904439420	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofile8sZ7Vg/thumbnails) because it does not exist
+JavaScript error: https://www.programiz.com/python-programming/online-compiler/, line 32: ReferenceError: __tcfapi is not defined

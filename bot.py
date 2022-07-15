@@ -206,6 +206,10 @@ class Bot:
                     elif last_msg.lower().startswith("bot "):
                         self.send_message('Invalid command 🤖🦇')
 
+                    # raz is offline
+                    elif last_msg.lower().find("raz") != -1:
+                        self.send_message('🤖🦇 Hi! Raz is offline and I\'m in command. Please leave a message and I\'ll let him know')
+
                     # initialize bot
                     elif last_msg.lower().startswith("bot_start"):
                         self.send_message('Bot Online 🤖🦇')
