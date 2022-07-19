@@ -4658,3 +4658,186 @@ JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iSLN4/yL/l/en_US/
 JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofileqUzcxf/thumbnails) because it does not exist
 console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://qaz.wtf"
 JavaScript error: https://www.programiz.com/python-programming/online-compiler/, line 32: ReferenceError: __tcfapi is not defined
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1657985338473	geckodriver	INFO	Listening on 127.0.0.1:50681
+1657985341579	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "51163" "-no-remote" "-profile" "/tmp/rust_mozprofileGTSplh"
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1657985342729	Marionette	INFO	Marionette enabled
+1657985342733	Marionette	INFO	Listening on port 40491
+WebDriver BiDi listening on ws://localhost:51163
+1657985342864	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+DevTools listening on ws://localhost:51163/devtools/browser/b0ca5e24-4fc5-4622-a04c-4384ac92882c
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/ye/l/en_US/7xj6s2vAnqT.js?_nc_x=Ij3Wp8lg5Kz, line 822: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/ye/l/en_US/7xj6s2vAnqT.js?_nc_x=Ij3Wp8lg5Kz, line 1171: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/ye/l/en_US/7xj6s2vAnqT.js?_nc_x=Ij3Wp8lg5Kz, line 1171: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/ye/l/en_US/7xj6s2vAnqT.js?_nc_x=Ij3Wp8lg5Kz, line 1171: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iSLN4/yL/l/en_US/S9VIsjA_ilE.js?_nc_x=Ij3Wp8lg5Kz, line 41: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 769))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 421))
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofileGTSplh/thumbnails) because it does not exist
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 581: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1657987443096	geckodriver	INFO	Listening on 127.0.0.1:45995
+1657987446229	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "60897" "-no-remote" "-profile" "/tmp/rust_mozprofileLDVPtF"
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1657987447370	Marionette	INFO	Marionette enabled
+1657987447373	Marionette	INFO	Listening on port 45143
+WebDriver BiDi listening on ws://localhost:60897
+1657987447503	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+DevTools listening on ws://localhost:60897/devtools/browser/71b72555-0b9f-417e-be0f-ae097ee0e738
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 278: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/ye/l/en_US/7xj6s2vAnqT.js?_nc_x=Ij3Wp8lg5Kz, line 822: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/ye/l/en_US/7xj6s2vAnqT.js?_nc_x=Ij3Wp8lg5Kz, line 1171: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/ye/l/en_US/7xj6s2vAnqT.js?_nc_x=Ij3Wp8lg5Kz, line 1171: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/ye/l/en_US/7xj6s2vAnqT.js?_nc_x=Ij3Wp8lg5Kz, line 1171: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iSLN4/yL/l/en_US/S9VIsjA_ilE.js?_nc_x=Ij3Wp8lg5Kz, line 41: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofileLDVPtF/thumbnails) because it does not exist
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/ye/l/en_US/7xj6s2vAnqT.js?_nc_x=Ij3Wp8lg5Kz, line 822: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/ye/l/en_US/7xj6s2vAnqT.js?_nc_x=Ij3Wp8lg5Kz, line 1171: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/ye/l/en_US/7xj6s2vAnqT.js?_nc_x=Ij3Wp8lg5Kz, line 1171: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3igIC4/ye/l/en_US/7xj6s2vAnqT.js?_nc_x=Ij3Wp8lg5Kz, line 1171: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iSLN4/yL/l/en_US/S9VIsjA_ilE.js?_nc_x=Ij3Wp8lg5Kz, line 41: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1658159793056	geckodriver	INFO	Listening on 127.0.0.1:53669
+1658159796969	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "49427" "-no-remote" "-profile" "/tmp/rust_mozprofileBhEjou"
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1658159804537	Marionette	INFO	Marionette enabled
+1658159804584	Marionette	INFO	Listening on port 35001
+WebDriver BiDi listening on ws://localhost:49427
+1658159805717	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+DevTools listening on ws://localhost:49427/devtools/browser/25b71b05-f274-4740-9a3b-ead2c9dea2fd
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 825: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iSLN4/yL/l/en_US/S9VIsjA_ilE.js?_nc_x=Ij3Wp8lg5Kz, line 41: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofileBhEjou/thumbnails) because it does not exist
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953482
+1658161674593	Marionette	INFO	Stopped listening on port 35001
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1658161677493	geckodriver	INFO	Listening on 127.0.0.1:51013
+1658161680701	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "40743" "-no-remote" "-profile" "/tmp/rust_mozprofileavm2Dc"
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1658161681918	Marionette	INFO	Marionette enabled
+1658161681921	Marionette	INFO	Listening on port 39973
+WebDriver BiDi listening on ws://localhost:40743
+1658161682210	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+DevTools listening on ws://localhost:40743/devtools/browser/c65dd016-6257-4867-a1f8-d5528c703396
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 825: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iSLN4/yL/l/en_US/S9VIsjA_ilE.js?_nc_x=Ij3Wp8lg5Kz, line 41: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofileavm2Dc/thumbnails) because it does not exist
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953522
+1658163650153	Marionette	INFO	Stopped listening on port 39973
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1658163718811	geckodriver	INFO	Listening on 127.0.0.1:50981
+1658163722008	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "54953" "-no-remote" "-profile" "/tmp/rust_mozprofileki4OeR"
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1658163723201	Marionette	INFO	Marionette enabled
+1658163723205	Marionette	INFO	Listening on port 37451
+WebDriver BiDi listening on ws://localhost:54953
+1658163723341	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+DevTools listening on ws://localhost:54953/devtools/browser/22e798e9-415b-4dcf-a291-fb817f3ba268
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 825: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iSLN4/yL/l/en_US/S9VIsjA_ilE.js?_nc_x=Ij3Wp8lg5Kz, line 41: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953522
+1658163751402	Marionette	INFO	Stopped listening on port 37451
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1658163763951	geckodriver	INFO	Listening on 127.0.0.1:42023
+1658163767081	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "45623" "-no-remote" "-profile" "/tmp/rust_mozprofilejMtN1v"
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1658163768267	Marionette	INFO	Marionette enabled
+1658163768271	Marionette	INFO	Listening on port 35349
+WebDriver BiDi listening on ws://localhost:45623
+1658163768403	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+DevTools listening on ws://localhost:45623/devtools/browser/47bf8c6e-42f8-4065-af94-3d9abd50e40b
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 825: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iSLN4/yL/l/en_US/S9VIsjA_ilE.js?_nc_x=Ij3Wp8lg5Kz, line 41: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 769))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 421))
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofilejMtN1v/thumbnails) because it does not exist
+1658164038846	Sync.ErrorHandler	ERROR	Sync encountered an error: [Exception... "The connection has timed out"  nsresult: "0x804b000e (NS_ERROR_NET_TIMEOUT)"  location: "<unknown>"  data: no] No traceback available
+1658164135740	Marionette	INFO	Stopped listening on port 35349
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953522
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1658164138997	geckodriver	INFO	Listening on 127.0.0.1:55227
+1658164142219	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "42513" "-no-remote" "-profile" "/tmp/rust_mozprofilezZw5FB"
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1658164143404	Marionette	INFO	Marionette enabled
+1658164143408	Marionette	INFO	Listening on port 37433
+WebDriver BiDi listening on ws://localhost:42513
+1658164143541	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+DevTools listening on ws://localhost:42513/devtools/browser/14f34b49-a7c5-4813-b266-e2c42fa63df2
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 769))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 421))
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 825: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/y0/l/en_US/bvzhtbhiaAK.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iSLN4/yL/l/en_US/S9VIsjA_ilE.js?_nc_x=Ij3Wp8lg5Kz, line 41: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofilezZw5FB/thumbnails) because it does not exist
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofilezZw5FB/thumbnails) because it does not exist
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953525
+1658168892815	Marionette	INFO	Stopped listening on port 37433
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+Sandbox: Unexpected EOF, op 0 flags 00 path /proc/cpuinfo
+1658168897253	geckodriver	INFO	Listening on 127.0.0.1:58387
+1658168900405	mozrunner::runner	INFO	Running command: "/home/raz0229/Downloads/firefox/firefox" "--marionette" "--remote-debugging-port" "59557" "-no-remote" "-profile" "/tmp/rust_mozprofilebbV6SW"
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1658168901560	Marionette	INFO	Marionette enabled
+1658168901564	Marionette	INFO	Listening on port 43329
+WebDriver BiDi listening on ws://localhost:59557
+1658168901704	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://41ba11f5-5ceb-48f3-accf-4febdfb45479/lib/filter/antibanner.js, line 1163: unreachable code after return statement
+DevTools listening on ws://localhost:59557/devtools/browser/62e00509-170d-4cd1-96c7-14c9f34bd8e7
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/yp/l/en_US/lvXEyU-2-Dz.js?_nc_x=Ij3Wp8lg5Kz, line 825: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/yp/l/en_US/lvXEyU-2-Dz.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/yp/l/en_US/lvXEyU-2-Dz.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i7Sl4/yp/l/en_US/lvXEyU-2-Dz.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iSLN4/yL/l/en_US/S9VIsjA_ilE.js?_nc_x=Ij3Wp8lg5Kz, line 41: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofilebbV6SW/thumbnails) because it does not exist
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953482
+1658169651049	Marionette	INFO	Stopped listening on port 43329

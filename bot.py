@@ -202,10 +202,6 @@ class Bot:
                         else:
                             self.send_message(self.make_call(deemojify(last_msg.replace("bot_ask", '').strip())))
 
-                    # invalid command
-                    elif last_msg.lower().startswith("bot "):
-                        self.send_message('Invalid command 🤖🦇')
-
                     # raz is offline
                     elif last_msg.lower().find("raz") != -1:
                         self.send_message('🤖🦇 Hi! 𝐑𝐚𝐳 is offline and I\'m in command. Please leave a message and I\'ll let him know')
@@ -341,6 +337,12 @@ class Bot:
                                     print(ex)
                                     self.send_message("Cannot find matching images")
                                     continue
+
+                                            
+                    # raz is offline
+                    elif last_msg.lower().find("bot") != -1:
+                        self.send_message('Invalid command 🤖🦇')
+
 
                     else:
                         print("No command")
