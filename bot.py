@@ -34,8 +34,8 @@ options.headless = False
 waifu = acl.Client("eae6c4c7e1a3fffe31e383371dd477d82649ac579117")
 profile = FirefoxProfile("/home/raz0229/.mozilla/firefox/58m1hr3k.dev-edition-default")
 
-blocked_list = ["mom", "dad", "mother", "father", "mommy", "moma", "mama", "sister", "sissy",  "lu", "phudi", "phodi", "chut", "bund", "bond", "fuck", "gashti", "pencho"]
-blocked_names = ["my", "batol", "raz", "abdulh", "wahb", "janua", "jinua", "raj", "zafr", "janu", "btol", "ali", "chris"]
+blocked_list = ["mom", "dad", "mother", "father", "mommy", "moma", "mama", "sister", "sissy"]
+blocked_names = ["my", "batol", "raz", "abdulh", "wahb", "janua", "jinua", "raj", "zafr", "janu", "btol", "ali", "chris","horny", "porn", "as","nudes", "lu", "phudi", "phodi", "chut", "bund", "bond", "fuck", "gashti", "pencho", "lund", "sexy", "sex", "milf", "tis", "rhodes", "angel", "khalif", "dick", "cok", "bos", "vagin", "cum", "hot", "moan", "hentai"]
 
 # Configuration
 PATH = "/home/raz0229/Downloads/geckodriver"  # path to your downloaded webdriver
@@ -72,11 +72,11 @@ def load_requests(source_url, sink_path):
 
 
 def filter_word(word):
-    # res = [ele for ele in blocked_list if (ele in word)]
-    # if res:
-    #     return []
-    if word in blocked_list:
-        return [word]
+    res = [ele for ele in blocked_list if (ele in word)]
+    if res:
+        return [res]
+    #if word in blocked_list:
+    #    return [word]
     word = ''.join(sorted(set(word), key=word.index))
     res = [ele for ele in blocked_names if (ele in word)]
     return res
@@ -281,8 +281,11 @@ class Bot:
                     # YouTube search
                     elif last_msg.lower().startswith("bot_yt"):
                         search = deemojify(last_msg.lower().replace("bot_yt", "").strip())
-                        self.send_message(f"🤖🦇 Searching YouTube for: {search}")
-                        self.send_message(search_youtube_url(search))
+                        if (filter_word(search)):
+                            self.send_message("🤖🦇 EXPLICIT WORDS BLOCKED BY CREATOR")
+                        else:
+                            self.send_message(f"🤖🦇 Searching YouTube for: {search}")
+                            self.send_message(search_youtube_url(search))
 # url = search_video_url('sea shanty')        
 # if url == '':
 #     print("Video either too long or not exists")
