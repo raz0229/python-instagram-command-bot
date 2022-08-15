@@ -134,6 +134,9 @@ class Bot:
     def __init__(self, contact):
         self.contact = contact
         elem = WebDriverWait(driver, 120).until(EC.element_to_be_clickable((By.XPATH, f'//*[text() = "{self.contact}" ]')))
+        notification_button = driver.find_element(By.XPATH, "//button[contains(text(), 'Turn On')]")
+        if notification_button:
+            notification_button.click()
         elem.click()
         self.incoming = WebDriverWait(driver, 120).until(
             EC.visibility_of_all_elements_located((By.CSS_SELECTOR ,'._aacl._aaco._aacu._aacx._aad6._aade')))
