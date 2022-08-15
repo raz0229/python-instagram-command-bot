@@ -31,4 +31,7 @@ my_bot = Bot('Humor at its best') #Haram Chads🔥❤ Sovereign Queendom of Huns
 listener = keyboard.Listener(on_press=my_bot.on_press)
 listener.start()
 
+#try:
 my_bot.init_bot()
+# except Exception():
+#     my_bot.stop_bot()

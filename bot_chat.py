@@ -10,29 +10,23 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 from pynput import keyboard
 from slugify import slugify
-from fancy import Fancy
 import pyautogui as gui
-from animu import client as acl
 from random import randint
 import http.client
-import wikipedia
 import asyncio
 import requests
 import socket
-import emoji
 import random
 import json
 import gc
 import os
 from selenium.webdriver.firefox.options import Options
-from apiclient.discovery import build
-from youtubesearchpython import VideosSearch
 
 options = Options()
+options.binary_location = r"/bin/firefox-developer-edition"
 options.headless = False
 
-waifu = acl.Client("eae6c4c7e1a3fffe31e383371dd477d82649ac579117")
-profile = FirefoxProfile("/home/raz0229/.mozilla/firefox/58m1hr3k.dev-edition-default")
+profile = FirefoxProfile("/home/raz0229/.mozilla/firefox/oimwjx5q.dev-edition-default/")
 
 blocked_list = ["mom", "dad", "mother", "father", "mommy", "moma", "mama", "sister", "sissy",  "lu", "phudi", "phodi", "chut", "bund", "bond", "fuck", "gashti", "pencho"]
 blocked_names = ["talh", "batol", "raz", "abdulh", "wahb", "janua", "jinua", "raj", "zafr", "janu", "nor", "tlha", "btol", "mustaf", "ali", "chris", "an"]
@@ -85,31 +79,6 @@ def filter_word(word):
     return res
 
 
-def search_youtube_url(videoQuery):
-    videosSearch = VideosSearch(f'{videoQuery}', limit = 5)
-    if len(videosSearch.result()['result']) >= 1:
-       num = random.randrange(0, 5)
-       return videosSearch.result()['result'][num]['link']
-    return "🤖🦇 No matching video found"
-
-
-def search_video_url(videoQuery):
-    ftr = [3600,60,1]
-    url = ''
-
-    videosSearch = VideosSearch(f'{videoQuery} 30 seconds', limit = 5)
-    videos = videosSearch.result()['result']
-    for i in range(len(videos)):
-        duration = videos[i]['duration']
-        timestr = duration
-        if duration is not None:
-            timestr = duration if len(duration.split(':')) >= 3 else f"00:{duration}"
-        checkDuration = sum([a*b for a,b in zip(ftr, map(int,timestr.split(':')))]) if timestr is not None else "None"
-        if checkDuration <= 60: 
-            url = videos[i]['link']
-            break
-    return url
-
 class Bot:
     def __init__(self, contact):
         self.contact = contact
@@ -150,15 +119,6 @@ class Bot:
         incoming = driver.find_elements_by_css_selector('._aacl._aaco._aacu._aacx._aad6._aade')
         self.received_msgs = len(incoming)
 
-    def send_copied_image(self):
-        input_box = driver.find_element_by_css_selector('textarea')
-        input_box.click()
-        input_box.send_keys(Keys.LEFT_CONTROL, "v")
-        send_button = driver.find_element_by_css_selector("._acan._acap._acaq._acas._acav")
-        send_button.click()
-        incoming = driver.find_elements_by_css_selector('._aacl._aaco._aacu._aacx._aad6._aade')
-        self.received_msgs = len(incoming)
-
     def on_press(self, key):
         print(key, 'Key pressed')
         if key == keyboard.Key.ctrl_r:  # If 'Left Ctrl' is the key pressed
@@ -184,20 +144,9 @@ class Bot:
                     except Exception:
                         last_msg = 'Something exception'
 
-                    # BOT response
- #                   if last_msg.lower().startswith(""):
-     #                   self.send_message('Thinking... 💀🦇')
-
-    #                    if deemojify(last_msg.lower().strip()) == "bot_ask":
-   #                         self.send_message("🤖🦇 Chat with me using bot_ask command. Example: bot_ask who are you")
-  #                      else:
- #                           self.send_message(self.make_call(deemojify(last_msg.replace("bot_ask", '').strip())))
-#
-#                    else:
-#                        print("No command")
             if self.pressed_ctrl:
                 break
-        self.contact = gui.prompt('Enter contact\'s name', 'WhatsApp Chat bot')
+        self.contact = gui.prompt('Enter contact\'s name', 'Instagram Chat bot')
         print(self.contact, type(self.contact))
         driver.find_element_by_xpath(f'//*[text() = "{self.contact}" ]').click()
         self.pressed_ctrl = False

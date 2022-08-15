@@ -30,26 +30,19 @@ from selenium.webdriver.firefox.options import Options
 from apiclient.discovery import build
 from youtube_search import YoutubeSearch
 #from youtubesearchpython import VideosSearch
-from dotenv import load_dotenv
 
-load_dotenv()
 options = Options()
-options.binary_location = os.getenv('FIREFOX_EXECUTABLE_PATH')
+options.binary_location = r"/bin/firefox-developer-edition"
 options.headless = False
 
-waifu = acl.Client(os.getenv('ANIMU_API_TOKEN'))
-profile = FirefoxProfile(os.getenv('FIREFOX_PROFILE_LOCATION'))
+waifu = acl.Client("eae6c4c7e1a3fffe31e383371dd477d82649ac579117")
+profile = FirefoxProfile("/home/raz0229/.mozilla/firefox/oimwjx5q.dev-edition-default/")
 
-# Download block list to block obscene language and insults
-r = requests.get('https://jsonkeeper.com/b/4M1E') 
-list = r.json()
-
-blocked_list = list['blocked_list']
-blocked_names = list["blocked_names"]
+blocked_list = ["mom", "dad", "mother", "father", "mommy", "moma", "mama", "sister", "sissy"]
+blocked_names = ["my", "batol", "raz", "abdulh", "wahb", "janua", "jinua", "raj", "zafr", "janu", "btol", "ali", "chris","horny", "porn", "as","nudes", "lu", "phudi", "phodi", "chut", "bund", "bond", "fuck", "gashti", "pencho", "lund", "sexy", "sex", "milf", "tis", "rhodes", "angel", "khalif", "dick", "cok", "bos", "vagin", "cum", "hot", "moan", "hentai"]
 
 # Configuration
-FIRST_NAME = os.getenv("FIRST_NAME")
-PATH = os.getenv("GECKODRIVER_PATH")  # path to your downloaded webdriver
+PATH = "/home/raz0229/Downloads/geckodriver"  # path to your downloaded webdriver
 driver = webdriver.Firefox(profile, executable_path=PATH, options=options)
 driver.get('https://instagram.com/direct/inbox')
 print(driver.title)  # prints title of the webpage
@@ -58,7 +51,7 @@ conn = http.client.HTTPSConnection("harley-the-chatbot.p.rapidapi.com")
 headers = {
     'content-type': "application/json",
     'Accept': "application/json",
-    'X-RapidAPI-Key': os.getenv("HARLEY_CHATBOT_API_KEY"),
+    'X-RapidAPI-Key': "85632300dbmsha01f5765f1a7303p18df83jsn83e04aa1780a",
     'X-RapidAPI-Host': "harley-the-chatbot.p.rapidapi.com"
     }
 
@@ -162,26 +155,26 @@ class Bot:
             return response.replace('Harley', 'RAZBot').replace('robomatic.ai', 'instagram.com/raz0229')  # replace name and location in response
 
     def new_msg_received(self):
-        incoming = driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
+        incoming = driver.find_elements_by_css_selector('._aacl._aaco._aacu._aacx._aad6._aade')
         if len(incoming) != self.received_msgs:
             return True
         else:
             return False
 
     def send_message(self, text):
-        input_box = driver.find_element(By.CSS_SELECTOR,'textarea')
+        input_box = driver.find_element_by_css_selector('textarea')
         input_box.click()
         input_box.send_keys(text, Keys.RETURN)
-        incoming = driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
+        incoming = driver.find_elements_by_css_selector('._aacl._aaco._aacu._aacx._aad6._aade')
         self.received_msgs = len(incoming)
 
     def send_copied_image(self):
-        input_box = driver.find_element(By.CSS_SELECTOR,'textarea')
+        input_box = driver.find_element_by_css_selector('textarea')
         input_box.click()
         input_box.send_keys(Keys.LEFT_CONTROL, "v")
-        send_button = driver.find_element(By.CSS_SELECTOR,"._acan._acap._acaq._acas._acav")
+        send_button = driver.find_element_by_css_selector("._acan._acap._acaq._acas._acav")
         send_button.click()
-        incoming = driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
+        incoming = driver.find_elements_by_css_selector('._aacl._aaco._aacu._aacx._aad6._aade')
         self.received_msgs = len(incoming)
 
     def on_press(self, key):
@@ -199,7 +192,7 @@ class Bot:
             if self.new_msg_received():
 
                     try:
-                        self.incoming = driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
+                        self.incoming = driver.find_elements_by_css_selector('._aacl._aaco._aacu._aacx._aad6._aade')
                         self.received_msgs = len(self.incoming)
                         last_msg = self.incoming[self.received_msgs - 1].text
                         print(last_msg)
@@ -216,8 +209,8 @@ class Bot:
                             self.send_message(self.make_call(deemojify(last_msg.replace("bot_ask", '').strip())))
 
                     # raz is offline
-                    elif last_msg.lower().find(FIRST_NAME.lower()) != -1:
-                        self.send_message('🤖🦇 Hi! {} is offline and I\'m in command. Please leave a message and I\'ll let him know'.format(Fancy(FIRST_NAME).makeFancy(1)))
+                    elif last_msg.lower().find("raz") != -1:
+                        self.send_message('🤖🦇 Hi! 𝐑𝐚𝐳 is offline and I\'m in command. Please leave a message and I\'ll let him know')
 
                     # initialize bot
                     elif last_msg.lower().startswith("bot_start"):
@@ -335,10 +328,10 @@ class Bot:
                             while True:
                                 try:
                                     service = build("customsearch", "v1",
-                                                    developerKey=os.getenv("GOOGLE_CUSTOM_SEARCH_DEVELOPER_KEY"))
+                                                    developerKey="AIzaSyB4hl9a1RPB_MmuqPm_zNmO49Y20qSf9e4")
                                     res = service.cse().list(
                                         q=slugify(searchTerm),
-                                        cx=os.getenv("GOOGLE_CUSTOM_SEARCH_CX"),
+                                        cx='7204b6b1decb42058',
                                         searchType='image',
                                         imgSize="MEDIUM",
                                         safe='high'
@@ -369,7 +362,7 @@ class Bot:
                         print("No command")
             if self.pressed_ctrl:
                 break
-        self.contact = gui.prompt('Enter contact\'s name', 'Instagram command bot')
+        self.contact = gui.prompt('Enter contact\'s name', 'WhatsApp Chat bot')
         print(self.contact, type(self.contact))
         driver.find_element_by_xpath(f'//*[text() = "{self.contact}" ]').click()
         self.pressed_ctrl = False
@@ -377,7 +370,6 @@ class Bot:
 
     # In case you have to stop the program for some reason
     def stop_bot(self):
-        self.send_message("[🤖🦇] Service RazBot v4.0 (main.py) terminated by the administrator")
         self.running = False
         print('Bot stopped')
         gc.collect()
