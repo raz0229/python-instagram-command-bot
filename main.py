@@ -24,14 +24,19 @@
 
 from pynput import keyboard
 from bot import Bot
+import sys
 
-my_bot = Bot('Humor at its best') #Haram Chads🔥❤ Sovereign Queendom of Hunsville
+if len(sys.argv)<=1:
+    print("[ERROR] Usage: main.py [Case-sensitive chat name]")
+    sys.exit(1)
+else:
+    my_bot = Bot(sys.argv[1])
 
 # Keyboard event listener
 listener = keyboard.Listener(on_press=my_bot.on_press)
 listener.start()
 
-#try:
 my_bot.init_bot()
-# except Exception():
-#     my_bot.stop_bot()
+
+
+
