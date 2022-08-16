@@ -1,7 +1,4 @@
-# see 'main.py'
-import os
 from urllib import response
-
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
@@ -17,6 +14,7 @@ import asyncio
 import requests
 import socket
 import random
+import emoji
 import json
 import gc
 import os
@@ -42,15 +40,6 @@ headers = {
     'X-RapidAPI-Key': "85632300dbmsha01f5765f1a7303p18df83jsn83e04aa1780a",
     'X-RapidAPI-Host': "aeona3.p.rapidapi.com"
     }
-
-connTranslate = http.client.HTTPSConnection("google-translate1.p.rapidapi.com")
-headersTranslate = {
-    'content-type': "application/x-www-form-urlencoded",
-    'Accept-Encoding': "application/gzip",
-    'X-RapidAPI-Host': "google-translate1.p.rapidapi.com",
-    'X-RapidAPI-Key': "85632300dbmsha01f5765f1a7303p18df83jsn83e04aa1780a"
-    }
-
 
 def deemojify(text):
     return emoji.get_emoji_regexp().sub(r'', text)
@@ -91,7 +80,7 @@ class Bot:
         self.pressed_ctrl = False
 
     def make_call(self, request):
-        
+        print("here: call made")
         conn.request("GET", f"/?text={slugify(request)}&userId=12312312312", headers=headers)
         
         try:
@@ -103,20 +92,20 @@ class Bot:
         except http.client.HTTPException:
             self.make_call(request)
         else:  # no error occurred
-            return response.replace('Aeona', 'RAZBot').replace('Oakland, California', 'RazRiG')  # replace name and location in response
+            return response.replace('Aeona', 'RAZBot').replace('Oakland, California', 'RazRiG').replace("dash", "-")  # replace name and location in response
 
     def new_msg_received(self):
-        incoming = driver.find_elements_by_css_selector('._aacl._aaco._aacu._aacx._aad6._aade')
+        incoming = driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
         if len(incoming) != self.received_msgs:
             return True
         else:
             return False
 
     def send_message(self, text):
-        input_box = driver.find_element_by_css_selector('textarea')
+        input_box = driver.find_element(By.CSS_SELECTOR,'textarea')
         input_box.click()
         input_box.send_keys(text, Keys.RETURN)
-        incoming = driver.find_elements_by_css_selector('._aacl._aaco._aacu._aacx._aad6._aade')
+        incoming = driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
         self.received_msgs = len(incoming)
 
     def on_press(self, key):
@@ -134,10 +123,9 @@ class Bot:
             if self.new_msg_received():
 
                     try:
-                        self.incoming = driver.find_elements_by_css_selector('._aacl._aaco._aacu._aacx._aad6._aade')
+                        self.incoming = driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
                         self.received_msgs = len(self.incoming)
                         last_msg = self.incoming[self.received_msgs - 1].text
-                        print(last_msg)
                         if not last_msg.startswith('💀🦇'):
                             print(last_msg)
                             self.send_message('💀🦇 ' + self.make_call(deemojify(last_msg.strip())))

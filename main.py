@@ -23,7 +23,7 @@
 # may refer to the official pynput documentation.
 
 from pynput import keyboard
-from bot import Bot
+from bot_chat import Bot
 import sys
 
 if len(sys.argv)<=1:

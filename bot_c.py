@@ -1,4 +1,4 @@
-# see 'main.py'
+from urllib import response
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.keys import Keys
@@ -7,31 +7,18 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 from pynput import keyboard
 from slugify import slugify
-from fancy import Fancy
 import pyautogui as gui
-from animu import client as acl
 from random import randint
-import time
 import http.client
-import wikipedia
 import asyncio
 import requests
-from googletrans import Translator
 import socket
-import emoji
 import random
+import emoji
 import json
-import urllib.request
-import signal
-import sys
-import re
 import gc
 import os
 from selenium.webdriver.firefox.options import Options
-from apiclient.discovery import build
-from youtube_search import YoutubeSearch
-#from youtubesearchpython import VideosSearch
-from dotenv import load_dotenv
 
 load_dotenv()
 options = Options()
@@ -39,7 +26,6 @@ options.binary_location = os.getenv('FIREFOX_EXECUTABLE_PATH')
 options.add_argument("--window-size=1920,1080")
 options.headless = False
 
-waifu = acl.Client(os.getenv('ANIMU_API_TOKEN'))
 profile = FirefoxProfile(os.getenv('FIREFOX_PROFILE_LOCATION'))
 
 # Download block list to block obscene language and insults
@@ -66,8 +52,6 @@ headers = {
     'X-RapidAPI-Key': os.getenv("HARLEY_CHATBOT_API_KEY"),
     'X-RapidAPI-Host': "harley-the-chatbot.p.rapidapi.com"
     }
-
-translator = Translator()
 
 def deemojify(text):
     return emoji.get_emoji_regexp().sub(r'', text)
