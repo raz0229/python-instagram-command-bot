@@ -23,14 +23,15 @@
 # may refer to the official pynput documentation.
 
 from pynput import keyboard
-from bot_chat import Bot
+from bot import Bot
 import sys
 
 if len(sys.argv)<=1:
-    print("[ERROR] Usage: main.py [Case-sensitive chat name]")
+    with open('usage.txt', 'r') as f:
+        print(f.read())
     sys.exit(1)
 else:
-    my_bot = Bot(sys.argv[1])
+    my_bot = Bot(sys.argv[1], HEADLESS=False)
 
 # Keyboard event listener
 listener = keyboard.Listener(on_press=my_bot.on_press)

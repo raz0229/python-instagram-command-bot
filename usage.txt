@@ -1,0 +1,22 @@
+[ERROR] 
+Usage: main.py [Case-sensitive chat name] [OPTION]...
+
+DESCRIPTION
+    Instagram command bot. 
+    
+    First argument is REQUIRED. It is case-sensitive so the name of chat must match with the passed argument.
+
+    -h, --headless 
+        start bot in headless mode.
+
+    --chat-mode=[MALE|FEMALE]
+        start bot in Chat mode. (Respond to all messages by default)
+        --chat-mode=MALE : Talk to Harley
+        --chat-mode=FEMALE : Talk to Aeona
+
+EXAMPLES
+    python main.py "Chat Name"
+        command bot is activated for chat "Chat Name"
+
+    python main.py "Chat Name" --chat-mode=FEMALE
+        chat bot is activated for "Chat Name" for Aeona.

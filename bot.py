@@ -33,42 +33,6 @@ from youtube_search import YoutubeSearch
 #from youtubesearchpython import VideosSearch
 from dotenv import load_dotenv
 
-load_dotenv()
-options = Options()
-options.binary_location = os.getenv('FIREFOX_EXECUTABLE_PATH')
-options.add_argument("--window-size=1920,1080")
-options.headless = False
-
-waifu = acl.Client(os.getenv('ANIMU_API_TOKEN'))
-profile = FirefoxProfile(os.getenv('FIREFOX_PROFILE_LOCATION'))
-
-# Download block list to block obscene language and insults
-print('[INFO] Downloading blocked keywords list..')
-r = requests.get('https://jsonkeeper.com/b/5ULD') 
-list = r.json()
-
-blocked_list = list['blocked_list']
-blocked_names = list["blocked_names"]
-print('[INFO] Blocklist Loaded into bot')
-
-# Configuration
-FIRST_NAME = os.getenv("FIRST_NAME")
-PATH = os.getenv("GECKODRIVER_PATH")  # path to your downloaded webdriver
-driver = webdriver.Firefox(profile, executable_path=PATH, options=options)
-print('[INFO] Loading your chats...')
-driver.get('https://instagram.com/direct/inbox')
-print("[INFO] " + driver.title + " loaded successfully")  # prints title of the webpage
-
-conn = http.client.HTTPSConnection("harley-the-chatbot.p.rapidapi.com")
-headers = {
-    'content-type': "application/json",
-    'Accept': "application/json",
-    'X-RapidAPI-Key': os.getenv("HARLEY_CHATBOT_API_KEY"),
-    'X-RapidAPI-Host': "harley-the-chatbot.p.rapidapi.com"
-    }
-
-translator = Translator()
-
 def deemojify(text):
     return emoji.get_emoji_regexp().sub(r'', text)
 
@@ -136,8 +100,48 @@ def getTranslation(abv, text):
 
 
 class Bot:
-    def __init__(self, contact):
+    def __init__(self, contact, HEADLESS):
+
         self.contact = contact
+        self.HEADLESS = HEADLESS
+        
+        load_dotenv()
+        options = Options()
+        options.binary_location = os.getenv('FIREFOX_EXECUTABLE_PATH')
+        options.add_argument("--window-size=1920,1080")
+        options.headless = self.HEADLESS
+
+        waifu = acl.Client(os.getenv('ANIMU_API_TOKEN'))
+        profile = FirefoxProfile(os.getenv('FIREFOX_PROFILE_LOCATION'))
+
+    # Download block list to block obscene language and insults
+        print('[INFO] Downloading blocked keywords list..')
+        r = requests.get('https://jsonkeeper.com/b/5ULD')
+        list = r.json()
+
+        blocked_list = list['blocked_list']
+        blocked_names = list["blocked_names"]
+        print('[INFO] Blocklist Loaded into bot')
+
+        # Configuration
+        FIRST_NAME = os.getenv("FIRST_NAME")
+        PATH = os.getenv("GECKODRIVER_PATH")  # path to your downloaded webdriver
+        driver = webdriver.Firefox(profile, executable_path=PATH, options=options)
+        print('[INFO] Loading your chats...')
+        driver.get('https://instagram.com/direct/inbox')
+        # prints title of the webpage
+        print("[INFO] " + driver.title + " loaded successfully")
+
+        conn = http.client.HTTPSConnection("harley-the-chatbot.p.rapidapi.com")
+        headers = {
+            'content-type': "application/json",
+            'Accept': "application/json",
+            'X-RapidAPI-Key': os.getenv("HARLEY_CHATBOT_API_KEY"),
+            'X-RapidAPI-Host': "harley-the-chatbot.p.rapidapi.com"
+        }
+
+        translator = Translator()
+
         elem = WebDriverWait(driver, 120).until(EC.element_to_be_clickable((By.XPATH, f'//*[text() = "{self.contact}" ]')))
         try:
             notification_button = driver.find_element(By.XPATH, "//button[contains(text(), 'Turn On')]")
