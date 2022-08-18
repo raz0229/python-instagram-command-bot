@@ -33,6 +33,18 @@ from youtube_search import YoutubeSearch
 #from youtubesearchpython import VideosSearch
 from dotenv import load_dotenv
 
+translator = Translator()
+waifu = acl.Client(os.getenv('ANIMU_API_TOKEN'))
+
+# Download block list to block obscene language and insults
+print('[INFO] Downloading blocked keywords list..')
+r = requests.get('https://jsonkeeper.com/b/5ULD')
+list = r.json()
+
+blocked_list = list['blocked_list']
+blocked_names = list["blocked_names"]
+print('[INFO] Blocklist Loaded into bot')
+
 def deemojify(text):
     return emoji.get_emoji_regexp().sub(r'', text)
 
@@ -100,7 +112,8 @@ def getTranslation(abv, text):
 
 
 class Bot:
-    def __init__(self, contact, HEADLESS):
+
+    def __init__(self, contact, HEADLESS=False):
 
         self.contact = contact
         self.HEADLESS = HEADLESS
@@ -111,47 +124,35 @@ class Bot:
         options.add_argument("--window-size=1920,1080")
         options.headless = self.HEADLESS
 
-        waifu = acl.Client(os.getenv('ANIMU_API_TOKEN'))
         profile = FirefoxProfile(os.getenv('FIREFOX_PROFILE_LOCATION'))
 
-    # Download block list to block obscene language and insults
-        print('[INFO] Downloading blocked keywords list..')
-        r = requests.get('https://jsonkeeper.com/b/5ULD')
-        list = r.json()
-
-        blocked_list = list['blocked_list']
-        blocked_names = list["blocked_names"]
-        print('[INFO] Blocklist Loaded into bot')
-
         # Configuration
-        FIRST_NAME = os.getenv("FIRST_NAME")
+        self.FIRST_NAME = os.getenv("FIRST_NAME")
         PATH = os.getenv("GECKODRIVER_PATH")  # path to your downloaded webdriver
-        driver = webdriver.Firefox(profile, executable_path=PATH, options=options)
+        self.driver = webdriver.Firefox(profile, executable_path=PATH, options=options)
         print('[INFO] Loading your chats...')
-        driver.get('https://instagram.com/direct/inbox')
+        self.driver.get('https://instagram.com/direct/inbox')
         # prints title of the webpage
-        print("[INFO] " + driver.title + " loaded successfully")
+        print("[INFO] " + self.driver.title + " loaded successfully")
 
-        conn = http.client.HTTPSConnection("harley-the-chatbot.p.rapidapi.com")
-        headers = {
+        self.conn = http.client.HTTPSConnection("harley-the-chatbot.p.rapidapi.com")
+        self.headers = {
             'content-type': "application/json",
             'Accept': "application/json",
             'X-RapidAPI-Key': os.getenv("HARLEY_CHATBOT_API_KEY"),
             'X-RapidAPI-Host': "harley-the-chatbot.p.rapidapi.com"
         }
 
-        translator = Translator()
-
-        elem = WebDriverWait(driver, 120).until(EC.element_to_be_clickable((By.XPATH, f'//*[text() = "{self.contact}" ]')))
+        elem = WebDriverWait(self.driver, 120).until(EC.element_to_be_clickable((By.XPATH, f'//*[text() = "{self.contact}" ]')))
         try:
-            notification_button = driver.find_element(By.XPATH, "//button[contains(text(), 'Turn On')]")
+            notification_button = self.driver.find_element(By.XPATH, "//button[contains(text(), 'Turn On')]")
             if notification_button:
                 notification_button.click()
         except Exception:
             print('[LOG] Could not locate notification button')
         elem.click()
         print("[INFO] Bot running on chat: " + self.contact)
-        self.incoming = WebDriverWait(driver, 120).until(
+        self.incoming = WebDriverWait(self.driver, 120).until(
             EC.visibility_of_all_elements_located((By.CSS_SELECTOR ,'._aacl._aaco._aacu._aacx._aad6._aade')))
         self.received_msgs = len(self.incoming)
         self.running = True
@@ -166,8 +167,8 @@ class Bot:
         }
 
         try:
-            conn.request("POST", "/talk/bot", json.dumps(payload), headers)
-            res = conn.getresponse()
+            self.conn.request("POST", "/talk/bot", json.dumps(payload), self.headers)
+            res = self.conn.getresponse()
             data = res.read()
             response = json.loads(data.decode("utf-8"))['data']['conversation']['output']
         except socket.timeout:
@@ -178,21 +179,21 @@ class Bot:
             return response.replace('Harley', 'RAZBot').replace('robomatic.ai', 'instagram.com/raz0229')  # replace name and location in response
 
     def new_msg_received(self):
-        incoming = driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
+        incoming = self.driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
         if len(incoming) != self.received_msgs:
             return True
         else:
             return False
 
     def send_message(self, text):
-        input_box = driver.find_element(By.CSS_SELECTOR,'textarea')
+        input_box = self.driver.find_element(By.CSS_SELECTOR,'textarea')
         input_box.click()
         input_box.send_keys(text, Keys.RETURN)
-        incoming = driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
+        incoming = self.driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
         self.received_msgs = len(incoming)
 
     def send_copied_image(self):
-        input_box = driver.find_element(By.CSS_SELECTOR,'textarea')
+        input_box = self.driver.find_element(By.CSS_SELECTOR,'textarea')
         #input_box = driver.find_element(By.CSS_SELECTOR, '._ab8w._ab94._ab99._ab9f._ab9m._ab9o._abbh._abcm textarea')
         input_box.click()
         #input_box.send_keys(os.getcwd()+"/image.png")
@@ -200,10 +201,10 @@ class Bot:
         #os.system("xdotool type $(xclip -o -selection clipboard)")
         input_box.send_keys(Keys.LEFT_CONTROL, "v")
         #gui.hotkey('ctrl', 'v')
-        send_button = driver.find_element(By.CSS_SELECTOR,"._acan._acap._acaq._acas._acav")
+        send_button = self.driver.find_element(By.CSS_SELECTOR,"._acan._acap._acaq._acas._acav")
         #send_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "._acan._acap._acaq._acas._acav")))
         send_button.click()
-        incoming = driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
+        incoming = self.driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
         self.received_msgs = len(incoming)
 
     def on_press(self, key):
@@ -222,7 +223,7 @@ class Bot:
             if self.new_msg_received():
 
                     try:
-                        self.incoming = driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
+                        self.incoming = self.driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
                         self.received_msgs = len(self.incoming)
                         last_msg = self.incoming[self.received_msgs - 1].text
                         print("[INFO] New message: " + last_msg)
@@ -239,8 +240,8 @@ class Bot:
                             self.send_message(self.make_call(deemojify(last_msg.replace("bot_ask", '').strip())))
 
                     # raz is offline
-                    elif last_msg.lower().find(FIRST_NAME.lower()) != -1:
-                        self.send_message('🤖🦇 Hi! {} is offline and I\'m in command. Please leave a message and I\'ll let him know'.format(Fancy(FIRST_NAME).makeFancy(1)))
+                    elif last_msg.lower().find(self.FIRST_NAME.lower()) != -1:
+                        self.send_message('🤖🦇 Hi! {} is offline and I\'m in command. Please leave a message and I\'ll let him know'.format(Fancy(self.FIRST_NAME).makeFancy(1)))
 
                     # initialize bot
                     elif last_msg.lower().startswith("bot_start"):

@@ -25,19 +25,30 @@
 from pynput import keyboard
 from bot import Bot
 import sys
+import argparse
+ 
+ 
+# Initialize parser
+parser = argparse.ArgumentParser()
+ 
+# Adding optional argument
+parser.add_argument("-c", "--chat", required=True)
+parser.add_argument("-H", "--headless")
+ 
+# Read arguments from command line
+args = parser.parse_args()
 
-if len(sys.argv)<=1:
-    with open('usage.txt', 'r') as f:
-        print(f.read())
+if len(sys.argv) <= 1:
+    print('Not enough arhuments')
+    #with open('usage.txt', 'r') as f:
+    #    print(f.read())
     sys.exit(1)
 else:
-    my_bot = Bot(sys.argv[1], HEADLESS=False)
+    headless = True if args.headless == 'True' or args.headless == 'true' else False
+    my_bot = Bot(args.chat, HEADLESS=headless)
 
 # Keyboard event listener
 listener = keyboard.Listener(on_press=my_bot.on_press)
 listener.start()
 
 my_bot.init_bot()
-
-
-

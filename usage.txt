@@ -6,7 +6,7 @@ DESCRIPTION
     
     First argument is REQUIRED. It is case-sensitive so the name of chat must match with the passed argument.
 
-    -h, --headless 
+    -H, --headless 
         start bot in Headless mode. (No GUI)
 
     --chat-mode=[MALE|FEMALE]
