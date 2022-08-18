@@ -22,17 +22,19 @@ from dotenv import load_dotenv
 import os
 from selenium.webdriver.firefox.options import Options
 
+load_dotenv()
+
 conn_harley = http.client.HTTPSConnection("harley-the-chatbot.p.rapidapi.com")
 headers_harley = {
     'content-type': "application/json",
     'Accept': "application/json",
-    'X-RapidAPI-Key': os.getenv("HARLEY_CHATBOT_API_KEY"),
+    'X-RapidAPI-Key': os.getenv("X_RAPIDAPI_KEY"),
     'X-RapidAPI-Host': "harley-the-chatbot.p.rapidapi.com"
     }
 
 conn_aeona = http.client.HTTPSConnection("aeona3.p.rapidapi.com")
 headers_aeona = {
-    'X-RapidAPI-Key': "85632300dbmsha01f5765f1a7303p18df83jsn83e04aa1780a",
+    'X-RapidAPI-Key': os.getenv("X_RAPIDAPI_KEY"),
     'X-RapidAPI-Host': "aeona3.p.rapidapi.com"
     }
 
@@ -41,13 +43,13 @@ def deemojify(text):
 
 
 class Bot:
+    
     def __init__(self, contact, HEADLESS=False, BOT="female"):
 
         self.contact = contact
         self.HEADLESS = HEADLESS
         self.BOT = BOT
         
-        load_dotenv()
         options = Options()
         options.binary_location = os.getenv('FIREFOX_EXECUTABLE_PATH')
         options.add_argument("--window-size=1920,1080")
@@ -83,6 +85,7 @@ class Bot:
 
     def make_call_harley(self, request):
         
+        url = "https://harley-the-chatbot.p.rapidapi.com/talk/bot"
         payload = {
 	        "client": "",
 	        "bot": "harley",
@@ -97,14 +100,14 @@ class Bot:
         except socket.timeout:
             return "ERR: Slow Internet connect on host"
         except http.client.HTTPException:
+            print('http exception')
             self.make_call_harley(request)
         else:  # no error occurred
             return response.replace('Harley', 'RAZBot').replace('robomatic.ai', 'instagram.com/raz0229')  # replace name and location in response
 
 
     def make_call_aeona(self, request):
-        print("here: call made")
-        conn_aeona.request("GET", f"/?text={slugify(request)}&userId=12312312312", headers=headers_aeona)
+        conn_aeona.request("GET", f"/?text={slugify(request)}&userId={ os.getenv('AEONA_USER_ID') }", headers=headers_aeona)
         
         try:
             res = conn_aeona.getresponse()
@@ -154,7 +157,7 @@ class Bot:
                         if not last_msg.startswith('💀🦇'):
                             print("[INFO] New message: " + last_msg)
                             if self.BOT.lower() == "male":
-                                self.send_message('💀🦇 ' + self.make_call_harley(deemojify(last_msg.strip())))
+                               self.send_message('💀🦇 ' + self.make_call_harley(deemojify(last_msg.strip())))
                             else:
                                 self.send_message('💀🦇 ' + self.make_call_aeona(deemojify(last_msg.strip())))
 

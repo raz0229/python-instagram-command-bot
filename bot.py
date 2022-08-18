@@ -142,7 +142,7 @@ class Bot:
         self.headers = {
             'content-type': "application/json",
             'Accept': "application/json",
-            'X-RapidAPI-Key': os.getenv("HARLEY_CHATBOT_API_KEY"),
+            'X-RapidAPI-Key': os.getenv("X_RAPIDAPI_KEY"),
             'X-RapidAPI-Host': "harley-the-chatbot.p.rapidapi.com"
         }
 
