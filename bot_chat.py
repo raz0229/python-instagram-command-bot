@@ -22,31 +22,6 @@ from dotenv import load_dotenv
 import os
 from selenium.webdriver.firefox.options import Options
 
-load_dotenv()
-options = Options()
-options.binary_location = os.getenv('FIREFOX_EXECUTABLE_PATH')
-options.add_argument("--window-size=1920,1080")
-options.headless = False
-
-profile = FirefoxProfile(os.getenv('FIREFOX_PROFILE_LOCATION'))
-
-# Download block list to block obscene language and insults
-print('[INFO] Downloading blocked keywords list..')
-r = requests.get('https://jsonkeeper.com/b/5ULD') 
-list = r.json()
-
-blocked_list = list['blocked_list']
-blocked_names = list["blocked_names"]
-print('[INFO] Blocklist Loaded into bot')
-
-# Configuration
-FIRST_NAME = os.getenv("FIRST_NAME")
-PATH = os.getenv("GECKODRIVER_PATH")  # path to your downloaded webdriver
-driver = webdriver.Firefox(profile, executable_path=PATH, options=options)
-print('[INFO] Loading your chats...')
-driver.get('https://instagram.com/direct/inbox')
-print("[INFO] " + driver.title + " loaded successfully")  # prints title of the webpage
-
 conn_harley = http.client.HTTPSConnection("harley-the-chatbot.p.rapidapi.com")
 headers_harley = {
     'content-type': "application/json",
@@ -65,44 +40,42 @@ def deemojify(text):
     return emoji.get_emoji_regexp().sub(r'', text)
 
 
-def urlify(text, command, target):
-    slug = slugify(text.lower().replace(command, '').strip(), separator='%20')
-    return f"q={deemojify(slug)}&target={target}"
-
-
-def load_requests(source_url, sink_path):
-    import requests
-    r = requests.get(source_url, stream=True)
-    if r.status_code == 200:
-        with open(sink_path, 'wb') as f:
-            for chunk in r:
-                f.write(chunk)
-
-
-def filter_word(word):
-    res = [ele for ele in blocked_list if (ele in word)]
-    if res:
-        return [res]
-    #if word in blocked_list:
-    #    return [word]
-    word = ''.join(sorted(set(word), key=word.index))
-    res = [ele for ele in blocked_names if (ele in word)]
-    return res
-
-
 class Bot:
-    def __init__(self, contact):
+    def __init__(self, contact, HEADLESS=False, BOT="female"):
+
         self.contact = contact
-        elem = WebDriverWait(driver, 120).until(EC.element_to_be_clickable((By.XPATH, f'//*[text() = "{self.contact}" ]')))
+        self.HEADLESS = HEADLESS
+        self.BOT = BOT
+        
+        load_dotenv()
+        options = Options()
+        options.binary_location = os.getenv('FIREFOX_EXECUTABLE_PATH')
+        options.add_argument("--window-size=1920,1080")
+        options.headless = self.HEADLESS
+
+        profile = FirefoxProfile(os.getenv('FIREFOX_PROFILE_LOCATION'))
+
+        PATH = os.getenv("GECKODRIVER_PATH")  # path to your downloaded webdriver
+        self.driver = webdriver.Firefox(profile, executable_path=PATH, options=options)
+        if self.BOT.lower() == "female":
+            print('[INFO] Chat Mode: Aeona (Female)')
+        else:
+            print('[INFO] Chat Mode: Harley (Male)')
+        print('[INFO] Loading your chats...')
+        self.driver.get('https://instagram.com/direct/inbox')
+        # prints title of the webpage
+        print("[INFO] " + self.driver.title + " loaded successfully")
+
+        elem = WebDriverWait(self.driver, 120).until(EC.element_to_be_clickable((By.XPATH, f'//*[text() = "{self.contact}" ]')))
         try:
-            notification_button = driver.find_element(By.XPATH, "//button[contains(text(), 'Turn On')]")
+            notification_button = self.driver.find_element(By.XPATH, "//button[contains(text(), 'Turn On')]")
             if notification_button:
                 notification_button.click()
         except Exception:
             print('[LOG] Could not locate notification button')
         elem.click()
-        print("[INFO] Bot running on chat: " + self.contact)
-        self.incoming = WebDriverWait(driver, 120).until(
+        print("[INFO] Bot running on chat: " + self.contact + " in Chat Mode")
+        self.incoming = WebDriverWait(self.driver, 120).until(
             EC.visibility_of_all_elements_located((By.CSS_SELECTOR ,'._aacl._aaco._aacu._aacx._aad6._aade')))
         self.received_msgs = len(self.incoming)
         self.running = True
@@ -146,17 +119,17 @@ class Bot:
 
 
     def new_msg_received(self):
-        incoming = driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
+        incoming = self.driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
         if len(incoming) != self.received_msgs:
             return True
         else:
             return False
 
     def send_message(self, text):
-        input_box = driver.find_element(By.CSS_SELECTOR,'textarea')
+        input_box = self.driver.find_element(By.CSS_SELECTOR,'textarea')
         input_box.click()
         input_box.send_keys(text, Keys.RETURN)
-        incoming = driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
+        incoming = self.driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
         self.received_msgs = len(incoming)
 
     def on_press(self, key):
@@ -175,12 +148,15 @@ class Bot:
             if self.new_msg_received():
 
                     try:
-                        self.incoming = driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
+                        self.incoming = self.driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
                         self.received_msgs = len(self.incoming)
                         last_msg = self.incoming[self.received_msgs - 1].text
                         if not last_msg.startswith('💀🦇'):
                             print("[INFO] New message: " + last_msg)
-                            self.send_message('💀🦇 ' + self.make_call_aeona(deemojify(last_msg.strip())))
+                            if self.BOT.lower() == "male":
+                                self.send_message('💀🦇 ' + self.make_call_harley(deemojify(last_msg.strip())))
+                            else:
+                                self.send_message('💀🦇 ' + self.make_call_aeona(deemojify(last_msg.strip())))
 
                     except Exception:
                         last_msg = 'Something exception'

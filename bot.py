@@ -5,11 +5,11 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.firefox.webdriver import FirefoxProfile
 from selenium.webdriver.common.by import By
 from selenium import webdriver
+from waifu_pypics import Waifu
 from pynput import keyboard
 from slugify import slugify
 from fancy import Fancy
 import pyautogui as gui
-from animu import client as acl
 from random import randint
 import time
 import http.client
@@ -20,6 +20,7 @@ from googletrans import Translator
 import socket
 import emoji
 import random
+from quotes import Quotes
 import json
 import urllib.request
 import signal
@@ -34,13 +35,15 @@ from youtube_search import YoutubeSearch
 from dotenv import load_dotenv
 
 translator = Translator()
-waifu = acl.Client(os.getenv('ANIMU_API_TOKEN'))
+waifu = Waifu()
+quotes = Quotes()
 
 # Download block list to block obscene language and insults
 print('[INFO] Downloading blocked keywords list..')
 r = requests.get('https://jsonkeeper.com/b/5ULD')
 list = r.json()
 
+params = ['waifu', 'neko', 'shinobu', 'megumin', 'bully', 'cuddle', 'cry', 'hug', 'awoo', 'kiss', 'lick', 'pat', 'smug', 'bonk', 'yeet', 'blush', 'smile', 'wave', 'highfive', 'handhold', 'nom', 'bite', 'glomp', 'slap', 'kill', 'kick', 'happy', 'wink', 'poke', 'dance', 'cringe']
 blocked_list = list['blocked_list']
 blocked_names = list["blocked_names"]
 print('[INFO] Blocklist Loaded into bot')
@@ -310,8 +313,9 @@ class Bot:
                     # Anime quote
                     elif last_msg.lower().startswith("bot_quote"):
                         try:
-                            quote = asyncio.run(waifu.quote())
-                            self.send_message(quote["quote"])
+                            person, quote = quotes.random()
+                            self.send_message(quote)
+                            self.send_message('~ ' + person)
                         except Exception:
                             self.send_message("🤖🦇 Cannot get Quote due to slow internet")
                     
@@ -342,10 +346,11 @@ class Bot:
                     elif last_msg.lower().startswith("bot_waifu"):
                         self.send_message("🤖🦇 Fetching a hot waifu. This could take a while...")
                         try:
-                            waf = asyncio.run(waifu.waifu())
-                            load_requests(waf["images"][0], "waifu.png")
+                            waf = waifu.get_image(random.choice(params))
+                            load_requests(waf, "waifu.png")
                             os.system("xclip -selection clipboard -t image/png -i " + os.getcwd() + "/waifu.png")
                             self.send_copied_image()
+                            self.send_message(waf)
                         except Exception:
                             self.send_message("🤖🦇 Slow internet while fetching waifu")
 

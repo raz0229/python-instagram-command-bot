@@ -5,8 +5,10 @@ python-dotenv~=0.20.0
 googletrans==4.0.0rc1
 python-slugify~=6.1.2
 selenium~=4.4.0
+quotes~=0.0.3
 youtube-search-python
 youtube-search~=2.1.1
+waifu_pypics
 google-api-python-client~=2.56.0
 pynput~=1.7.6
 animu~=0.1.0
