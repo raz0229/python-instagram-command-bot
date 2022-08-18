@@ -38,6 +38,15 @@ translator = Translator()
 waifu = Waifu()
 quotes = Quotes()
 
+load_dotenv()
+conn_harley = http.client.HTTPSConnection("harley-the-chatbot.p.rapidapi.com")
+headers_harley = {
+    'content-type': "application/json",
+    'Accept': "application/json",
+    'X-RapidAPI-Key': os.getenv("X_RAPIDAPI_KEY"),
+    'X-RapidAPI-Host': "harley-the-chatbot.p.rapidapi.com"
+    }
+
 # Download block list to block obscene language and insults
 print('[INFO] Downloading blocked keywords list..')
 r = requests.get('https://jsonkeeper.com/b/5ULD')
@@ -121,7 +130,6 @@ class Bot:
         self.contact = contact
         self.HEADLESS = HEADLESS
         
-        load_dotenv()
         options = Options()
         options.binary_location = os.getenv('FIREFOX_EXECUTABLE_PATH')
         options.add_argument("--window-size=1920,1080")
@@ -137,14 +145,6 @@ class Bot:
         self.driver.get('https://instagram.com/direct/inbox')
         # prints title of the webpage
         print("[INFO] " + self.driver.title + " loaded successfully")
-
-        self.conn = http.client.HTTPSConnection("harley-the-chatbot.p.rapidapi.com")
-        self.headers = {
-            'content-type': "application/json",
-            'Accept': "application/json",
-            'X-RapidAPI-Key': os.getenv("X_RAPIDAPI_KEY"),
-            'X-RapidAPI-Host': "harley-the-chatbot.p.rapidapi.com"
-        }
 
         elem = WebDriverWait(self.driver, 120).until(EC.element_to_be_clickable((By.XPATH, f'//*[text() = "{self.contact}" ]')))
         try:
@@ -163,6 +163,7 @@ class Bot:
 
     def make_call(self, request):
         
+        url = "https://harley-the-chatbot.p.rapidapi.com/talk/bot"
         payload = {
 	        "client": "",
 	        "bot": "harley",
@@ -170,13 +171,14 @@ class Bot:
         }
 
         try:
-            self.conn.request("POST", "/talk/bot", json.dumps(payload), self.headers)
-            res = self.conn.getresponse()
+            conn_harley.request("POST", "/talk/bot", json.dumps(payload), headers_harley)
+            res = conn_harley.getresponse()
             data = res.read()
             response = json.loads(data.decode("utf-8"))['data']['conversation']['output']
         except socket.timeout:
             return "ERR: Slow Internet connect on host"
         except http.client.HTTPException:
+            print('http exception')
             self.make_call(request)
         else:  # no error occurred
             return response.replace('Harley', 'RAZBot').replace('robomatic.ai', 'instagram.com/raz0229')  # replace name and location in response
