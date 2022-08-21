@@ -4,24 +4,24 @@ The bot in *Standard Mode* comes with a total of 12 commands and only responds w
 
 ## 🦇🤖 Commands
 
- 1. **BOT_ASK _something_**
+ 1. **BOT_ASK _something_** \
 	 Responds to the user using either Aeona or Harley.
 	 
- 2. **BOT_ENGLISH _bonjour_**
+ 2. **BOT_ENGLISH _bonjour_** \
  Detects language and translates the passed text to English using Google Translate.
- 3. **BOT_URDU _hello_**
+ 3. **BOT_URDU _hello_** \
  Detects language and translates the passed text to Urdu using Google Translate. 
- 4. **BOT_PASHTO _hello_**
+ 4. **BOT_PASHTO _hello_** \
  Detects language and translates the passed text to Pashto using Google Translate.
- 5. **BOT_WIKI _donald trump_**
+ 5. **BOT_WIKI _donald trump_** \
  Searches Wikipedia for the passed argument and sends a 9 lines description of it.
- 6. **BOT_FANCY _your name_**
+ 6. **BOT_FANCY _your name_** \
  Spams the DM with 24 different ASCII styled variants of passed argument.
- 7. **BOT_QUOTE**
+ 7. **BOT_QUOTE** \
  Sends a random quote of a famous personality using _'quotes'_ PyPi package.
- 8. **BOT_WAIFU**
+ 8. **BOT_WAIFU** \
  Sends image of an SFW Waifu (by default) using _'waifu_pypics'_ PyPi package.
- 9. **BOT_INSULT _your name_**
+ 9. **BOT_INSULT _your name_** \
  Throws a random insult of the name passed using _'insults.txt'_ in the root of your project.
  
 
