@@ -76,12 +76,13 @@ The bot in *Standard Mode* comes with a total of 12 commands and only responds w
  - Sign up for [RapidAPI](https://rapidapi.com), then create a `.env` file in the root of your project.
  `touch .env`
  
-    FIRST_NAME=""
-	FIREFOX_EXECUTABLE_PATH=""
-	FIREFOX_PROFILE_LOCATION=""
-	GECKODRIVER_PATH=""
-	X_RAPIDAPI_KEY=""
-	AEONA_USER_ID=""
-	GOOGLE_CUSTOM_SEARCH_DEVELOPER_KEY=""
-	GOOGLE_CUSTOM_SEARCH_CX=""
+ 	In `.env` file, we need to set these environment variables:
+	`FIRST_NAME=""`
+	`FIREFOX_EXECUTABLE_PATH=""`
+	`FIREFOX_PROFILE_LOCATION=""`
+	`GECKODRIVER_PATH=""`
+	`X_RAPIDAPI_KEY=""`
+	`AEONA_USER_ID=""`
+	`GOOGLE_CUSTOM_SEARCH_DEVELOPER_KEY=""`
+	`GOOGLE_CUSTOM_SEARCH_CX=""`
 
