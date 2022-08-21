@@ -73,6 +73,8 @@ The bot in *Standard Mode* comes with a total of 12 commands and only responds w
  - Clone the repository and `cd` into it. \
  `git clone https://github.com/raz0229/python-instagram-command-bot.git`
   `cd python-instagram-command-bot`
+ - Install all the dependencies \
+ `pip install -r requirements.txt`
  - Sign up for [RapidAPI](https://rapidapi.com), then create a `.env` file in the root of your project.
  `touch .env`
  
