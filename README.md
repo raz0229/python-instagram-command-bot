@@ -105,5 +105,5 @@ The bot in *Standard Mode* comes with a total of 12 commands and only responds w
 - To find, your `GOOGLE_CUSTOM_SEARCH_DEVELOPER_KEY` and `GOOGLE_CUSTOM_SEARCH_CX`: \
     https://console.cloud.google.com/marketplace/product/google/customsearch.googleapis.com
 
-- `FIREFOX_PROFILE_LOCATION` would be somewhere in `%APPDATA%` for Windows and `$HOME/.mozilla/firefox` in Linux
-    https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles#w_creating-a-profile
+- `FIREFOX_PROFILE_LOCATION` would be somewhere in `%APPDATA%` for Windows and `$HOME/.mozilla/firefox` in Linux \
+    https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles#w_creating-a-profile`
