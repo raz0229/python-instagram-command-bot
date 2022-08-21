@@ -70,7 +70,7 @@ The bot in *Standard Mode* comes with a total of 12 commands and only responds w
 
 ## ⚙️ Configuration and Run
 
- - Clone the repository and `cd` into it.
+ - Clone the repository and `cd` into it. \
  `git clone https://github.com/raz0229/python-instagram-command-bot.git`
   `cd python-instagram-command-bot`
  - Sign up for [RapidAPI](https://rapidapi.com), then create a `.env` file in the root of your project.
@@ -86,4 +86,4 @@ The bot in *Standard Mode* comes with a total of 12 commands and only responds w
 	AEONA_USER_ID=""
 	GOOGLE_CUSTOM_SEARCH_DEVELOPER_KEY=""
 	GOOGLE_CUSTOM_SEARCH_CX=""
-```
+```env
