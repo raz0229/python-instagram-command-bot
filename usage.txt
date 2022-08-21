@@ -2,21 +2,25 @@
 Usage: main.py [Case-sensitive chat name] [OPTION]...
 
 DESCRIPTION
-    Instagram command bot. 
+    Instagram command bot and chat bot. 
     
-    First argument is REQUIRED. It is case-sensitive so the name of chat must match with the passed argument.
+    -c, --chat
+        This argument is REQUIRED. It is case-sensitive so the name of chat must match with the passed argument.
 
     -H, --headless 
         start bot in Headless mode. (No GUI)
 
-    --chat-mode=[MALE|FEMALE]
+    -C, --chatmode=[MALE|FEMALE]
         start bot in Chat mode. (Respond to all messages by default)
         --chat-mode=MALE : Talk to Harley
         --chat-mode=FEMALE : Talk to Aeona
 
 EXAMPLES
-    python main.py "Chat Name"
-        command bot is activated for chat "Chat Name"
+    python main.py -c "Chat Name"
+        command bot is activated for chat "Chat Name".
 
-    python main.py "Chat Name" --chat-mode=FEMALE
+    python main.py -c "Chat Name" --chatmode=FEMALE
         chat bot is activated for "Chat Name" for Aeona.
+
+    python main.py -c "Chat Name" --chatmode=MALE --headless=True
+        chat bot is activated for "Chat Name" for Harley in headless mode.
