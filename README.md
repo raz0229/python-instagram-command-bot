@@ -68,4 +68,21 @@ The bot in *Standard Mode* comes with a total of 12 commands and only responds w
         chat bot is activated for "Chat Name" for Harley in headless mode.
 
 
-## ⚙️ Configuration and Run 
+## ⚙️ Configuration and Run
+
+ - Clone the repository and `cd` into it.
+ `git clone https://github.com/raz0229/python-instagram-command-bot.git`
+  `cd python-instagram-command-bot`
+ - Sign up for [RapidAPI](https://rapidapi.com), then create a `.env` file in the root of your project.
+ `touch .env`
+ 
+
+    FIRST_NAME=""
+	FIREFOX_EXECUTABLE_PATH=""
+	FIREFOX_PROFILE_LOCATION=""
+	GECKODRIVER_PATH=""
+	X_RAPIDAPI_KEY=""
+	AEONA_USER_ID=""
+	GOOGLE_CUSTOM_SEARCH_DEVELOPER_KEY=""
+	GOOGLE_CUSTOM_SEARCH_CX=""
+
