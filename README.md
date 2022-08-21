@@ -96,7 +96,7 @@ The bot in *Standard Mode* comes with a total of 12 commands and only responds w
 
 ### 🔗 Useful Links
 
-    - To find your `X_RAPIDAPI_KEY`: \
+- To find your `X_RAPIDAPI_KEY`: \
     https://docs.rapidapi.com/docs/keys
 
-    - 
+- 
