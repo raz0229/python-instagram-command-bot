@@ -84,8 +84,8 @@ The bot in *Standard Mode* comes with a total of 12 commands and only responds w
  
  In `.env` file, we need to set these environment variables:
  ```
-    FIRST_NAME=""
-	FIREFOX_EXECUTABLE_PATH=""
+    FIRST_NAME="Raz"
+	FIREFOX_EXECUTABLE_PATH="/usr/bin/firefox"
 	FIREFOX_PROFILE_LOCATION=""
 	GECKODRIVER_PATH=""
 	X_RAPIDAPI_KEY=""
@@ -99,4 +99,10 @@ The bot in *Standard Mode* comes with a total of 12 commands and only responds w
 - To find your `X_RAPIDAPI_KEY`: \
     https://docs.rapidapi.com/docs/keys
 
-- 
+- To find, your `AEONA_USER_ID`: \
+    https://rapidapi.com/multiii/api/aeona3/
+
+- To find, your `GOOGLE_CUSTOM_SEARCH_DEVELOPER_KEY` and `GOOGLE_CUSTOM_SEARCH_CX`: \
+    https://console.cloud.google.com/marketplace/product/google/customsearch.googleapis.com
+
+- `FIREFOX_PROFILE_LOCATION` would be somewhere in `%APPDATA%` for Windows and `$HOME/.mozilla/firefox` in Linux
