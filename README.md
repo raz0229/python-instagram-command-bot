@@ -75,6 +75,10 @@ The bot in *Standard Mode* comes with a total of 12 commands and only responds w
   `cd python-instagram-command-bot`
  - Install all the dependencies \
  `pip install -r requirements.txt`
+ - Download Geckodriver(https://github.com/mozilla/geckodriver/releases) for your FireFox web browser.
+
+ > ( Mozilla Firefox browser is required )
+
  - Sign up for [RapidAPI](https://rapidapi.com), then create a `.env` file in the root of your project.
  `touch .env`
  
@@ -90,4 +94,9 @@ The bot in *Standard Mode* comes with a total of 12 commands and only responds w
 	GOOGLE_CUSTOM_SEARCH_CX=""
 ```
 
-### Useful Links
+### 🔗 Useful Links
+
+    - To find your `X_RAPIDAPI_KEY`: \
+    https://docs.rapidapi.com/docs/keys
+
+    - 
