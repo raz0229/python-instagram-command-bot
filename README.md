@@ -106,3 +106,4 @@ The bot in *Standard Mode* comes with a total of 12 commands and only responds w
     https://console.cloud.google.com/marketplace/product/google/customsearch.googleapis.com
 
 - `FIREFOX_PROFILE_LOCATION` would be somewhere in `%APPDATA%` for Windows and `$HOME/.mozilla/firefox` in Linux
+    https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles#w_creating-a-profile
