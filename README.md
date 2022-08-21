@@ -76,7 +76,6 @@ The bot in *Standard Mode* comes with a total of 12 commands and only responds w
  - Sign up for [RapidAPI](https://rapidapi.com), then create a `.env` file in the root of your project.
  `touch .env`
  
-
     FIRST_NAME=""
 	FIREFOX_EXECUTABLE_PATH=""
 	FIREFOX_PROFILE_LOCATION=""
