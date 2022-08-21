@@ -27,12 +27,12 @@ The bot in *Standard Mode* comes with a total of 12 commands and only responds w
 
 > Add or remove insults from _'insults.txt'_ and replace the generic name with _XXX_.
 
- 11. **BOT_PICKUP**
+ 11. **BOT_PICKUP**  \
  Throws a random pickup line from _'pickup.txt'_ in the root of your project.
- 12. **BOT_IMAGE _butterfly_**
+ 12. **BOT_IMAGE _butterfly_**  \
  Sends an image of the argument passed using Google Custom Search API.
  
- 13. **BOT_YT _lovely song_**
+ 13. **BOT_YT _lovely song_**  \
  Sends link and description of the passed argument using _'youtube-search'_ PyPi package. 
  
  
