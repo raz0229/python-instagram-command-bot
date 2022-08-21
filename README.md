@@ -1,8 +1,8 @@
-﻿# Python Instagram Command Bot
+﻿# 🤖 Python Instagram Command Bot
 This repository is a fork of [Python WhatsApp Chatbot](https://github.com/raz0229/python-whatsapp-chatbot) built using Selenium and some 3rd party APIs from [RapidAPI](https://rapidapi.com) originally made to talk to your DMs on Instagram and give automatic replies but this feature has been confined to a separate mode i.e. *Chat Mode*.
 The bot in *Standard Mode* comes with a total of 12 commands and only responds when triggered in your chats.
 
-## Commands
+## 🦇🤖 Commands
 
  1. **BOT_ASK _something_**
 	 Responds to the user using either Aeona or Harley.
@@ -39,7 +39,7 @@ The bot in *Standard Mode* comes with a total of 12 commands and only responds w
 
 > (All the commands listed here and CASE-INSENSITIVE) 
 
-## Usage
+## ❓ Usage
 
     Usage: main.py [Case-sensitive chat name] [OPTION]...
 
@@ -67,3 +67,5 @@ The bot in *Standard Mode* comes with a total of 12 commands and only responds w
     python main.py -c "Chat Name" --chatmode=MALE --headless=True
         chat bot is activated for "Chat Name" for Harley in headless mode.
 
+
+## ⚙️ Configuration and Run 
