@@ -71,7 +71,7 @@ The bot in *Standard Mode* comes with a total of 12 commands and only responds w
 ## ⚙️ Configuration and Run
 
  - Clone the repository and `cd` into it. \
- `git clone https://github.com/raz0229/python-instagram-command-bot.git`
+ `git clone https://github.com/raz0229/python-instagram-command-bot.git` \
   `cd python-instagram-command-bot`
  - Install all the dependencies \
  `pip install -r requirements.txt`
