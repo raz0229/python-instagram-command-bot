@@ -17936,3 +17936,856 @@ console.error: "Error during quit-application-granted: [Exception... \"File erro
 1661009050724	Sync.ErrorHandler	ERROR	Sync encountered an error: Error: Aborting sync, remote setup failed(resource://services-sync/stages/enginesync.js:96:13) JS Stack trace: sync@enginesync.js:96:13
 console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
 JavaScript error: resource:///modules/BrowserGlue.jsm, line 4738: TypeError: can't access property "document", win is null
+1661357475304	geckodriver	INFO	Listening on 127.0.0.1:34525
+1661357477505	mozrunner::runner	INFO	Running command: "/bin/firefox-developer-edition" "--marionette" "--window-size=1920,1080" "--remote-debugging-port" "52875" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileO9pdYE"
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:17.564: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:17.564: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:17.564: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:17.564: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:17.564: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:17.564: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:18.048: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:18.048: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:18.048: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:18.048: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:18.048: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:18.048: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:18.147: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:18.147: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:18.147: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:18.147: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:18.147: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:18.148: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:18.186: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:18.186: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:18.186: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:18.186: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:18.186: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:6233): Gtk-WARNING **: 21:11:18.186: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1661357478394	Marionette	INFO	Marionette enabled
+1661357478399	Marionette	INFO	Listening on port 45337
+Read port: 45337
+WebDriver BiDi listening on ws://localhost:52875
+1661357478562	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: SessionStore: "The session file is invalid: TypeError: can't access property \"windows\", state is null"
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+JavaScript warning: moz-extension://4607a33e-7aed-4332-926d-d3c50baa05d9/lib/filter/antibanner.js, line 1164: unreachable code after return statement
+DevTools listening on ws://localhost:52875/devtools/browser/2113502f-9087-4d0d-a854-592fa508ad99
+JavaScript warning: moz-extension://4607a33e-7aed-4332-926d-d3c50baa05d9/lib/filter/antibanner.js, line 1164: unreachable code after return statement
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 580: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iNuP4/yA/l/en_US/-jeZQT6bhwe9hB7SOXIBVNsccnIapmovXOr9SYYbtTdizIamkz7iwVrhpwWdLO1rTFLHyK1FzruxCqzh_YEkY2EnT2PVl79CMEbrZJRNPKv2Olqp-Gahdmo0xPLIVPhM9pn_RHk7KQJFAfauiVbcBuG_VOiiL8cOqu0SRLPE32dUYRpM5uGvkJawv5t.js?_nc_x=Ij3Wp8lg5Kz, line 829: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iNuP4/yA/l/en_US/-jeZQT6bhwe9hB7SOXIBVNsccnIapmovXOr9SYYbtTdizIamkz7iwVrhpwWdLO1rTFLHyK1FzruxCqzh_YEkY2EnT2PVl79CMEbrZJRNPKv2Olqp-Gahdmo0xPLIVPhM9pn_RHk7KQJFAfauiVbcBuG_VOiiL8cOqu0SRLPE32dUYRpM5uGvkJawv5t.js?_nc_x=Ij3Wp8lg5Kz, line 829: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iNuP4/yA/l/en_US/-jeZQT6bhwe9hB7SOXIBVNsccnIapmovXOr9SYYbtTdizIamkz7iwVrhpwWdLO1rTFLHyK1FzruxCqzh_YEkY2EnT2PVl79CMEbrZJRNPKv2Olqp-Gahdmo0xPLIVPhM9pn_RHk7KQJFAfauiVbcBuG_VOiiL8cOqu0SRLPE32dUYRpM5uGvkJawv5t.js?_nc_x=Ij3Wp8lg5Kz, line 1173: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iNuP4/yA/l/en_US/-jeZQT6bhwe9hB7SOXIBVNsccnIapmovXOr9SYYbtTdizIamkz7iwVrhpwWdLO1rTFLHyK1FzruxCqzh_YEkY2EnT2PVl79CMEbrZJRNPKv2Olqp-Gahdmo0xPLIVPhM9pn_RHk7KQJFAfauiVbcBuG_VOiiL8cOqu0SRLPE32dUYRpM5uGvkJawv5t.js?_nc_x=Ij3Wp8lg5Kz, line 1173: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iNuP4/yA/l/en_US/-jeZQT6bhwe9hB7SOXIBVNsccnIapmovXOr9SYYbtTdizIamkz7iwVrhpwWdLO1rTFLHyK1FzruxCqzh_YEkY2EnT2PVl79CMEbrZJRNPKv2Olqp-Gahdmo0xPLIVPhM9pn_RHk7KQJFAfauiVbcBuG_VOiiL8cOqu0SRLPE32dUYRpM5uGvkJawv5t.js?_nc_x=Ij3Wp8lg5Kz, line 1173: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iqcA4/yp/l/en_US/Ti0uFq3fThZ.js?_nc_x=Ij3Wp8lg5Kz, line 40: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofileO9pdYE/thumbnails) because it does not exist
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iUKx4/yg/l/en_US/-jeZQT6bhwe9hB7SOXIBVNsccnIapmovXOr9SYYbtTdipEskUmOTVU1hpwWdLO1rTFLHyK1FzruxCqzh_YEkY2EnT2PVl79CMEbmxtyNnRpucbrZJRNPKv2Olqp-Gahdmo0xPLIVPhM9pn_RHk7KQJFAfauiVbcBuG_VOY9Bu9mPclkSiiL8cOqu0SRLPE32dUYRpM5uGvkJawv5tywrLkuk588iqnWmYRg2smDBhxge4IGlQ1eH9oFe0X2rCAkljpYFOaE8n5KJIBGRCuA1gSHyXlV-lWAYZLajFganPQ7ZYDv8NPYi.js?_nc_x=Ij3Wp8lg5Kz, line 829: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iUKx4/yg/l/en_US/-jeZQT6bhwe9hB7SOXIBVNsccnIapmovXOr9SYYbtTdipEskUmOTVU1hpwWdLO1rTFLHyK1FzruxCqzh_YEkY2EnT2PVl79CMEbmxtyNnRpucbrZJRNPKv2Olqp-Gahdmo0xPLIVPhM9pn_RHk7KQJFAfauiVbcBuG_VOY9Bu9mPclkSiiL8cOqu0SRLPE32dUYRpM5uGvkJawv5tywrLkuk588iqnWmYRg2smDBhxge4IGlQ1eH9oFe0X2rCAkljpYFOaE8n5KJIBGRCuA1gSHyXlV-lWAYZLajFganPQ7ZYDv8NPYi.js?_nc_x=Ij3Wp8lg5Kz, line 829: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iUKx4/yg/l/en_US/-jeZQT6bhwe9hB7SOXIBVNsccnIapmovXOr9SYYbtTdipEskUmOTVU1hpwWdLO1rTFLHyK1FzruxCqzh_YEkY2EnT2PVl79CMEbmxtyNnRpucbrZJRNPKv2Olqp-Gahdmo0xPLIVPhM9pn_RHk7KQJFAfauiVbcBuG_VOY9Bu9mPclkSiiL8cOqu0SRLPE32dUYRpM5uGvkJawv5tywrLkuk588iqnWmYRg2smDBhxge4IGlQ1eH9oFe0X2rCAkljpYFOaE8n5KJIBGRCuA1gSHyXlV-lWAYZLajFganPQ7ZYDv8NPYi.js?_nc_x=Ij3Wp8lg5Kz, line 1173: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iUKx4/yg/l/en_US/-jeZQT6bhwe9hB7SOXIBVNsccnIapmovXOr9SYYbtTdipEskUmOTVU1hpwWdLO1rTFLHyK1FzruxCqzh_YEkY2EnT2PVl79CMEbmxtyNnRpucbrZJRNPKv2Olqp-Gahdmo0xPLIVPhM9pn_RHk7KQJFAfauiVbcBuG_VOY9Bu9mPclkSiiL8cOqu0SRLPE32dUYRpM5uGvkJawv5tywrLkuk588iqnWmYRg2smDBhxge4IGlQ1eH9oFe0X2rCAkljpYFOaE8n5KJIBGRCuA1gSHyXlV-lWAYZLajFganPQ7ZYDv8NPYi.js?_nc_x=Ij3Wp8lg5Kz, line 1173: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iUKx4/yg/l/en_US/-jeZQT6bhwe9hB7SOXIBVNsccnIapmovXOr9SYYbtTdipEskUmOTVU1hpwWdLO1rTFLHyK1FzruxCqzh_YEkY2EnT2PVl79CMEbmxtyNnRpucbrZJRNPKv2Olqp-Gahdmo0xPLIVPhM9pn_RHk7KQJFAfauiVbcBuG_VOY9Bu9mPclkSiiL8cOqu0SRLPE32dUYRpM5uGvkJawv5tywrLkuk588iqnWmYRg2smDBhxge4IGlQ1eH9oFe0X2rCAkljpYFOaE8n5KJIBGRCuA1gSHyXlV-lWAYZLajFganPQ7ZYDv8NPYi.js?_nc_x=Ij3Wp8lg5Kz, line 1173: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iqcA4/yp/l/en_US/Ti0uFq3fThZ.js?_nc_x=Ij3Wp8lg5Kz, line 40: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.412316860716
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 2013\"  data: no]"
+1661358212433	Marionette	INFO	Stopped listening on port 45337
+1661358212522	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+[2022-08-24T16:23:32Z ERROR glean_core] Can't persist ping lifetime data: Error { kind: Rkv(IoError(Os { code: 2, kind: NotFound, message: "No such file or directory" })) }
+1661358216680	geckodriver	INFO	Listening on 127.0.0.1:49605
+1661358218077	mozrunner::runner	INFO	Running command: "/bin/firefox-developer-edition" "--marionette" "--window-size=1920,1080" "--remote-debugging-port" "56547" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileDwpQsa"
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.125: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.125: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.125: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.125: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.125: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.125: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.345: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.345: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.345: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.345: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.345: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.345: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.442: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.442: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.442: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.442: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.442: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.442: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.481: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.481: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.482: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.482: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.482: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:9970): Gtk-WARNING **: 21:23:38.482: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1661358218658	Marionette	INFO	Marionette enabled
+1661358218661	Marionette	INFO	Listening on port 35911
+WebDriver BiDi listening on ws://localhost:56547
+Read port: 35911
+1661358218757	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: SessionStore: "The session file is invalid: TypeError: can't access property \"windows\", state is null"
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+JavaScript warning: moz-extension://4607a33e-7aed-4332-926d-d3c50baa05d9/lib/filter/antibanner.js, line 1164: unreachable code after return statement
+DevTools listening on ws://localhost:56547/devtools/browser/b47e0d84-31ac-4a1f-93a5-c5ed5a1b1ae0
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 580: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: moz-extension://4607a33e-7aed-4332-926d-d3c50baa05d9/lib/filter/antibanner.js, line 1164: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iNuP4/yr/l/en_US/-jeZQT6bhwe9hB7SOXIBVNsccnIapmovXOr9SYYbtTdipEskUmOTVU1hpwWdLO1rTFLHyK1FzruxCqzh_YEkY2EnT2PVl79CMEbrZJRNPKv2Olqp-Gahdmo0xPLIVPhM9pn_RHk7KQJFAfauiVbcBuG_VOiiL8cOqu0SRLPE32dUYRpM5uGvkJawv5t.js?_nc_x=Ij3Wp8lg5Kz, line 829: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iNuP4/yr/l/en_US/-jeZQT6bhwe9hB7SOXIBVNsccnIapmovXOr9SYYbtTdipEskUmOTVU1hpwWdLO1rTFLHyK1FzruxCqzh_YEkY2EnT2PVl79CMEbrZJRNPKv2Olqp-Gahdmo0xPLIVPhM9pn_RHk7KQJFAfauiVbcBuG_VOiiL8cOqu0SRLPE32dUYRpM5uGvkJawv5t.js?_nc_x=Ij3Wp8lg5Kz, line 829: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iNuP4/yr/l/en_US/-jeZQT6bhwe9hB7SOXIBVNsccnIapmovXOr9SYYbtTdipEskUmOTVU1hpwWdLO1rTFLHyK1FzruxCqzh_YEkY2EnT2PVl79CMEbrZJRNPKv2Olqp-Gahdmo0xPLIVPhM9pn_RHk7KQJFAfauiVbcBuG_VOiiL8cOqu0SRLPE32dUYRpM5uGvkJawv5t.js?_nc_x=Ij3Wp8lg5Kz, line 1173: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iNuP4/yr/l/en_US/-jeZQT6bhwe9hB7SOXIBVNsccnIapmovXOr9SYYbtTdipEskUmOTVU1hpwWdLO1rTFLHyK1FzruxCqzh_YEkY2EnT2PVl79CMEbrZJRNPKv2Olqp-Gahdmo0xPLIVPhM9pn_RHk7KQJFAfauiVbcBuG_VOiiL8cOqu0SRLPE32dUYRpM5uGvkJawv5t.js?_nc_x=Ij3Wp8lg5Kz, line 1173: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iNuP4/yr/l/en_US/-jeZQT6bhwe9hB7SOXIBVNsccnIapmovXOr9SYYbtTdipEskUmOTVU1hpwWdLO1rTFLHyK1FzruxCqzh_YEkY2EnT2PVl79CMEbrZJRNPKv2Olqp-Gahdmo0xPLIVPhM9pn_RHk7KQJFAfauiVbcBuG_VOiiL8cOqu0SRLPE32dUYRpM5uGvkJawv5t.js?_nc_x=Ij3Wp8lg5Kz, line 1173: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iqcA4/yp/l/en_US/Ti0uFq3fThZ.js?_nc_x=Ij3Wp8lg5Kz, line 40: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661358298309	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofileDwpQsa/thumbnails) because it does not exist
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.412316860710
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 2013\"  data: no]"
+1661359676323	Marionette	INFO	Stopped listening on port 35911
+1661440350449	geckodriver	INFO	Listening on 127.0.0.1:56163
+1661440352596	mozrunner::runner	INFO	Running command: "/bin/firefox-developer-edition" "--marionette" "--window-size=1920,1080" "--remote-debugging-port" "51743" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileXD4WsA"
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:32.651: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:32.651: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:32.651: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:32.651: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:32.651: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:32.651: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:33.084: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:33.084: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:33.084: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:33.084: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:33.084: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:33.084: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:33.177: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:33.178: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:33.178: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:33.178: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:33.178: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:33.178: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:33.218: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:33.218: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:33.218: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:33.218: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:33.218: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3190): Gtk-WARNING **: 20:12:33.218: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1661440353430	Marionette	INFO	Marionette enabled
+1661440353435	Marionette	INFO	Listening on port 45911
+WebDriver BiDi listening on ws://localhost:51743
+Read port: 45911
+1661440353582	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: SessionStore: "The session file is invalid: TypeError: can't access property \"windows\", state is null"
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+JavaScript warning: moz-extension://4607a33e-7aed-4332-926d-d3c50baa05d9/lib/filter/antibanner.js, line 1164: unreachable code after return statement
+DevTools listening on ws://localhost:51743/devtools/browser/d8631cfa-9e51-430b-939e-3b61f16b025c
+JavaScript warning: moz-extension://4607a33e-7aed-4332-926d-d3c50baa05d9/lib/filter/antibanner.js, line 1164: unreachable code after return statement
+JavaScript error: resource://gre/modules/ExtensionContent.jsm, line 580: TypeError: PrecompiledScript.executeInGlobal: Argument 1 is not an object.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3imJV4/yE/l/en_US/dcuTIZrvnPr.js?_nc_x=Ij3Wp8lg5Kz, line 841: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3imJV4/yE/l/en_US/dcuTIZrvnPr.js?_nc_x=Ij3Wp8lg5Kz, line 841: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3imJV4/yE/l/en_US/dcuTIZrvnPr.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3imJV4/yE/l/en_US/dcuTIZrvnPr.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3imJV4/yE/l/en_US/dcuTIZrvnPr.js?_nc_x=Ij3Wp8lg5Kz, line 1174: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3ixjF4/y7/l/en_US/4RppimFTGgEJoUFFLaHorvK6_B6xhdTNi4sYxRSN6dbqpEskUmOTVU1IYyA9JxvDok4bUJ6KiLWSg36rztoSbich5OckFzaoUijKMi2JuhVX9MW4tHC1BYRmjlnRo-sPlb7QmV_y726GaCZYss3A6sdRJKg6SfZKyJGRpxDM9sdQAr2HjajAVkBLlLfjgu5G8cdneYfqVf36FuG07SKvprgI__Iyquv1EPuUxuwQzZFtGaqaRv.js?_nc_x=Ij3Wp8lg5Kz, line 1151: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofileXD4WsA/thumbnails) because it does not exist
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.412316860711
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 2013\"  data: no]"
+1661440815832	Marionette	INFO	Stopped listening on port 45911
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://services-sync/engines/extension-storage.js, line 54: TypeError: can't access property "get", lazy.Svc.Prefs is undefined
+1661603132530	geckodriver	INFO	Listening on 127.0.0.1:42245
+1661603134776	mozrunner::runner	INFO	Running command: "/bin/firefox-developer-edition" "--marionette" "--window-size=1920,1080" "--remote-debugging-port" "35795" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileIxw28E"
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:34.842: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:34.842: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:34.842: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:34.842: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:34.842: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:34.842: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:36.016: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:36.016: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:36.016: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:36.016: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:36.016: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:36.016: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:36.126: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:36.126: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:36.126: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:36.126: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:36.126: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:36.126: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:36.174: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:36.174: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:36.174: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:36.174: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:36.174: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3203): Gtk-WARNING **: 17:25:36.174: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1661603136398	Marionette	INFO	Marionette enabled
+1661603136402	Marionette	INFO	Listening on port 45707
+Read port: 45707
+WebDriver BiDi listening on ws://127.0.0.1:35795
+1661603136575	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://4607a33e-7aed-4332-926d-d3c50baa05d9/lib/filter/antibanner.js, line 1164: unreachable code after return statement
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://127.0.0.1:35795/devtools/browser/3c22fd40-ce1e-4d21-9e28-7d3af361d128
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 307: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 842: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 842: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 1176: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 1176: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 1176: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iyWw4/yh/l/en_US/JaPxTGpv9ly49QpNLO-_P1BeGgprjG_znzIamkz7iwVr8u3oeXbPEsN4bUJ6KiLWSg-CDAhgWKWst36rztoSbich5OckFzaoUijKMi2JuhVX9MW4tHC1BYRmjYss3A6sdRJKX_5DP5PMu05oz79oKhdplZxDM9sdQAr2HjajAVkBLlLfxJvRTpm1_gjV_ZGSwnM8PdivvKhwouk083hLXS0jjpx-fqVf36FuG07quv1EPuUxuwQzZFtGaqaRv.js?_nc_x=Ij3Wp8lg5Kz, line 1102: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofileIxw28E/thumbnails) because it does not exist
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 842: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 842: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 1176: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 1176: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 1176: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iyWw4/yo/l/en_US/JaPxTGpv9ly49QpNLO-_P1BeGgprjG_znpEskUmOTVU18u3oeXbPEsN4bUJ6KiLWSg-CDAhgWKWst36rztoSbich5OckFzaoUijKMi2JuhVX9MW4tHC1BYRmjYss3A6sdRJKX_5DP5PMu05oz79oKhdplZxDM9sdQAr2HjajAVkBLlLfxJvRTpm1_gjV_ZGSwnM8PdivvKhwouk083hLXS0jjpx-fqVf36FuG07quv1EPuUxuwQzZFtGaqaRv.js?_nc_x=Ij3Wp8lg5Kz, line 1102: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Parent 3203, Main Thread] WARNING: ContentParent: id=7f74e39ec500 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+[Parent 3203, Main Thread] WARNING: ContentParent: id=7f74e3916700 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+[Parent 3203, Main Thread] WARNING: ContentParent: id=7f74ca594700 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+[Parent 3203, Main Thread] WARNING: ContentParent: id=7f74e390a100 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953486
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 2009\"  data: no]"
+1661603550789	Marionette	INFO	Stopped listening on port 45707
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 3203, Main Thread] WARNING: ContentParent: id=7f74e3916700 - BlockShutdown: CanSend.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3671
+[Parent 3203, Main Thread] WARNING: ContentParent: id=7f74e3916700 - ShutDownProcess: Sent shutdown message.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:1803
+[Parent 3203, Main Thread] WARNING: ContentParent: id=7f74e3916700 - ShutDownProcess: Closing channel.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:1843
+[Parent 3203, Main Thread] WARNING: ContentParent: id=7f74e3916700 - RemoveShutdownBlockers: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3786
+1661603557517	geckodriver	INFO	Listening on 127.0.0.1:41399
+1661603558933	mozrunner::runner	INFO	Running command: "/bin/firefox-developer-edition" "--marionette" "--window-size=1920,1080" "--remote-debugging-port" "51315" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilepFSifD"
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:38.984: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:38.984: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:38.984: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:38.984: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:38.984: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:38.984: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:39.824: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:39.824: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:39.824: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:39.824: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:39.824: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:39.824: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:39.930: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:39.930: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:39.930: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:39.930: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:39.930: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:39.930: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:39.974: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:39.974: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:39.974: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:39.974: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:39.974: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:3894): Gtk-WARNING **: 17:32:39.974: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1661603560165	Marionette	INFO	Marionette enabled
+1661603560168	Marionette	INFO	Listening on port 44957
+Read port: 44957
+WebDriver BiDi listening on ws://127.0.0.1:51315
+1661603560327	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://4607a33e-7aed-4332-926d-d3c50baa05d9/lib/filter/antibanner.js, line 1164: unreachable code after return statement
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://127.0.0.1:51315/devtools/browser/8ee47408-ab89-43d9-a73d-970422c46669
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 307: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 842: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 842: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 1176: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 1176: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 1176: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iyWw4/yh/l/en_US/JaPxTGpv9ly49QpNLO-_P1BeGgprjG_znzIamkz7iwVr8u3oeXbPEsN4bUJ6KiLWSg-CDAhgWKWst36rztoSbich5OckFzaoUijKMi2JuhVX9MW4tHC1BYRmjYss3A6sdRJKX_5DP5PMu05oz79oKhdplZxDM9sdQAr2HjajAVkBLlLfxJvRTpm1_gjV_ZGSwnM8PdivvKhwouk083hLXS0jjpx-fqVf36FuG07quv1EPuUxuwQzZFtGaqaRv.js?_nc_x=Ij3Wp8lg5Kz, line 1102: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 842: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 842: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 1176: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 1176: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 1176: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iyWw4/y3/l/en_US/JaPxTGpv9ly49QpNLO-_P1BeGgprjG_znpEskUmOTVU18u3oeXbPEsN4bUJ6KiLWSg-CDAhgWKWst36rztoSbich5OckFzaoUijKMi2JuhVX9MW4tHC1BYRmjYss3A6sdRJKX_5DP5PMu05oz79oKhdplZxDM9sdQAr2HjajAVkBLlLfV_ZGSwnM8PdivvKhwouk083hLXS0jjpx-fqVf36FuG07quv1EPuUxuwQzZFtGaqaRv.js?_nc_x=Ij3Wp8lg5Kz, line 1102: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Parent 3894, Main Thread] WARNING: ContentParent: id=7f1893dc5700 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+[Parent 3894, Main Thread] WARNING: ContentParent: id=7f1893165c00 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+[Parent 3894, Main Thread] WARNING: ContentParent: id=7f187a268300 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+[Parent 3894, Main Thread] WARNING: ContentParent: id=7f189105c100 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953486
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 2009\"  data: no]"
+1661603708227	Marionette	INFO	Stopped listening on port 44957
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 3894, Main Thread] WARNING: ContentParent: id=7f1893165c00 - BlockShutdown: CanSend.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3671
+[Parent 3894, Main Thread] WARNING: ContentParent: id=7f1893165c00 - ShutDownProcess: Sent shutdown message.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:1803
+[Parent 3894, Main Thread] WARNING: ContentParent: id=7f1893165c00 - ShutDownProcess: Closing channel.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:1843
+[Parent 3894, Main Thread] WARNING: ContentParent: id=7f1893165c00 - RemoveShutdownBlockers: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3786
+JavaScript error: resource://services-sync/engines/extension-storage.js, line 54: TypeError: can't access property "get", lazy.Svc.Prefs is undefined
+1661603718961	geckodriver	INFO	Listening on 127.0.0.1:59957
+1661603720402	mozrunner::runner	INFO	Running command: "/bin/firefox-developer-edition" "--marionette" "--window-size=1920,1080" "--remote-debugging-port" "58889" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileEheQbm"
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:20.453: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:20.453: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:20.453: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:20.453: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:20.454: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:20.454: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:21.324: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:21.324: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:21.324: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:21.324: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:21.324: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:21.324: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:21.437: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:21.437: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:21.437: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:21.437: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:21.437: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:21.437: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:21.489: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:21.489: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:21.489: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:21.489: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:21.489: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:4395): Gtk-WARNING **: 17:35:21.489: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1661603721685	Marionette	INFO	Marionette enabled
+1661603721688	Marionette	INFO	Listening on port 39179
+Read port: 39179
+WebDriver BiDi listening on ws://127.0.0.1:58889
+1661603721812	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://4607a33e-7aed-4332-926d-d3c50baa05d9/lib/filter/antibanner.js, line 1164: unreachable code after return statement
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://127.0.0.1:58889/devtools/browser/3df11749-e9db-4fb5-8f9c-195b14f8514c
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 842: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 842: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 1176: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 1176: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iDRV4/yc/l/en_US/jkcKfLy3t79.js?_nc_x=Ij3Wp8lg5Kz, line 1176: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iyWw4/yh/l/en_US/JaPxTGpv9ly49QpNLO-_P1BeGgprjG_znzIamkz7iwVr8u3oeXbPEsN4bUJ6KiLWSg-CDAhgWKWst36rztoSbich5OckFzaoUijKMi2JuhVX9MW4tHC1BYRmjYss3A6sdRJKX_5DP5PMu05oz79oKhdplZxDM9sdQAr2HjajAVkBLlLfxJvRTpm1_gjV_ZGSwnM8PdivvKhwouk083hLXS0jjpx-fqVf36FuG07quv1EPuUxuwQzZFtGaqaRv.js?_nc_x=Ij3Wp8lg5Kz, line 1102: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofileEheQbm/thumbnails) because it does not exist
+JavaScript error: resource://gre/actors/AutoScrollChild.jsm, line 64: TypeError: can't access property "startsWith", node.closest(...).constructor.name is undefined
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://docs.google.com/&followup=https://docs.google.com/&emr=1 line 2 > eval line 969 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 160: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://docs.google.com/&followup=https://docs.google.com/&emr=1 line 2 > eval line 4708 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1661607149794	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https%3A%2F%2Fdocs.google.com%2F&followup=https%3A%2F%2Fdocs.google.com%2F&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin line 2 > eval line 3106 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://accounts.google.com."
+JavaScript warning: https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https%3A%2F%2Fdocs.google.com%2F&followup=https%3A%2F%2Fdocs.google.com%2F&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin line 2 > eval line 6258 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofileEheQbm/thumbnails) because it does not exist
+JavaScript error: resource://gre/actors/AutoScrollChild.jsm, line 64: TypeError: can't access property "startsWith", node.closest(...).constructor.name is undefined
+[Parent 4395, Main Thread] WARNING: ContentParent: id=7f291e553a00 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+[Parent 4395, Main Thread] WARNING: ContentParent: id=7f291e487d00 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+[Parent 4395, Main Thread] WARNING: ContentParent: id=7f2913126900 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+[Parent 4395, Main Thread] WARNING: ContentParent: id=7f290030e800 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953541
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 2009\"  data: no]"
+1661609499774	Marionette	INFO	Stopped listening on port 39179
+[Parent 4395, Main Thread] WARNING: ContentParent: id=7f291e487d00 - BlockShutdown: CanSend.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3671
+[Parent 4395, Main Thread] WARNING: ContentParent: id=7f291e487d00 - ShutDownProcess: Sent shutdown message.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:1803
+[Parent 4395, Main Thread] WARNING: ContentParent: id=7f291e487d00 - ShutDownProcess: Closing channel.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:1843
+[Parent 4395, Main Thread] WARNING: ContentParent: id=7f291e487d00 - RemoveShutdownBlockers: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3786
+1661678933212	geckodriver	INFO	Listening on 127.0.0.1:49049
+1661678935321	mozrunner::runner	INFO	Running command: "/bin/firefox-developer-edition" "--marionette" "--window-size=1920,1080" "--remote-debugging-port" "37827" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileuSuWAq"
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:55.378: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:55.378: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:55.378: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:55.378: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:55.378: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:55.378: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:56.491: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:56.491: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:56.491: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:56.492: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:56.492: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:56.492: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:56.608: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:56.608: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:56.608: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:56.608: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:56.608: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:56.608: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:56.653: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:56.653: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:56.653: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:56.653: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:56.653: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:13854): Gtk-WARNING **: 14:28:56.653: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1661678936908	Marionette	INFO	Marionette enabled
+1661678936912	Marionette	INFO	Listening on port 42167
+Read port: 42167
+WebDriver BiDi listening on ws://127.0.0.1:37827
+1661678937126	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://4607a33e-7aed-4332-926d-d3c50baa05d9/lib/filter/antibanner.js, line 1164: unreachable code after return statement
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://127.0.0.1:37827/devtools/browser/048d40ac-d412-4ad3-8d60-298825a7e9e2
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i-JB4/yE/l/en_US/8_Pq7_zcvwg.js?_nc_x=Ij3Wp8lg5Kz, line 842: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i-JB4/yE/l/en_US/8_Pq7_zcvwg.js?_nc_x=Ij3Wp8lg5Kz, line 842: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i-JB4/yE/l/en_US/8_Pq7_zcvwg.js?_nc_x=Ij3Wp8lg5Kz, line 1176: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i-JB4/yE/l/en_US/8_Pq7_zcvwg.js?_nc_x=Ij3Wp8lg5Kz, line 1176: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3i-JB4/yE/l/en_US/8_Pq7_zcvwg.js?_nc_x=Ij3Wp8lg5Kz, line 1176: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iqcA4/yY/l/en_US/Um3gYmfH3FL.js?_nc_x=Ij3Wp8lg5Kz, line 40: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofileuSuWAq/thumbnails) because it does not exist
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1662058448183	geckodriver	INFO	Listening on 127.0.0.1:34763
+1662058450275	mozrunner::runner	INFO	Running command: "/bin/firefox-developer-edition" "--marionette" "--window-size=1920,1080" "--remote-debugging-port" "45511" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilefsJyty"
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:10.332: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:10.332: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:10.332: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:10.332: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:10.332: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:10.332: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:11.490: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:11.490: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:11.490: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:11.490: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:11.490: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:11.490: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:11.589: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:11.589: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:11.589: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:11.589: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:11.589: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:11.589: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:11.630: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:11.630: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:11.630: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:11.630: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:11.630: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25266): Gtk-WARNING **: 23:54:11.631: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1662058451884	Marionette	INFO	Marionette enabled
+1662058451888	Marionette	INFO	Listening on port 45787
+Read port: 45787
+WebDriver BiDi listening on ws://127.0.0.1:45511
+1662058452073	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://4607a33e-7aed-4332-926d-d3c50baa05d9/lib/filter/antibanner.js, line 1164: unreachable code after return statement
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://127.0.0.1:45511/devtools/browser/0d032fa2-57d4-49b5-8291-d8ec004dfb06
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if1i4/y5/l/en_US/GtvAAeqWSxu.js?_nc_x=Ij3Wp8lg5Kz, line 839: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if1i4/y5/l/en_US/GtvAAeqWSxu.js?_nc_x=Ij3Wp8lg5Kz, line 839: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if1i4/y5/l/en_US/GtvAAeqWSxu.js?_nc_x=Ij3Wp8lg5Kz, line 1175: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if1i4/y5/l/en_US/GtvAAeqWSxu.js?_nc_x=Ij3Wp8lg5Kz, line 1175: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if1i4/y5/l/en_US/GtvAAeqWSxu.js?_nc_x=Ij3Wp8lg5Kz, line 1175: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iqcA4/yp/l/en_US/uweNKUJeVTU.js?_nc_x=Ij3Wp8lg5Kz, line 41: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1662058461359	Sync.Telemetry	ERROR	Notification for engine tabs but it isn't current
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofilefsJyty/thumbnails) because it does not exist
+1662059064083	geckodriver	INFO	Listening on 127.0.0.1:59537
+1662059065479	mozrunner::runner	INFO	Running command: "/bin/firefox-developer-edition" "--marionette" "--window-size=1920,1080" "--remote-debugging-port" "38287" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileSRxBfF"
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:25.531: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:25.531: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:25.531: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:25.531: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:25.531: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:25.531: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:26.405: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:26.405: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:26.405: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:26.406: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:26.406: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:26.406: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:26.514: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:26.514: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:26.514: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:26.514: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:26.514: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:26.514: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:26.564: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:26.564: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:26.564: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:26.564: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:26.564: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:25959): Gtk-WARNING **: 00:04:26.564: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1662059066753	Marionette	INFO	Marionette enabled
+1662059066756	Marionette	INFO	Listening on port 38445
+Read port: 38445
+WebDriver BiDi listening on ws://127.0.0.1:38287
+1662059066871	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://4607a33e-7aed-4332-926d-d3c50baa05d9/lib/filter/antibanner.js, line 1164: unreachable code after return statement
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://127.0.0.1:38287/devtools/browser/e9fef5b3-1bd1-4b91-b5f8-15a36cf811fa
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if1i4/y5/l/en_US/GtvAAeqWSxu.js?_nc_x=Ij3Wp8lg5Kz, line 839: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if1i4/y5/l/en_US/GtvAAeqWSxu.js?_nc_x=Ij3Wp8lg5Kz, line 839: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if1i4/y5/l/en_US/GtvAAeqWSxu.js?_nc_x=Ij3Wp8lg5Kz, line 1175: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if1i4/y5/l/en_US/GtvAAeqWSxu.js?_nc_x=Ij3Wp8lg5Kz, line 1175: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if1i4/y5/l/en_US/GtvAAeqWSxu.js?_nc_x=Ij3Wp8lg5Kz, line 1175: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iqcA4/yp/l/en_US/uweNKUJeVTU.js?_nc_x=Ij3Wp8lg5Kz, line 41: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Parent 25266, Main Thread] WARNING: ContentParent: id=7fc07f0d6b00 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+[Parent 25266, Main Thread] WARNING: ContentParent: id=7fc07ef66200 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+[Parent 25266, Main Thread] WARNING: ContentParent: id=7fc065471100 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+[Parent 25266, Main Thread] WARNING: ContentParent: id=7fc07c28ee00 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953486
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 2009\"  data: no]"
+1662059079563	Marionette	INFO	Stopped listening on port 45787
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 25266, Main Thread] WARNING: ContentParent: id=7fc07ef66200 - BlockShutdown: CanSend.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3671
+[Parent 25266, Main Thread] WARNING: ContentParent: id=7fc07ef66200 - ShutDownProcess: Sent shutdown message.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:1803
+[Parent 25266, Main Thread] WARNING: ContentParent: id=7fc07ef66200 - ShutDownProcess: Closing channel.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:1843
+[Parent 25266, Main Thread] WARNING: ContentParent: id=7fc07ef66200 - RemoveShutdownBlockers: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3786
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofileSRxBfF/thumbnails) because it does not exist
+1662059270347	geckodriver	INFO	Listening on 127.0.0.1:52855
+1662059272300	mozrunner::runner	INFO	Running command: "/bin/firefox-developer-edition" "--marionette" "--window-size=1920,1080" "--remote-debugging-port" "60641" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilekKM5tS"
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:52.357: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:52.357: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:52.357: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:52.357: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:52.357: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:52.357: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:53.230: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:53.231: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:53.231: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:53.231: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:53.231: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:53.231: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:53.377: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:53.377: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:53.377: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:53.377: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:53.377: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:53.377: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:53.430: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:53.430: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:53.430: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:53.430: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:53.430: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:26760): Gtk-WARNING **: 00:07:53.430: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1662059273634	Marionette	INFO	Marionette enabled
+1662059273637	Marionette	INFO	Listening on port 41647
+Read port: 41647
+WebDriver BiDi listening on ws://127.0.0.1:60641
+1662059273803	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://4607a33e-7aed-4332-926d-d3c50baa05d9/lib/filter/antibanner.js, line 1164: unreachable code after return statement
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+DevTools listening on ws://127.0.0.1:60641/devtools/browser/42ec14bb-ff0a-4b80-a3b3-8556c0941d3c
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if1i4/y5/l/en_US/GtvAAeqWSxu.js?_nc_x=Ij3Wp8lg5Kz, line 839: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if1i4/y5/l/en_US/GtvAAeqWSxu.js?_nc_x=Ij3Wp8lg5Kz, line 839: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if1i4/y5/l/en_US/GtvAAeqWSxu.js?_nc_x=Ij3Wp8lg5Kz, line 1175: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if1i4/y5/l/en_US/GtvAAeqWSxu.js?_nc_x=Ij3Wp8lg5Kz, line 1175: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if1i4/y5/l/en_US/GtvAAeqWSxu.js?_nc_x=Ij3Wp8lg5Kz, line 1175: unreachable code after return statement
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3iqcA4/yp/l/en_US/uweNKUJeVTU.js?_nc_x=Ij3Wp8lg5Kz, line 41: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+[Parent 25959, Main Thread] WARNING: ContentParent: id=7fef48729c00 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+[Parent 25959, Main Thread] WARNING: ContentParent: id=7fef485d3d00 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+[Parent 25959, Main Thread] WARNING: ContentParent: id=7fef459ac300 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+[Parent 25959, Main Thread] WARNING: ContentParent: id=7fef48728300 - BlockShutdown: NotifyImpendingShutdown.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3626
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 112: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953541
+Missing chrome or resource URL: resource://gre/modules/UpdateListener.sys.mjs
+console.error: "Error during quit-application-granted: [Exception... \"File error: Not found\"  nsresult: \"0x80520012 (NS_ERROR_FILE_NOT_FOUND)\"  location: \"JS frame :: resource:///modules/BrowserGlue.jsm :: _onQuitApplicationGranted/tasks< :: line 2009\"  data: no]"
+1662059292054	Marionette	INFO	Stopped listening on port 38445
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 25959, Main Thread] WARNING: ContentParent: id=7fef485d3d00 - BlockShutdown: CanSend.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3671
+[Parent 25959, Main Thread] WARNING: ContentParent: id=7fef485d3d00 - ShutDownProcess: Sent shutdown message.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:1803
+[Parent 25959, Main Thread] WARNING: ContentParent: id=7fef485d3d00 - ShutDownProcess: Closing channel.: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:1843
+[Parent 25959, Main Thread] WARNING: ContentParent: id=7fef485d3d00 - RemoveShutdownBlockers: file /build/firefox-developer-edition/src/firefox-105.0/dom/ipc/ContentParent.cpp:3786
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 108: Error: Could not get children of file(/tmp/rust_mozprofilekKM5tS/thumbnails) because it does not exist
+JavaScript error: resource://gre/actors/AutoScrollChild.jsm, line 64: TypeError: can't access property "startsWith", node.closest(...).constructor.name is undefined
+JavaScript error: resource://gre/actors/AutoScrollChild.jsm, line 64: TypeError: can't access property "startsWith", node.closest(...).constructor.name is undefined
+JavaScript error: resource://gre/actors/AutoScrollChild.jsm, line 64: TypeError: can't access property "startsWith", node.closest(...).constructor.name is undefined
+1662060030353	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1662060032842	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.

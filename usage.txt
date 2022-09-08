@@ -19,8 +19,8 @@ EXAMPLES
     python main.py -c "Chat Name"
         command bot is activated for chat "Chat Name".
 
-    python main.py -c "Chat Name" --chatmode=FEMALE
-        chat bot is activated for "Chat Name" for Aeona.
+    python main.py -c "Chat Name" --chatmode=MALE
+        chat bot is activated for "Chat Name" for Harley.
 
-    python main.py -c "Chat Name" --chatmode=MALE --headless=True
-        chat bot is activated for "Chat Name" for Harley in headless mode.
+    python main.py -c "Chat Name" --chatmode=FEMALE --headless=True
+        chat bot is activated for "Chat Name" for Aeona in headless mode.
