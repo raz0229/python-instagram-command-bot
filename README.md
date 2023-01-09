@@ -92,12 +92,16 @@ The bot in *Standard Mode* comes with a total of 12 commands and only responds w
 	AEONA_USER_ID=""
 	GOOGLE_CUSTOM_SEARCH_DEVELOPER_KEY=""
 	GOOGLE_CUSTOM_SEARCH_CX=""
+    OPENAI_API_KEY=""
 ```
 
 ### 🔗 Useful Links
 
 - To find your `X_RAPIDAPI_KEY`: \
     https://docs.rapidapi.com/docs/keys
+
+- To find your `OPENAI_API_KEY`: \
+    https://beta.openai.com/account/api-keys
 
 - To find, your `AEONA_USER_ID`: \
     https://rapidapi.com/multiii/api/aeona3/

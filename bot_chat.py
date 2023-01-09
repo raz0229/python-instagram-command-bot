@@ -21,7 +21,11 @@ import gc
 from dotenv import load_dotenv
 import os
 from selenium.webdriver.firefox.options import Options
+import openai
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
+# Set up the model and prompt
+model_engine = "text-davinci-003"
 load_dotenv()
 
 conn_harley = http.client.HTTPSConnection("harley-the-chatbot.p.rapidapi.com")
@@ -82,6 +86,25 @@ class Bot:
         self.received_msgs = len(self.incoming)
         self.running = True
         self.pressed_ctrl = False
+
+    def make_call_chatgpt(self, request):
+        try:
+            # Generate a response
+            completion = openai.Completion.create(
+                engine=model_engine,
+                prompt=request,
+                max_tokens=1024,
+                n=1,
+                stop=None,
+                temperature=0.5,
+            )
+
+            response = completion.choices[0].text
+        except socket.timeout:
+            return "ERR: Slow Internet connect on host"
+        else:  # no error occurred
+            return response.replace('\n', ' ')
+
 
     def make_call_harley(self, request):
         
@@ -157,7 +180,7 @@ class Bot:
                         if not last_msg.startswith('💀🦇'):
                             print("[INFO] New message: " + last_msg)
                             if self.BOT.lower() == "male":
-                               self.send_message('💀🦇 ' + self.make_call_harley(deemojify(last_msg.strip())))
+                               self.send_message('💀🦇 ' + self.make_call_chatgpt(deemojify(last_msg.strip())))
                             else:
                                 self.send_message('💀🦇 ' + self.make_call_aeona(deemojify(last_msg.strip())))
 

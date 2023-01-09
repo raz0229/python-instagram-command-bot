@@ -33,6 +33,12 @@ from apiclient.discovery import build
 from youtube_search import YoutubeSearch
 #from youtubesearchpython import VideosSearch
 from dotenv import load_dotenv
+import openai
+openai.api_key = "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"
+
+# Set up the model and prompt
+model_engine = "text-davinci-003"
+load_dotenv()
 
 translator = Translator()
 waifu = Waifu()
@@ -49,7 +55,7 @@ headers_harley = {
 
 # Download block list to block obscene language and insults
 print('[INFO] Downloading blocked keywords list..')
-r = requests.get('https://jsonkeeper.com/b/5ULD')
+r = requests.get('https://jsonkeeper.com/b/5ULD', verify=False)
 list = r.json()
 
 params = ['waifu', 'neko', 'shinobu', 'megumin', 'bully', 'cuddle', 'cry', 'hug', 'awoo', 'kiss', 'lick', 'pat', 'smug', 'bonk', 'yeet', 'blush', 'smile', 'wave', 'highfive', 'handhold', 'nom', 'bite', 'glomp', 'slap', 'kill', 'kick', 'happy', 'wink', 'poke', 'dance', 'cringe']
@@ -156,33 +162,31 @@ class Bot:
         elem.click()
         print("[INFO] Bot running on chat: " + self.contact)
         self.incoming = WebDriverWait(self.driver, 120).until(
-            EC.visibility_of_all_elements_located((By.CSS_SELECTOR ,'._aacl._aaco._aacu._aacx._aad6._aade')))
+            EC.visibility_of_any_elements_located((By.CSS_SELECTOR ,'._aacl._aaco._aacu._aacx._aad6._aade')))
         self.received_msgs = len(self.incoming)
+        print(len(self.incoming))
         self.running = True
         self.pressed_ctrl = False
 
     def make_call(self, request):
-        
-        url = "https://harley-the-chatbot.p.rapidapi.com/talk/bot"
-        payload = {
-	        "client": "",
-	        "bot": "harley",
-	        "message": request
-        }
-
         try:
-            conn_harley.request("POST", "/talk/bot", json.dumps(payload), headers_harley)
-            res = conn_harley.getresponse()
-            data = res.read()
-            response = json.loads(data.decode("utf-8"))['data']['conversation']['output']
+            # Generate a response
+            completion = openai.Completion.create(
+                engine=model_engine,
+                prompt=request,
+                max_tokens=1024,
+                n=1,
+                stop=None,
+                temperature=0.5,
+            )
+
+            response = completion.choices[0].text
+
         except socket.timeout:
             return "ERR: Slow Internet connect on host"
-        except http.client.HTTPException:
-            print('http exception')
-            self.make_call(request)
         else:  # no error occurred
-            return response.replace('Harley', 'RAZBot').replace('robomatic.ai', 'instagram.com/raz0229')  # replace name and location in response
-
+            return response.replace('\n', ' ') 
+       
     def new_msg_received(self):
         incoming = self.driver.find_elements(By.CSS_SELECTOR,'._aacl._aaco._aacu._aacx._aad6._aade')
         if len(incoming) != self.received_msgs:
