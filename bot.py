@@ -34,7 +34,7 @@ from youtube_search import YoutubeSearch
 #from youtubesearchpython import VideosSearch
 from dotenv import load_dotenv
 import openai
-openai.api_key = "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"
+openai.api_key = "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"
 
 # Set up the model and prompt
 model_engine = "text-davinci-003"

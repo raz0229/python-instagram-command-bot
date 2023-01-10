@@ -22507,3 +22507,337 @@ Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
+1673278183241	geckodriver	INFO	Listening on 127.0.0.1:38721
+1673278185969	mozrunner::runner	INFO	Running command: "/bin/firefox-developer-edition" "--marionette" "--window-size=1920,1080" "-no-remote" "-profile" "/tmp/rust_mozprofileIeGjOt"
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:46.054: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:46.054: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:46.054: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:46.054: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:46.054: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:46.054: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:47.357: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:47.357: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:47.358: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:47.358: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:47.358: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:47.358: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:47.495: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:47.495: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:47.495: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:47.495: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:47.495: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:47.495: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:47.549: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:47.549: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:47.549: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:47.549: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:47.549: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19261): Gtk-WARNING **: 20:29:47.549: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1673278187724	Marionette	INFO	Marionette enabled
+1673278187729	Marionette	INFO	Listening on port 44657
+Read port: 44657
+1673278187945	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://4607a33e-7aed-4332-926d-d3c50baa05d9/lib/filter/antibanner.js, line 1164: unreachable code after return statement
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 115: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953490
+1673278214684	Marionette	INFO	Stopped listening on port 44657
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+sendPing@resource://gre/modules/EventPing.jsm:51:30
+_submitPing@resource://gre/modules/EventPing.jsm:229:12
+shutdown@resource://gre/modules/EventPing.jsm:112:10
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:940:31
+shutdown/<@resource://gre/modules/TelemetryControllerParent.jsm:1010:24
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+submit@resource://services-sync/telemetry.js:826:32
+finish@resource://services-sync/telemetry.js:797:10
+shutdown@resource://services-sync/telemetry.js:807:10
+SyncTelemetryImpl/<@resource://services-sync/telemetry.js:681:66
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:946:14
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+1673278214821	Sync.Telemetry	ERROR	failed to submit ping: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"(resource://gre/modules/AsyncShutdown.jsm:718:15) JS Stack trace: addBlocker@AsyncShutdown.jsm:718:15
+addBlocker@AsyncShutdown.jsm:523:26
+addBlocker@AsyncShutdown.jsm:462:15
+setupShutdown@osfile_async_front.jsm:1548:28
+@osfile_async_front.jsm:1568:16
+@osfile.jsm:12:30
+@TelemetryStorage.jsm:19:28
+promiseArchivePing@TelemetryArchive.jsm:103:5
+promiseArchivePing@TelemetryArchive.jsm:63:33
+_submitPingLogic@TelemetryControllerParent.jsm:540:48
+send@TelemetryControllerParent.jsm:628:24
+submitExternalPing@TelemetryControllerParent.jsm:182:17
+submit@telemetry.js:826:32
+finish@telemetry.js:797:10
+shutdown@telemetry.js:807:10
+SyncTelemetryImpl/<@telemetry.js:681:66
+_cleanupOnShutdown@TelemetryControllerParent.jsm:946:14
+observe@AsyncShutdown.jsm:572:16
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  Waiting for ping task
+          Phase: TelemetryController: Waiting for pending ping activity
+          State: (none)
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:103:5
+promiseArchivePing@resource://gre/modules/TelemetryArchive.jsm:63:33
+_submitPingLogic@resource://gre/modules/TelemetryControllerParent.jsm:540:48
+send@resource://gre/modules/TelemetryControllerParent.jsm:628:24
+submitExternalPing@resource://gre/modules/TelemetryControllerParent.jsm:182:17
+saveShutdownPings@resource://gre/modules/TelemetrySession.jsm:982:34
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1232:20
+cleanup@resource://gre/modules/TelemetrySession.jsm:1239:9
+shutdownChromeProcess@resource://gre/modules/TelemetrySession.jsm:1256:14
+shutdown@resource://gre/modules/TelemetrySession.jsm:247:17
+_cleanupOnShutdown@resource://gre/modules/TelemetryControllerParent.jsm:959:35
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: A blocker encountered an error while we were waiting.
+          Blocker:  TelemetryController: shutting down
+          Phase: profile-before-change-telemetry
+          State: Error getting state: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange" at addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:1692:7
+getShutdownState@resource://gre/modules/TelemetrySend.jsm:374:30
+_getState@resource://gre/modules/TelemetryControllerParent.jsm:1058:38
+setupTelemetry/<@resource://gre/modules/TelemetryControllerParent.jsm:917:18
+safeGetState@resource://gre/modules/AsyncShutdown.jsm:254:17
+Barrier/_internalAddBlocker/promise<@resource://gre/modules/AsyncShutdown.jsm:773:20
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+WARNING: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+WARNING: addBlocker@resource://gre/modules/AsyncShutdown.jsm:718:15
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:523:26
+addBlocker@resource://gre/modules/AsyncShutdown.jsm:462:15
+setupShutdown@resource://gre/modules/osfile/osfile_async_front.jsm:1548:28
+@resource://gre/modules/osfile/osfile_async_front.jsm:1568:16
+@resource://gre/modules/osfile.jsm:12:30
+@resource://gre/modules/TelemetryStorage.jsm:19:28
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:721:5
+removeAbortedSessionPing@resource://gre/modules/TelemetryControllerParent.jsm:249:17
+shutdownChromeProcess/cleanup/<@resource://gre/modules/TelemetrySession.jsm:1235:42
+observe@resource://gre/modules/AsyncShutdown.jsm:572:16
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "profile-before-change" is finished, it is too late to register completion condition "OS.File: flush I/O queued before profileBeforeChange"
+1673278249058	geckodriver	INFO	Listening on 127.0.0.1:51363
+1673278250837	mozrunner::runner	INFO	Running command: "/bin/firefox-developer-edition" "--marionette" "--window-size=1920,1080" "-no-remote" "-profile" "/tmp/rust_mozprofileeC3s5T"
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:50.903: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:50.904: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:50.904: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:50.904: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:50.904: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:50.904: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:51.826: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:51.826: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:51.826: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:51.826: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:51.826: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:51.826: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:51.950: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:51.950: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:51.950: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:51.950: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:51.950: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:51.950: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:52.005: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:52.005: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:52.005: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:52.005: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:52.005: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:19896): Gtk-WARNING **: 20:30:52.005: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1673278252131	Marionette	INFO	Marionette enabled
+1673278252135	Marionette	INFO	Listening on port 44241
+Read port: 44241
+1673278252321	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://4607a33e-7aed-4332-926d-d3c50baa05d9/lib/filter/antibanner.js, line 1164: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if8t4/y9/l/en_US/btpXAOmpZtO.js?_nc_x=Ij3Wp8lg5Kz, line 28: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1673278281128	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:219:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:204:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1673278359382	geckodriver	INFO	Listening on 127.0.0.1:57241
+1673278361394	mozrunner::runner	INFO	Running command: "/bin/firefox-developer-edition" "--marionette" "--window-size=1920,1080" "-no-remote" "-profile" "/tmp/rust_mozprofilechJHAw"
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:41.467: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:41.468: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:41.468: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:41.468: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:41.468: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:41.468: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:42.525: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:42.525: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:42.525: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:42.525: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:42.525: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:42.525: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:42.706: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:42.706: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:42.706: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:42.706: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:42.706: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:42.706: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:42.817: Theme parsing error: gtk.css:3089:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:42.817: Theme parsing error: gtk.css:3091:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:42.817: Theme parsing error: gtk.css:3093:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:42.817: Theme parsing error: gtk.css:3095:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:42.817: Theme parsing error: gtk.css:3097:35: Missing closing bracket for :not()
+
+(firefoxdeveloperedition:21226): Gtk-WARNING **: 20:32:42.817: Theme parsing error: gtk.css:3099:35: Missing closing bracket for :not()
+[GFX1-]: glxtest: VA-API test failed: failed to initialise VAAPI connection.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1673278363026	Marionette	INFO	Marionette enabled
+1673278363031	Marionette	INFO	Listening on port 39759
+Read port: 39759
+1673278363196	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: moz-extension://4607a33e-7aed-4332-926d-d3c50baa05d9/lib/filter/antibanner.js, line 1164: unreachable code after return statement
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://static.cdninstagram.com/rsrc.php/v3if8t4/y9/l/en_US/btpXAOmpZtO.js?_nc_x=Ij3Wp8lg5Kz, line 28: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(/tmp/rust_mozprofileeC3s5T/thumbnails) because it does not exist
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(/tmp/rust_mozprofilechJHAw/thumbnails) because it does not exist
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 764))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 416))
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(/tmp/rust_mozprofileeC3s5T/thumbnails) because it does not exist
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(/tmp/rust_mozprofilechJHAw/thumbnails) because it does not exist
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(/tmp/rust_mozprofileeC3s5T/thumbnails) because it does not exist
+console.error: Region.sys.mjs: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 764))
+console.error: Region.sys.mjs: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.sys.mjs", 416))
+JavaScript error: resource://gre/modules/PromiseWorker.jsm, line 106: Error: Could not get children of file(/tmp/rust_mozprofilechJHAw/thumbnails) because it does not exist
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 115: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953547
+1673287830729	Marionette	INFO	Stopped listening on port 44241
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "quit-application-granted" is finished, it is too late to register completion condition "ContentParent: id=7f678fd61600"
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+JavaScript error: resource://gre/modules/ConduitsChild.jsm, line 115: Error: sendRemoveListener on closed conduit adblockultimate@adblockultimate.net.137438953548
+1673287831381	Marionette	INFO	Stopped listening on port 39759
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "quit-application-granted" is finished, it is too late to register completion condition "ContentParent: id=7f7caead4b00"
+JavaScript error: chrome://remote/content/marionette/cert.sys.mjs, line 51: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
